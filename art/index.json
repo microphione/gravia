@@ -1,0 +1,85 @@
+{
+  "tilePx": 32,
+  "images": {
+    "grass": {
+      "file": "grass.png",
+      "width": 32,
+      "height": 32
+    },
+    "dirt": {
+      "file": "dirt.png",
+      "width": 32,
+      "height": 32
+    },
+    "water": {
+      "file": "water.png",
+      "width": 32,
+      "height": 32
+    },
+    "wood-floor": {
+      "file": "wood-floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof": {
+      "file": "roof.png",
+      "width": 32,
+      "height": 32
+    },
+    "stone-wall": {
+      "file": "stone-wall.png",
+      "width": 32,
+      "height": 32
+    },
+    "stone-wall-high": {
+      "file": "stone-wall-high.png",
+      "width": 32,
+      "height": 32
+    },
+    "stone-wall-top": {
+      "file": "stone-wall-top.png",
+      "width": 32,
+      "height": 32
+    },
+    "house-wall": {
+      "file": "house-wall.png",
+      "width": 32,
+      "height": 32
+    },
+    "flower": {
+      "file": "flower.png",
+      "width": 32,
+      "height": 32
+    },
+    "tree-top": {
+      "file": "tree-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "tree-trunk": {
+      "file": "tree-trunk.png",
+      "width": 64,
+      "height": 32
+    },
+    "player-down": {
+      "file": "player-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-left": {
+      "file": "player-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-right": {
+      "file": "player-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-up": {
+      "file": "player-up.png",
+      "width": 32,
+      "height": 32
+    }
+  }
+}
