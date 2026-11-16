@@ -66,18 +66,18 @@
       "width": 32,
       "height": 32
     },
-    "stone-wall-n": {
-      "file": "stone-wall-n.png",
+    "stone-wall-h": {
+      "file": "stone-wall-h.png",
       "width": 64,
       "height": 64
     },
-    "stone-wall-w": {
-      "file": "stone-wall-w.png",
+    "stone-wall-v": {
+      "file": "stone-wall-v.png",
       "width": 64,
       "height": 64
     },
-    "stone-wall-nw": {
-      "file": "stone-wall-nw.png",
+    "stone-wall-corner": {
+      "file": "stone-wall-corner.png",
       "width": 64,
       "height": 64
     },
@@ -86,53 +86,53 @@
       "width": 64,
       "height": 64
     },
-    "house-wall-n": {
-      "file": "house-wall-n.png",
-      "width": 64,
-      "height": 64
-    },
-    "house-wall-w": {
-      "file": "house-wall-w.png",
-      "width": 64,
-      "height": 64
-    },
-    "house-wall-nw": {
-      "file": "house-wall-nw.png",
-      "width": 64,
-      "height": 64
-    },
     "house-wall-post": {
       "file": "house-wall-post.png",
       "width": 64,
       "height": 64
     },
-    "house-door-n-closed": {
-      "file": "house-door-n-closed.png",
+    "house-wall-h": {
+      "file": "house-wall-h.png",
       "width": 64,
       "height": 64
     },
-    "house-door-n-open": {
-      "file": "house-door-n-open.png",
+    "house-wall-v": {
+      "file": "house-wall-v.png",
       "width": 64,
       "height": 64
     },
-    "house-window-n-closed": {
-      "file": "house-window-n-closed.png",
+    "house-wall-corner": {
+      "file": "house-wall-corner.png",
       "width": 64,
       "height": 64
     },
-    "house-window-n-open": {
-      "file": "house-window-n-open.png",
+    "house-door-h-closed": {
+      "file": "house-door-h-closed.png",
       "width": 64,
       "height": 64
     },
-    "house-window-w-closed": {
-      "file": "house-window-w-closed.png",
+    "house-door-h-open": {
+      "file": "house-door-h-open.png",
       "width": 64,
       "height": 64
     },
-    "house-window-w-open": {
-      "file": "house-window-w-open.png",
+    "house-window-h-closed": {
+      "file": "house-window-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-h-open": {
+      "file": "house-window-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-v-closed": {
+      "file": "house-window-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-v-open": {
+      "file": "house-window-v-open.png",
       "width": 64,
       "height": 64
     },
@@ -208,6 +208,71 @@
     },
     "player-up-step2": {
       "file": "player-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-apple": {
+      "file": "item-apple.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-down": {
+      "file": "villager-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-down-step1": {
+      "file": "villager-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-down-step2": {
+      "file": "villager-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-left": {
+      "file": "villager-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-left-step1": {
+      "file": "villager-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-left-step2": {
+      "file": "villager-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-right": {
+      "file": "villager-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-right-step1": {
+      "file": "villager-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-right-step2": {
+      "file": "villager-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-up": {
+      "file": "villager-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-up-step1": {
+      "file": "villager-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "villager-up-step2": {
+      "file": "villager-up-step2.png",
       "width": 32,
       "height": 32
     }
