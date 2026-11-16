@@ -350,6 +350,36 @@
       "file": "rat-up-step2.png",
       "width": 32,
       "height": 32
+    },
+    "corpse-rat": {
+      "file": "corpse-rat.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-villager": {
+      "file": "corpse-villager.png",
+      "width": 64,
+      "height": 64
+    },
+    "item-rat-tail": {
+      "file": "item-rat-tail.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-cheese": {
+      "file": "item-cheese.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-bread": {
+      "file": "item-bread.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-backpack": {
+      "file": "ui-backpack.png",
+      "width": 32,
+      "height": 32
     }
   }
 }
