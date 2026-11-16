@@ -153,63 +153,63 @@
     },
     "player-down": {
       "file": "player-down.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-left": {
       "file": "player-left.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-right": {
       "file": "player-right.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-up": {
       "file": "player-up.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-down-step1": {
       "file": "player-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-down-step2": {
       "file": "player-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-left-step1": {
       "file": "player-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-left-step2": {
       "file": "player-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-right-step1": {
       "file": "player-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-right-step2": {
       "file": "player-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-up-step1": {
       "file": "player-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "player-up-step2": {
       "file": "player-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "item-apple": {
       "file": "item-apple.png",
@@ -218,63 +218,63 @@
     },
     "villager-down": {
       "file": "villager-down.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-down-step1": {
       "file": "villager-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-down-step2": {
       "file": "villager-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-left": {
       "file": "villager-left.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-left-step1": {
       "file": "villager-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-left-step2": {
       "file": "villager-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-right": {
       "file": "villager-right.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-right-step1": {
       "file": "villager-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-right-step2": {
       "file": "villager-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-up": {
       "file": "villager-up.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-up-step1": {
       "file": "villager-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "villager-up-step2": {
       "file": "villager-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     }
   }
 }
