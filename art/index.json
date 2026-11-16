@@ -26,25 +26,115 @@
       "width": 32,
       "height": 32
     },
-    "stone-wall": {
-      "file": "stone-wall.png",
+    "roof-n": {
+      "file": "roof-n.png",
       "width": 32,
       "height": 32
     },
-    "stone-wall-high": {
-      "file": "stone-wall-high.png",
+    "roof-s": {
+      "file": "roof-s.png",
       "width": 32,
       "height": 32
     },
-    "stone-wall-top": {
-      "file": "stone-wall-top.png",
+    "roof-e": {
+      "file": "roof-e.png",
       "width": 32,
       "height": 32
     },
-    "house-wall": {
-      "file": "house-wall.png",
+    "roof-w": {
+      "file": "roof-w.png",
       "width": 32,
       "height": 32
+    },
+    "roof-nw": {
+      "file": "roof-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-ne": {
+      "file": "roof-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-sw": {
+      "file": "roof-sw.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-se": {
+      "file": "roof-se.png",
+      "width": 32,
+      "height": 32
+    },
+    "stone-wall-n": {
+      "file": "stone-wall-n.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-wall-w": {
+      "file": "stone-wall-w.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-wall-nw": {
+      "file": "stone-wall-nw.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-wall-post": {
+      "file": "stone-wall-post.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-wall-n": {
+      "file": "house-wall-n.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-wall-w": {
+      "file": "house-wall-w.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-wall-nw": {
+      "file": "house-wall-nw.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-wall-post": {
+      "file": "house-wall-post.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-door-n-closed": {
+      "file": "house-door-n-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-door-n-open": {
+      "file": "house-door-n-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-n-closed": {
+      "file": "house-window-n-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-n-open": {
+      "file": "house-window-n-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-w-closed": {
+      "file": "house-window-w-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-window-w-open": {
+      "file": "house-window-w-open.png",
+      "width": 64,
+      "height": 64
     },
     "flower": {
       "file": "flower.png",
