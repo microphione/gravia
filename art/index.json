@@ -285,6 +285,66 @@
       "file": "villager-up-step2.png",
       "width": 64,
       "height": 64
+    },
+    "rat-down": {
+      "file": "rat-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-down-step1": {
+      "file": "rat-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-down-step2": {
+      "file": "rat-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-left": {
+      "file": "rat-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-left-step1": {
+      "file": "rat-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-left-step2": {
+      "file": "rat-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-right": {
+      "file": "rat-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-right-step1": {
+      "file": "rat-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-right-step2": {
+      "file": "rat-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-up": {
+      "file": "rat-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-up-step1": {
+      "file": "rat-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "rat-up-step2": {
+      "file": "rat-up-step2.png",
+      "width": 32,
+      "height": 32
     }
   }
 }
