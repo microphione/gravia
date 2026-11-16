@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gierka map maker</title>
+    <style>html,body{color:#e0e0e0;background:#101018;height:100%;margin:0;font:13px sans-serif;overflow:hidden}body{-webkit-user-select:none;user-select:none;display:flex}#main{flex-direction:column;flex:1;min-width:0;display:flex}#view{flex:1;min-height:0;position:relative;overflow:hidden}canvas{image-rendering:pixelated;display:block;position:absolute;top:0;left:0}#status{white-space:nowrap;text-overflow:ellipsis;background:#1c1c28;border-top:1px solid #33334a;padding:4px 8px;overflow:hidden}#side{box-sizing:border-box;background:#1c1c28;border-left:1px solid #33334a;width:280px;padding:8px;overflow-y:auto}#side section{margin-bottom:12px}#side h2{text-transform:uppercase;color:#9a9ab0;margin:0 0 4px;font-size:12px}#side h3{color:#9a9ab0;margin:8px 0 4px;font-size:12px}button{font:inherit;color:inherit;cursor:pointer;background:#2a2a3c;border:1px solid #44445c;border-radius:3px;padding:3px 8px}button:disabled{opacity:.4;cursor:default}button.on{background:#3a5a9a;border-color:#6a8ad0}.row{flex-wrap:wrap;gap:4px;margin-bottom:4px;display:flex}#levels{flex-direction:column;gap:2px;margin-bottom:4px;display:flex}#levels button{text-align:left}.layer-row{align-items:center;gap:6px;margin-bottom:2px;display:flex}.layer-row span{flex:1}#palette .items{flex-wrap:wrap;gap:4px;display:flex}#palette button{flex-direction:column;align-items:center;width:76px;padding:3px;font-size:11px;display:flex}#palette canvas,#tile-types canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}#markers p{color:#c0c0d0;margin:4px 0}#markers label{margin-bottom:2px;display:block}#markers input[type=number]{width:60px}.tile-row{border-bottom:1px solid #33334a;margin-bottom:6px;padding-bottom:6px;font-size:11px}.tile-line{align-items:center;gap:4px;margin-bottom:2px;display:flex}.tile-line input[type=text]{flex:1;min-width:0}.tile-line select{min-width:0;max-width:90px}.fatal{color:#e0e0e0;margin:16px;font-family:sans-serif}</style>
+    <script type="module" crossorigin src="./assets/mapmaker-DjqfZMOu.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/CanvasPool-BKClwQdf.js">
+    <link rel="modulepreload" crossorigin href="./assets/Filter-CN7QUHyT.js">
+    <link rel="modulepreload" crossorigin href="./assets/canvasUtils-B0HNDru7.js">
+    <link rel="modulepreload" crossorigin href="./assets/Cache-fNcOcM1E.js">
+    <link rel="modulepreload" crossorigin href="./assets/GCManagedHash-BNMlzcZi.js">
+    <link rel="modulepreload" crossorigin href="./assets/RenderTargetSystem-CHsvIyYi.js">
+    <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-CIH9f4hr.js">
+    <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-CzVmTByP.js">
+    <link rel="modulepreload" crossorigin href="./assets/getTexelRangeRects-CiPp9Owe.js">
+    <link rel="modulepreload" crossorigin href="./assets/tile-images-C-bnoKYK.js">
+  </head>
+  <body>
+    <noscript><p class="fatal">The map maker needs JavaScript.</p></noscript>
+    <div id="main">
+      <div id="view"></div>
+      <div id="status"></div>
+    </div>
+    <aside id="side">
+      <div id="file-panel-slot"></div>
+      <section>
+        <h2>Tool</h2>
+        <div class="row" id="tools"></div>
+        <div class="row" id="history"></div>
+      </section>
+      <section>
+        <h2>Level</h2>
+        <div id="levels"></div>
+        <div class="row" id="level-buttons"></div>
+      </section>
+      <section>
+        <h2>Layers (active, shown)</h2>
+        <div id="layers"></div>
+        <label><input type="checkbox" id="as-in-game" /> as in the game</label>
+      </section>
+      <section id="markers">
+        <h2>Markers</h2>
+      </section>
+      <section id="palette">
+        <h2>Palette</h2>
+      </section>
+      <section id="tile-types">
+        <h2>Tile types</h2>
+      </section>
+    </aside>
+  </body>
+</html>

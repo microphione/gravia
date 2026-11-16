@@ -80,6 +80,46 @@
       "file": "player-up.png",
       "width": 32,
       "height": 32
+    },
+    "player-down-step1": {
+      "file": "player-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-down-step2": {
+      "file": "player-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-left-step1": {
+      "file": "player-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-left-step2": {
+      "file": "player-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-right-step1": {
+      "file": "player-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-right-step2": {
+      "file": "player-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-up-step1": {
+      "file": "player-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "player-up-step2": {
+      "file": "player-up-step2.png",
+      "width": 32,
+      "height": 32
     }
   }
 }
