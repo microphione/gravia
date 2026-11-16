@@ -146,6 +146,11 @@
       "width": 32,
       "height": 32
     },
+    "cellar-floor": {
+      "file": "cellar-floor.png",
+      "width": 32,
+      "height": 32
+    },
     "flower": {
       "file": "flower.png",
       "width": 32,
