@@ -116,6 +116,16 @@
       "width": 64,
       "height": 64
     },
+    "house-door-v-closed": {
+      "file": "house-door-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-door-v-open": {
+      "file": "house-door-v-open.png",
+      "width": 64,
+      "height": 64
+    },
     "house-window-h-closed": {
       "file": "house-window-h-closed.png",
       "width": 64,
@@ -133,6 +143,46 @@
     },
     "house-window-v-open": {
       "file": "house-window-v-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-door-h-closed": {
+      "file": "stone-door-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-door-h-open": {
+      "file": "stone-door-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-door-v-closed": {
+      "file": "stone-door-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-door-v-open": {
+      "file": "stone-door-v-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-window-h-closed": {
+      "file": "stone-window-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-window-h-open": {
+      "file": "stone-window-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-window-v-closed": {
+      "file": "stone-window-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-window-v-open": {
+      "file": "stone-window-v-open.png",
       "width": 64,
       "height": 64
     },
