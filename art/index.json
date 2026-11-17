@@ -196,6 +196,36 @@
       "width": 32,
       "height": 32
     },
+    "house-stairs-east": {
+      "file": "house-stairs-east.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-stairwell-east": {
+      "file": "house-stairwell-east.png",
+      "width": 32,
+      "height": 32
+    },
+    "house-stairs-south": {
+      "file": "house-stairs-south.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-stairwell-south": {
+      "file": "house-stairwell-south.png",
+      "width": 32,
+      "height": 32
+    },
+    "house-stairs-west": {
+      "file": "house-stairs-west.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-stairwell-west": {
+      "file": "house-stairwell-west.png",
+      "width": 32,
+      "height": 32
+    },
     "cellar-floor": {
       "file": "cellar-floor.png",
       "width": 32,
@@ -466,6 +496,11 @@
       "width": 32,
       "height": 32
     },
+    "ui-skills": {
+      "file": "ui-skills.png",
+      "width": 32,
+      "height": 32
+    },
     "ui-attack": {
       "file": "ui-attack.png",
       "width": 32,
@@ -493,11 +528,6 @@
     },
     "ui-tool-pickaxe": {
       "file": "ui-tool-pickaxe.png",
-      "width": 32,
-      "height": 32
-    },
-    "ui-skills": {
-      "file": "ui-skills.png",
       "width": 32,
       "height": 32
     },
