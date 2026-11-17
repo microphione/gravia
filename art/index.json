@@ -496,6 +496,11 @@
       "width": 32,
       "height": 32
     },
+    "ui-skills": {
+      "file": "ui-skills.png",
+      "width": 32,
+      "height": 32
+    },
     "ui-tool-rope": {
       "file": "ui-tool-rope.png",
       "width": 32,
