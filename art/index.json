@@ -201,6 +201,11 @@
       "width": 32,
       "height": 32
     },
+    "respawn-pad": {
+      "file": "respawn-pad.png",
+      "width": 32,
+      "height": 32
+    },
     "flower": {
       "file": "flower.png",
       "width": 32,
@@ -411,6 +416,36 @@
       "width": 64,
       "height": 64
     },
+    "corpse-rat-worn": {
+      "file": "corpse-rat-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-rat-rotten": {
+      "file": "corpse-rat-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-rat-bones": {
+      "file": "corpse-rat-bones.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-villager-worn": {
+      "file": "corpse-villager-worn.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-villager-rotten": {
+      "file": "corpse-villager-rotten.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-villager-bones": {
+      "file": "corpse-villager-bones.png",
+      "width": 64,
+      "height": 64
+    },
     "item-rat-tail": {
       "file": "item-rat-tail.png",
       "width": 32,
@@ -428,6 +463,41 @@
     },
     "ui-backpack": {
       "file": "ui-backpack.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-attack": {
+      "file": "ui-attack.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-food": {
+      "file": "ui-food.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-potion-health": {
+      "file": "ui-potion-health.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-potion-mana": {
+      "file": "ui-potion-mana.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-tool-shovel": {
+      "file": "ui-tool-shovel.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-tool-pickaxe": {
+      "file": "ui-tool-pickaxe.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-tool-rope": {
+      "file": "ui-tool-rope.png",
       "width": 32,
       "height": 32
     },
