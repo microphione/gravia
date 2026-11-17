@@ -430,6 +430,26 @@
       "file": "ui-backpack.png",
       "width": 32,
       "height": 32
+    },
+    "tool-brush": {
+      "file": "tool-brush.png",
+      "width": 32,
+      "height": 32
+    },
+    "tool-picker": {
+      "file": "tool-picker.png",
+      "width": 32,
+      "height": 32
+    },
+    "tool-marker": {
+      "file": "tool-marker.png",
+      "width": 32,
+      "height": 32
+    },
+    "tool-eraser": {
+      "file": "tool-eraser.png",
+      "width": 32,
+      "height": 32
     }
   }
 }
