@@ -601,6 +601,76 @@
       "width": 32,
       "height": 32
     },
+    "grey-rat-down": {
+      "file": "grey-rat-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-down-step1": {
+      "file": "grey-rat-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-down-step2": {
+      "file": "grey-rat-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-left": {
+      "file": "grey-rat-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-left-step1": {
+      "file": "grey-rat-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-left-step2": {
+      "file": "grey-rat-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-right": {
+      "file": "grey-rat-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-right-step1": {
+      "file": "grey-rat-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-right-step2": {
+      "file": "grey-rat-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-up": {
+      "file": "grey-rat-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-up-step1": {
+      "file": "grey-rat-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "grey-rat-up-step2": {
+      "file": "grey-rat-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-grey-rat": {
+      "file": "corpse-grey-rat.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-grey-fang": {
+      "file": "item-grey-fang.png",
+      "width": 32,
+      "height": 32
+    },
     "corpse-rat": {
       "file": "corpse-rat.png",
       "width": 32,
