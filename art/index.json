@@ -306,6 +306,11 @@
       "width": 64,
       "height": 64
     },
+    "portal-pad": {
+      "file": "portal-pad.png",
+      "width": 32,
+      "height": 32
+    },
     "house-sign": {
       "file": "house-sign.png",
       "width": 64,

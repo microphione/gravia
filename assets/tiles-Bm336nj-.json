@@ -57,6 +57,7 @@
     { "id": 57, "name": "stone-door-v-east", "image": "stone-door-v-closed", "layer": 1, "blocks": true, "opens": "door", "openImage": "stone-door-v-open", "swing": "east" },
     { "id": 58, "name": "bed", "image": "bed", "layer": 1, "blocks": true, "bed": true },
     { "id": 59, "name": "stash", "image": "stash", "layer": 1, "blocks": true, "container": true },
+    { "id": 60, "name": "portal-pad", "image": "portal-pad", "layer": 0, "blocks": false },
     { "id": 61, "name": "for-sale-sign", "image": "house-sign", "layer": 1, "blocks": true }
   ]
 }
