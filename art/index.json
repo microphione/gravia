@@ -671,6 +671,51 @@
       "width": 32,
       "height": 32
     },
+    "item-backpack": {
+      "file": "item-backpack.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-leather-cap": {
+      "file": "item-leather-cap.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-padded-vest": {
+      "file": "item-padded-vest.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-work-gloves": {
+      "file": "item-work-gloves.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-linen-trousers": {
+      "file": "item-linen-trousers.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-leather-boots": {
+      "file": "item-leather-boots.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-copper-ring": {
+      "file": "item-copper-ring.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-wooden-amulet": {
+      "file": "item-wooden-amulet.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-plank-shield": {
+      "file": "item-plank-shield.png",
+      "width": 32,
+      "height": 32
+    },
     "item-gold-coin": {
       "file": "item-gold-coin.png",
       "width": 32,
