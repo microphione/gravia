@@ -66,6 +66,41 @@
       "width": 32,
       "height": 32
     },
+    "roof-in-nw": {
+      "file": "roof-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-in-ne": {
+      "file": "roof-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-in-nw-ne": {
+      "file": "roof-in-nw-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-e-in-nw": {
+      "file": "roof-e-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-w-in-ne": {
+      "file": "roof-w-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-we": {
+      "file": "roof-we.png",
+      "width": 32,
+      "height": 32
+    },
+    "roof-nwe": {
+      "file": "roof-nwe.png",
+      "width": 32,
+      "height": 32
+    },
     "stone-wall-h": {
       "file": "stone-wall-h.png",
       "width": 64,
@@ -186,6 +221,26 @@
       "width": 64,
       "height": 64
     },
+    "door-leaf-north": {
+      "file": "door-leaf-north.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-leaf-east": {
+      "file": "door-leaf-east.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-leaf-south": {
+      "file": "door-leaf-south.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-leaf-west": {
+      "file": "door-leaf-west.png",
+      "width": 64,
+      "height": 64
+    },
     "house-stairs": {
       "file": "house-stairs.png",
       "width": 64,
@@ -235,6 +290,11 @@
       "file": "respawn-pad.png",
       "width": 32,
       "height": 32
+    },
+    "chest": {
+      "file": "chest.png",
+      "width": 64,
+      "height": 64
     },
     "flower": {
       "file": "flower.png",
@@ -498,6 +558,11 @@
     },
     "ui-skills": {
       "file": "ui-skills.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-settings": {
+      "file": "ui-settings.png",
       "width": 32,
       "height": 32
     },
