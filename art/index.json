@@ -296,6 +296,21 @@
       "width": 64,
       "height": 64
     },
+    "bed": {
+      "file": "bed.png",
+      "width": 64,
+      "height": 64
+    },
+    "stash": {
+      "file": "stash.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-sign": {
+      "file": "house-sign.png",
+      "width": 64,
+      "height": 64
+    },
     "flower": {
       "file": "flower.png",
       "width": 32,
@@ -596,6 +611,26 @@
       "width": 64,
       "height": 64
     },
+    "corpse-person": {
+      "file": "corpse-person.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-person-worn": {
+      "file": "corpse-person-worn.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-person-rotten": {
+      "file": "corpse-person-rotten.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-person-bones": {
+      "file": "corpse-person-bones.png",
+      "width": 64,
+      "height": 64
+    },
     "item-rat-tail": {
       "file": "item-rat-tail.png",
       "width": 32,
@@ -608,6 +643,11 @@
     },
     "item-bread": {
       "file": "item-bread.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-gold-coin": {
+      "file": "item-gold-coin.png",
       "width": 32,
       "height": 32
     },
