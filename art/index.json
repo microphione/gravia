@@ -391,6 +391,426 @@
       "width": 64,
       "height": 64
     },
+    "player-down--default": {
+      "file": "player-down--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--default": {
+      "file": "player-down-step1--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--default": {
+      "file": "player-down-step2--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--default": {
+      "file": "player-left--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--default": {
+      "file": "player-left-step1--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--default": {
+      "file": "player-left-step2--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--default": {
+      "file": "player-right--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--default": {
+      "file": "player-right-step1--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--default": {
+      "file": "player-right-step2--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--default": {
+      "file": "player-up--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--default": {
+      "file": "player-up-step1--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--default": {
+      "file": "player-up-step2--default.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--ratcatcher": {
+      "file": "player-down--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--ratcatcher": {
+      "file": "player-down-step1--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--ratcatcher": {
+      "file": "player-down-step2--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--ratcatcher": {
+      "file": "player-left--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--ratcatcher": {
+      "file": "player-left-step1--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--ratcatcher": {
+      "file": "player-left-step2--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--ratcatcher": {
+      "file": "player-right--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--ratcatcher": {
+      "file": "player-right-step1--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--ratcatcher": {
+      "file": "player-right-step2--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--ratcatcher": {
+      "file": "player-up--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--ratcatcher": {
+      "file": "player-up-step1--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--ratcatcher": {
+      "file": "player-up-step2--ratcatcher.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--exterminator": {
+      "file": "player-down--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--exterminator": {
+      "file": "player-down-step1--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--exterminator": {
+      "file": "player-down-step2--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--exterminator": {
+      "file": "player-left--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--exterminator": {
+      "file": "player-left-step1--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--exterminator": {
+      "file": "player-left-step2--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--exterminator": {
+      "file": "player-right--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--exterminator": {
+      "file": "player-right-step1--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--exterminator": {
+      "file": "player-right-step2--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--exterminator": {
+      "file": "player-up--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--exterminator": {
+      "file": "player-up-step1--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--exterminator": {
+      "file": "player-up-step2--exterminator.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--veteran": {
+      "file": "player-down--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--veteran": {
+      "file": "player-down-step1--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--veteran": {
+      "file": "player-down-step2--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--veteran": {
+      "file": "player-left--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--veteran": {
+      "file": "player-left-step1--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--veteran": {
+      "file": "player-left-step2--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--veteran": {
+      "file": "player-right--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--veteran": {
+      "file": "player-right-step1--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--veteran": {
+      "file": "player-right-step2--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--veteran": {
+      "file": "player-up--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--veteran": {
+      "file": "player-up-step1--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--veteran": {
+      "file": "player-up-step2--veteran.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--finder": {
+      "file": "player-down--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--finder": {
+      "file": "player-down-step1--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--finder": {
+      "file": "player-down-step2--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--finder": {
+      "file": "player-left--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--finder": {
+      "file": "player-left-step1--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--finder": {
+      "file": "player-left-step2--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--finder": {
+      "file": "player-right--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--finder": {
+      "file": "player-right-step1--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--finder": {
+      "file": "player-right-step2--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--finder": {
+      "file": "player-up--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--finder": {
+      "file": "player-up-step1--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--finder": {
+      "file": "player-up-step2--finder.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--revenant": {
+      "file": "player-down--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--revenant": {
+      "file": "player-down-step1--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--revenant": {
+      "file": "player-down-step2--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--revenant": {
+      "file": "player-left--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--revenant": {
+      "file": "player-left-step1--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--revenant": {
+      "file": "player-left-step2--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--revenant": {
+      "file": "player-right--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--revenant": {
+      "file": "player-right-step1--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--revenant": {
+      "file": "player-right-step2--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--revenant": {
+      "file": "player-up--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--revenant": {
+      "file": "player-up-step1--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--revenant": {
+      "file": "player-up-step2--revenant.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down--duellist": {
+      "file": "player-down--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step1--duellist": {
+      "file": "player-down-step1--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-down-step2--duellist": {
+      "file": "player-down-step2--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left--duellist": {
+      "file": "player-left--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step1--duellist": {
+      "file": "player-left-step1--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-left-step2--duellist": {
+      "file": "player-left-step2--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right--duellist": {
+      "file": "player-right--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step1--duellist": {
+      "file": "player-right-step1--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-right-step2--duellist": {
+      "file": "player-right-step2--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up--duellist": {
+      "file": "player-up--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step1--duellist": {
+      "file": "player-up-step1--duellist.png",
+      "width": 64,
+      "height": 64
+    },
+    "player-up-step2--duellist": {
+      "file": "player-up-step2--duellist.png",
+      "width": 64,
+      "height": 64
+    },
     "item-apple": {
       "file": "item-apple.png",
       "width": 32,
@@ -598,6 +1018,11 @@
     },
     "corpse-straw-dummy": {
       "file": "corpse-straw-dummy.png",
+      "width": 32,
+      "height": 32
+    },
+    "rest-spot": {
+      "file": "rest-spot.png",
       "width": 32,
       "height": 32
     },
