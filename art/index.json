@@ -571,6 +571,31 @@
       "width": 32,
       "height": 32
     },
+    "straw-dummy-down": {
+      "file": "straw-dummy-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "straw-dummy-left": {
+      "file": "straw-dummy-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "straw-dummy-right": {
+      "file": "straw-dummy-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "straw-dummy-up": {
+      "file": "straw-dummy-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-straw-dummy": {
+      "file": "corpse-straw-dummy.png",
+      "width": 32,
+      "height": 32
+    },
     "corpse-rat": {
       "file": "corpse-rat.png",
       "width": 32,
