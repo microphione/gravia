@@ -706,6 +706,11 @@
       "width": 32,
       "height": 32
     },
+    "item-ward-charm": {
+      "file": "item-ward-charm.png",
+      "width": 32,
+      "height": 32
+    },
     "item-wooden-amulet": {
       "file": "item-wooden-amulet.png",
       "width": 32,
