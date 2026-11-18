@@ -496,6 +496,66 @@
       "width": 32,
       "height": 32
     },
+    "companion-down": {
+      "file": "companion-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-down-step1": {
+      "file": "companion-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-down-step2": {
+      "file": "companion-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-left": {
+      "file": "companion-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-left-step1": {
+      "file": "companion-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-left-step2": {
+      "file": "companion-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-right": {
+      "file": "companion-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-right-step1": {
+      "file": "companion-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-right-step2": {
+      "file": "companion-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-up": {
+      "file": "companion-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-up-step1": {
+      "file": "companion-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "companion-up-step2": {
+      "file": "companion-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
     "corpse-rat": {
       "file": "corpse-rat.png",
       "width": 32,
