@@ -58,6 +58,8 @@
     { "id": 58, "name": "bed", "image": "bed", "layer": 1, "blocks": true, "bed": true },
     { "id": 59, "name": "stash", "image": "stash", "layer": 1, "blocks": true, "container": true },
     { "id": 60, "name": "portal-pad", "image": "portal-pad", "layer": 0, "blocks": false },
-    { "id": 61, "name": "for-sale-sign", "image": "house-sign", "layer": 1, "blocks": true }
+    { "id": 61, "name": "for-sale-sign", "image": "house-sign", "layer": 1, "blocks": true },
+    { "id": 62, "name": "herb", "image": "herb", "layer": 1, "blocks": true, "herb": "healing-herb", "pickedImage": "herb-picked" },
+    { "id": 63, "name": "alchemy-table", "image": "alchemy-table", "layer": 1, "blocks": true, "workplace": true }
   ]
 }

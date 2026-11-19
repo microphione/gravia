@@ -816,6 +816,41 @@
       "width": 32,
       "height": 32
     },
+    "item-healing-herb": {
+      "file": "item-healing-herb.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-small-health-potion": {
+      "file": "item-small-health-potion.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-small-mana-potion": {
+      "file": "item-small-mana-potion.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-health-potion": {
+      "file": "item-health-potion.png",
+      "width": 32,
+      "height": 32
+    },
+    "herb": {
+      "file": "herb.png",
+      "width": 64,
+      "height": 64
+    },
+    "herb-picked": {
+      "file": "herb-picked.png",
+      "width": 64,
+      "height": 64
+    },
+    "alchemy-table": {
+      "file": "alchemy-table.png",
+      "width": 64,
+      "height": 64
+    },
     "villager-down": {
       "file": "villager-down.png",
       "width": 64,
