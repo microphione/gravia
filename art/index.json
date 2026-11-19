@@ -1246,6 +1246,11 @@
       "width": 32,
       "height": 32
     },
+    "item-house-list": {
+      "file": "item-house-list.png",
+      "width": 32,
+      "height": 32
+    },
     "item-rat-corpse": {
       "file": "item-rat-corpse.png",
       "width": 32,
