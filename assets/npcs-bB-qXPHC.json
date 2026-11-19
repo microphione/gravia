@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "npcs": [
+    {
+      "id": "ferryman",
+      "name": "Ferryman",
+      "line": "The crossing is short. Shall I take you over to the other island?",
+      "choices": [
+        { "id": "travel", "text": "Yes, take me across.", "effect": "travel" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ]
+    },
+    {
+      "id": "farmer",
+      "name": "Farmer",
+      "line": "Good day. Mind the mud, it clings to boots.",
+      "choices": [
+        { "id": "chat", "text": "What's new with you?", "effect": "say", "next": "news" },
+        { "id": "ask", "text": "Do you need help?", "effect": "quest-start", "quest": "rat-tails", "next": "ask-yes", "requires": [{ "type": "quest", "quest": "rat-tails", "state": "none" }] },
+        { "id": "hand-in", "text": "I have your rat tails.", "effect": "quest-done", "quest": "rat-tails", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "rat-tails", "state": "active" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "ask-yes",
+          "line": "Aye, the rats are eating me out of house and home.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Fine tails! You have my thanks, and the village's.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "news",
+          "line": "The barley is up, but the rats are fat this year.",
+          "choices": [
+            { "id": "rats", "text": "Fat rats?", "effect": "say", "next": "rats" },
+            { "id": "weather", "text": "How is the weather?", "effect": "say", "next": "weather" },
+            { "id": "news-back", "text": "Let me ask something else.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "rats",
+          "line": "They eat my grain and leave their tails behind.",
+          "choices": [
+            { "id": "rats-back", "text": "Ugly business.", "effect": "say" },
+            { "id": "rats-news", "text": "Tell me more news.", "effect": "say", "next": "news" }
+          ]
+        },
+        {
+          "id": "weather",
+          "line": "Dry for now. My knee says rain by the weekend.",
+          "choices": [
+            { "id": "weather-back", "text": "Take care of that knee.", "effect": "say" },
+            { "id": "weather-news", "text": "Tell me more news.", "effect": "say", "next": "news" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trader",
+      "name": "Trader",
+      "line": "Welcome, friend. Bread, cheese, and fair prices.",
+      "choices": [
+        { "id": "chat", "text": "What's new with you?", "effect": "say", "next": "news" },
+        { "id": "trade", "text": "Let's trade.", "effect": "trade" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "news",
+          "line": "Slow days. The road is quiet and my cart is full.",
+          "choices": [
+            { "id": "road", "text": "Why is the road quiet?", "effect": "say", "next": "road" },
+            { "id": "news-back", "text": "Let me ask something else.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "road",
+          "line": "Folk stay home when the wolves howl at night.",
+          "choices": [
+            { "id": "road-back", "text": "I will be careful.", "effect": "say" }
+          ]
+        }
+      ],
+      "shop": {
+        "sells": [
+          { "item": "bread", "price": 6 },
+          { "item": "cheese", "price": 5 }
+        ],
+        "buys": [
+          { "item": "rat-tail", "price": 1 },
+          { "item": "rat-corpse", "price": 5, "freshOnly": true }
+        ]
+      }
+    },
+    {
+      "id": "house-agent",
+      "name": "House agent",
+      "line": "Welcome home. What shall I see to in the house?",
+      "choices": [
+        { "id": "floor-up", "text": "Build a floor above ({price} gold).", "effect": "house-floor-up", "next": "built" },
+        { "id": "floor-down", "text": "Dig a floor below ({price} gold).", "effect": "house-floor-down", "next": "built" },
+        { "id": "give-up", "text": "I give this house up.", "effect": "house-give-up", "next": "gave-up" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "built",
+          "line": "It is done. Take a look.",
+          "choices": [
+            { "id": "built-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "gave-up",
+          "line": "The house is no longer yours. Farewell.",
+          "choices": [
+            { "id": "gave-up-back", "text": "Farewell.", "effect": "say" }
+          ]
+        }
+      ],
+      "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5 }
+    }
+  ]
+}
