@@ -96,7 +96,8 @@
         "buys": [
           { "item": "rat-tail", "price": 1 },
           { "item": "rat-corpse", "price": 5, "freshOnly": true }
-        ]
+        ],
+        "purse": { "cap": 100, "refillGold": 1, "refillEveryMs": 10000 }
       }
     },
     {

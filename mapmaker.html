@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gierka map maker</title>
-    <style>html,body{color:#e0e0e0;background:#101018;height:100%;margin:0;font:13px sans-serif;overflow:hidden}body{-webkit-user-select:none;user-select:none;display:flex}#main{flex-direction:column;flex:1;min-width:0;display:flex}#view{flex:1;min-height:0;position:relative;overflow:hidden}canvas{image-rendering:pixelated;display:block;position:absolute;top:0;left:0}#status{white-space:nowrap;text-overflow:ellipsis;background:#1c1c28;border-top:1px solid #33334a;padding:4px 8px;overflow:hidden}#side{box-sizing:border-box;background:#1c1c28;border-left:1px solid #33334a;width:280px;padding:8px;overflow-y:auto}#side section{margin-bottom:12px}#side h2{text-transform:uppercase;color:#9a9ab0;margin:0 0 4px;font-size:12px}#side h3{color:#9a9ab0;margin:8px 0 4px;font-size:12px}button{font:inherit;color:inherit;cursor:pointer;background:#2a2a3c;border:1px solid #44445c;border-radius:3px;padding:3px 8px}button:disabled{opacity:.4;cursor:default}button.on{background:#3a5a9a;border-color:#6a8ad0}#tools button{align-items:center;gap:4px;display:flex}#tools .icon{width:32px;height:32px;image-rendering:pixelated}.row{flex-wrap:wrap;gap:4px;margin-bottom:4px;display:flex}#levels{flex-direction:column;gap:2px;max-height:200px;margin-bottom:4px;display:flex;position:relative;overflow-y:auto}#levels button{text-align:left;flex-shrink:0}.layer-row{align-items:center;gap:6px;margin-bottom:2px;display:flex}.layer-row span{flex:1}#palette .items{flex-wrap:wrap;gap:4px;display:flex}#palette button{flex-direction:column;align-items:center;width:76px;padding:3px;font-size:11px;display:flex}#palette canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}#markers p{color:#c0c0d0;margin:4px 0}#markers label{margin-bottom:2px;display:block}#markers input[type=number]{width:60px}#tile-types .hint{color:#9a9ab0;margin:0 0 6px;font-size:11px}#props,#draft{z-index:10;background:#08080eb3;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}#props[hidden],#draft[hidden]{display:none}.props-box{box-sizing:border-box;background:#1c1c28;border:1px solid #44445c;border-radius:4px;outline:none;width:520px;max-width:96vw;max-height:92vh;padding:12px;overflow-y:auto}.props-box h2{margin:0 0 6px;font-size:14px}.props-box h3{color:#9a9ab0;margin:10px 0 4px;font-size:12px}.props-box canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}.props-row{align-items:center;gap:6px;margin-bottom:4px;display:flex}.props-row input[type=text]{flex:1;min-width:0}.props-row input[readonly]{color:#9a9ab0;background:#16161f}.props-row select{min-width:0;max-width:150px}.props-error{color:#ff9a8a;margin:8px 0 0}.props-buttons{justify-content:flex-end;gap:6px;margin-top:10px;display:flex}.fatal{color:#e0e0e0;margin:16px;font-family:sans-serif}</style>
-    <script type="module" crossorigin src="./assets/mapmaker-DwyR4k2Y.js"></script>
+    <style>html,body{color:#e0e0e0;background:#101018;height:100%;margin:0;font:13px sans-serif;overflow:hidden}body{-webkit-user-select:none;user-select:none;display:flex}#main{flex-direction:column;flex:1;min-width:0;display:flex}#view{flex:1;min-height:0;position:relative;overflow:hidden}canvas{image-rendering:pixelated;display:block;position:absolute;top:0;left:0}#status{white-space:nowrap;text-overflow:ellipsis;background:#1c1c28;border-top:1px solid #33334a;padding:4px 8px;overflow:hidden}#side{box-sizing:border-box;background:#1c1c28;border-left:1px solid #33334a;flex-direction:column;width:280px;display:flex}#tool-options{box-sizing:border-box;background:#232334;border-bottom:1px solid #33334a;flex:none;padding:6px 8px}#side-body{flex:1;min-height:0;padding:8px;overflow-y:auto}#side section{margin-bottom:12px}#tool-options section{margin-bottom:0;display:none}#tool-options[data-tool=brush] #piece,#tool-options[data-tool=eraser] #piece,#tool-options[data-tool=picker] #piece,#tool-options[data-tool=marker] #markers,#tool-options[data-tool=select] #markers{display:block}#tool-options:not([data-tool=marker]) .only-marker,#tool-options:not([data-tool=eraser]) #piece .row{display:none}#tool-options .row{margin-bottom:2px}.piece-line{align-items:center;gap:6px;min-height:32px;margin-bottom:4px;display:flex}#piece canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}#side h2{text-transform:uppercase;color:#9a9ab0;margin:0 0 4px;font-size:12px}#side h3{color:#9a9ab0;margin:8px 0 4px;font-size:12px}button{font:inherit;color:inherit;cursor:pointer;background:#2a2a3c;border:1px solid #44445c;border-radius:3px;padding:3px 8px}button:disabled{opacity:.4;cursor:default}button.on{background:#3a5a9a;border-color:#6a8ad0}#toolbar{background:#1c1c28;border-bottom:1px solid #33334a;flex-wrap:wrap;align-items:center;gap:4px 14px;padding:4px 8px;display:flex}#toolbar .row{align-items:center;margin-bottom:0}#tools button{align-items:center;gap:4px;display:flex}#tools .icon{width:32px;height:32px;image-rendering:pixelated}#tools .key{color:#9a9ab0;font-size:11px}#stepper{align-items:center;gap:4px;display:flex;position:relative}#level-name{min-width:120px}#level-popover{z-index:15;background:#1c1c28;border:1px solid #44445c;border-radius:4px;margin-top:4px;padding:6px;position:absolute;top:100%;left:0;box-shadow:0 4px 12px #00000080}#level-popover[hidden]{display:none}#level-popover .hint{color:#9a9ab0;margin:6px 0 0;font-size:11px}#layers{gap:4px;display:flex}#layers .chip{cursor:pointer;white-space:nowrap;background:#2a2a3c;border:1px solid #44445c;border-radius:3px;align-items:center;gap:3px;padding:3px 6px;display:flex}.row{flex-wrap:wrap;gap:4px;margin-bottom:4px;display:flex}#levels{flex-direction:column;gap:2px;min-width:140px;max-height:min(60vh,460px);display:flex;position:relative;overflow-y:auto}#levels button{text-align:left;flex-shrink:0}#palette .items{flex-wrap:wrap;gap:4px;display:flex}#palette button{flex-direction:column;align-items:center;width:76px;padding:3px;font-size:11px;display:flex}#palette canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}#markers p{color:#c0c0d0;min-height:2.6em;margin:4px 0 0}#markers label{margin-bottom:2px;display:block}#markers input[type=number]{width:60px}#tile-types .hint{color:#9a9ab0;margin:0 0 6px;font-size:11px}#props,#draft{z-index:10;background:#08080eb3;justify-content:center;align-items:center;display:flex;position:fixed;inset:0}#props[hidden],#draft[hidden]{display:none}.props-box{box-sizing:border-box;background:#1c1c28;border:1px solid #44445c;border-radius:4px;outline:none;width:520px;max-width:96vw;max-height:92vh;padding:12px;overflow-y:auto}.props-box h2{margin:0 0 6px;font-size:14px}.props-box h3{color:#9a9ab0;margin:10px 0 4px;font-size:12px}.props-box canvas{object-fit:contain;background:#101018;width:32px;height:32px;position:static}.props-row{align-items:center;gap:6px;margin-bottom:4px;display:flex}.props-row input[type=text]{flex:1;min-width:0}.props-row input[readonly]{color:#9a9ab0;background:#16161f}.props-row select{min-width:0;max-width:150px}.props-error{color:#ff9a8a;margin:8px 0 0}.props-buttons{justify-content:flex-end;gap:6px;margin-top:10px;display:flex}@media (height<=480px){#toolbar{gap:2px 8px;padding:2px 6px}#tools .icon{width:16px;height:16px}#side{width:220px}#tool-options{padding:3px 6px}#tool-options button{padding:1px 5px}#markers p{min-height:0;margin:2px 0 0;font-size:11px}.piece-line{min-height:0}#side-body{padding:6px}#levels{max-height:50vh}}.fatal{color:#e0e0e0;margin:16px;font-family:sans-serif}</style>
+    <script type="module" crossorigin src="./assets/mapmaker-Dk4j5JL_.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/CanvasPool-BKClwQdf.js">
     <link rel="modulepreload" crossorigin href="./assets/Filter-C-9RPzfk.js">
     <link rel="modulepreload" crossorigin href="./assets/canvasUtils-B0HNDru7.js">
@@ -15,40 +15,39 @@
     <link rel="modulepreload" crossorigin href="./assets/getTextureBatchBindGroup-CIH9f4hr.js">
     <link rel="modulepreload" crossorigin href="./assets/GraphicsContext-CzVmTByP.js">
     <link rel="modulepreload" crossorigin href="./assets/getTexelRangeRects-DC-oQS47.js">
-    <link rel="modulepreload" crossorigin href="./assets/tile-images-BMkUMYoa.js">
+    <link rel="modulepreload" crossorigin href="./assets/tile-images-DGpiARax.js">
   </head>
   <body>
     <noscript><p class="fatal">The map maker needs JavaScript.</p></noscript>
     <div id="main">
+      <div id="toolbar" role="toolbar" aria-label="Map maker tools">
+        <div class="row" id="tools"></div>
+        <div class="row" id="history"></div>
+        <div id="stepper"></div>
+        <div id="layers"></div>
+      </div>
       <div id="view"></div>
       <div id="status"></div>
     </div>
     <aside id="side">
-      <div id="file-panel-slot"></div>
-      <section>
-        <h2>Tool</h2>
-        <div class="row" id="tools"></div>
-        <div class="row" id="history"></div>
-      </section>
-      <section>
-        <h2>Level</h2>
-        <div id="levels"></div>
-      </section>
-      <section>
-        <h2>Layers (shown)</h2>
-        <div id="layers"></div>
-        <label><input type="checkbox" id="as-in-game" /> as in the game</label>
-      </section>
-      <section id="markers">
-        <h2>Markers</h2>
-      </section>
-      <section id="palette">
-        <h2>Palette</h2>
-      </section>
-      <section id="tile-types">
-        <h2>Tile types</h2>
-        <p class="hint">Right click a palette tile (long press on a touch screen) to edit it.</p>
-      </section>
+      <div id="tool-options" data-tool="brush">
+        <section id="piece"></section>
+        <section id="markers"></section>
+      </div>
+      <div id="side-body">
+        <div id="file-panel-slot"></div>
+        <section>
+          <h2>View</h2>
+          <label><input type="checkbox" id="as-in-game" /> as in the game</label>
+        </section>
+        <section id="palette">
+          <h2>Palette</h2>
+        </section>
+        <section id="tile-types">
+          <h2>Tile types</h2>
+          <p class="hint">Right click a palette tile (long press on a touch screen) to edit it.</p>
+        </section>
+      </div>
     </aside>
     <div id="props" role="dialog" aria-modal="true" aria-label="Tile properties" hidden></div>
     <div id="draft" role="dialog" aria-modal="true" aria-label="Unsaved working copy" hidden></div>
