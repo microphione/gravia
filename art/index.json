@@ -851,6 +851,21 @@
       "width": 64,
       "height": 64
     },
+    "boat-hull": {
+      "file": "boat-hull.png",
+      "width": 64,
+      "height": 64
+    },
+    "boat-rim": {
+      "file": "boat-rim.png",
+      "width": 64,
+      "height": 20
+    },
+    "boat-mid": {
+      "file": "boat-mid.png",
+      "width": 64,
+      "height": 16
+    },
     "villager-down": {
       "file": "villager-down.png",
       "width": 64,
@@ -1126,6 +1141,81 @@
       "width": 32,
       "height": 32
     },
+    "arena-rat-down": {
+      "file": "arena-rat-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-down-step1": {
+      "file": "arena-rat-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-down-step2": {
+      "file": "arena-rat-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-left": {
+      "file": "arena-rat-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-left-step1": {
+      "file": "arena-rat-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-left-step2": {
+      "file": "arena-rat-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-right": {
+      "file": "arena-rat-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-right-step1": {
+      "file": "arena-rat-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-right-step2": {
+      "file": "arena-rat-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-up": {
+      "file": "arena-rat-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-up-step1": {
+      "file": "arena-rat-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-rat-up-step2": {
+      "file": "arena-rat-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-arena-rat": {
+      "file": "corpse-arena-rat.png",
+      "width": 32,
+      "height": 32
+    },
+    "arena-door": {
+      "file": "arena-door.png",
+      "width": 64,
+      "height": 64
+    },
+    "ui-tool-taming": {
+      "file": "ui-tool-taming.png",
+      "width": 32,
+      "height": 32
+    },
     "item-grey-fang": {
       "file": "item-grey-fang.png",
       "width": 32,
@@ -1338,6 +1428,16 @@
     },
     "ui-tool-rope": {
       "file": "ui-tool-rope.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-status-protection": {
+      "file": "ui-status-protection.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-status-battle": {
+      "file": "ui-status-battle.png",
       "width": 32,
       "height": 32
     },

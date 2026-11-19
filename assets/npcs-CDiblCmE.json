@@ -185,6 +185,32 @@
         }
       ],
       "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5 }
+    },
+    {
+      "id": "boatman",
+      "name": "Boatman",
+      "line": "The boat leaves in {departure}.",
+      "choices": [
+        { "id": "board", "text": "I want to sail.", "effect": "board", "next": "board-ok" },
+        { "id": "when", "text": "When does it leave?", "effect": "say", "next": "when" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "board-ok",
+          "line": "Take a seat when you are by the boat. It leaves in {departure}.",
+          "choices": [
+            { "id": "board-ok-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "when",
+          "line": "Next departure in {departure}. Do not be late.",
+          "choices": [
+            { "id": "when-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
     }
   ]
 }
