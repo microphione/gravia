@@ -211,6 +211,16 @@
           ]
         }
       ]
+    },
+    {
+      "id": "depot-keeper",
+      "name": "Depot keeper",
+      "line": "Your things are safe with me. Shall I open your depot?",
+      "choices": [
+        { "id": "open", "text": "Show me my depot.", "effect": "depot-open" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "depot": true
     }
   ]
 }
