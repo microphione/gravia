@@ -866,6 +866,11 @@
       "width": 64,
       "height": 16
     },
+    "boat-foam": {
+      "file": "boat-foam.png",
+      "width": 4,
+      "height": 4
+    },
     "villager-down": {
       "file": "villager-down.png",
       "width": 64,
