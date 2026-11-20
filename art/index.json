@@ -1465,6 +1465,11 @@
       "file": "tool-eraser.png",
       "width": 32,
       "height": 32
+    },
+    "tool-spawn": {
+      "file": "tool-spawn.png",
+      "width": 32,
+      "height": 32
     }
   }
 }
