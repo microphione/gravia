@@ -65,6 +65,7 @@
     { "id": 65, "name": "iron-ore", "image": "iron-ore", "layer": 1, "blocks": true, "node": { "trade": "mining", "item": "iron-ore", "regrowMs": 300000 }, "pickedImage": "iron-ore-spent" },
     { "id": 66, "name": "fir-tree", "image": "fir-tree", "layer": 1, "blocks": true, "node": { "trade": "woodcutting", "item": "log", "regrowMs": 240000 }, "pickedImage": "fir-stump" },
     { "id": 67, "name": "forge", "image": "forge", "layer": 1, "blocks": true, "workplace": "forge" },
-    { "id": 68, "name": "loom", "image": "loom", "layer": 1, "blocks": true, "workplace": "loom" }
+    { "id": 68, "name": "loom", "image": "loom", "layer": 1, "blocks": true, "workplace": "loom" },
+    { "id": 69, "name": "arena-door", "image": "arena-door", "layer": 1, "blocks": true, "gate": true }
   ]
 }
