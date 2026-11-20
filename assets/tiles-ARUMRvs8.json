@@ -60,6 +60,11 @@
     { "id": 60, "name": "portal-pad", "image": "portal-pad", "layer": 0, "blocks": false },
     { "id": 61, "name": "for-sale-sign", "image": "house-sign", "layer": 1, "blocks": true },
     { "id": 62, "name": "herb", "image": "herb", "layer": 1, "blocks": true, "herb": "healing-herb", "pickedImage": "herb-picked" },
-    { "id": 63, "name": "alchemy-table", "image": "alchemy-table", "layer": 1, "blocks": true, "workplace": true }
+    { "id": 63, "name": "alchemy-table", "image": "alchemy-table", "layer": 1, "blocks": true, "workplace": true },
+    { "id": 64, "name": "depot-chest", "image": "depot-chest", "layer": 1, "blocks": true, "depot": true },
+    { "id": 65, "name": "iron-ore", "image": "iron-ore", "layer": 1, "blocks": true, "node": { "trade": "mining", "item": "iron-ore", "regrowMs": 300000 }, "pickedImage": "iron-ore-spent" },
+    { "id": 66, "name": "fir-tree", "image": "fir-tree", "layer": 1, "blocks": true, "node": { "trade": "woodcutting", "item": "log", "regrowMs": 240000 }, "pickedImage": "fir-stump" },
+    { "id": 67, "name": "forge", "image": "forge", "layer": 1, "blocks": true, "workplace": "forge" },
+    { "id": 68, "name": "loom", "image": "loom", "layer": 1, "blocks": true, "workplace": "loom" }
   ]
 }

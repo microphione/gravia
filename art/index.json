@@ -296,6 +296,11 @@
       "width": 64,
       "height": 64
     },
+    "depot-chest": {
+      "file": "depot-chest.png",
+      "width": 64,
+      "height": 64
+    },
     "bed": {
       "file": "bed.png",
       "width": 64,
@@ -1146,6 +1151,21 @@
       "width": 32,
       "height": 32
     },
+    "corpse-grey-rat-skinned": {
+      "file": "corpse-grey-rat-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-grey-rat-skinned-worn": {
+      "file": "corpse-grey-rat-skinned-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-grey-rat-skinned-rotten": {
+      "file": "corpse-grey-rat-skinned-rotten.png",
+      "width": 32,
+      "height": 32
+    },
     "arena-rat-down": {
       "file": "arena-rat-down.png",
       "width": 32,
@@ -1218,6 +1238,11 @@
     },
     "ui-tool-taming": {
       "file": "ui-tool-taming.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-taming-bell": {
+      "file": "item-taming-bell.png",
       "width": 32,
       "height": 32
     },
@@ -1331,8 +1356,38 @@
       "width": 32,
       "height": 32
     },
+    "item-leather-cap-1": {
+      "file": "item-leather-cap-1.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-leather-cap-2": {
+      "file": "item-leather-cap-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-leather-cap-3": {
+      "file": "item-leather-cap-3.png",
+      "width": 32,
+      "height": 32
+    },
     "item-padded-vest": {
       "file": "item-padded-vest.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-padded-vest-1": {
+      "file": "item-padded-vest-1.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-padded-vest-2": {
+      "file": "item-padded-vest-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-padded-vest-3": {
+      "file": "item-padded-vest-3.png",
       "width": 32,
       "height": 32
     },
@@ -1343,6 +1398,21 @@
     },
     "item-linen-trousers": {
       "file": "item-linen-trousers.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-linen-trousers-1": {
+      "file": "item-linen-trousers-1.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-linen-trousers-2": {
+      "file": "item-linen-trousers-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-linen-trousers-3": {
+      "file": "item-linen-trousers-3.png",
       "width": 32,
       "height": 32
     },
@@ -1371,6 +1441,21 @@
       "width": 32,
       "height": 32
     },
+    "item-plank-shield-1": {
+      "file": "item-plank-shield-1.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-plank-shield-2": {
+      "file": "item-plank-shield-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-plank-shield-3": {
+      "file": "item-plank-shield-3.png",
+      "width": 32,
+      "height": 32
+    },
     "item-gold-coin": {
       "file": "item-gold-coin.png",
       "width": 32,
@@ -1378,6 +1463,11 @@
     },
     "item-house-list": {
       "file": "item-house-list.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-house-lost-note": {
+      "file": "item-house-lost-note.png",
       "width": 32,
       "height": 32
     },
@@ -1473,6 +1563,76 @@
     },
     "tool-spawn": {
       "file": "tool-spawn.png",
+      "width": 32,
+      "height": 32
+    },
+    "iron-ore": {
+      "file": "iron-ore.png",
+      "width": 64,
+      "height": 64
+    },
+    "iron-ore-spent": {
+      "file": "iron-ore-spent.png",
+      "width": 64,
+      "height": 64
+    },
+    "fir-tree": {
+      "file": "fir-tree.png",
+      "width": 64,
+      "height": 64
+    },
+    "fir-stump": {
+      "file": "fir-stump.png",
+      "width": 64,
+      "height": 64
+    },
+    "forge": {
+      "file": "forge.png",
+      "width": 64,
+      "height": 64
+    },
+    "loom": {
+      "file": "loom.png",
+      "width": 64,
+      "height": 64
+    },
+    "item-iron-ore": {
+      "file": "item-iron-ore.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-log": {
+      "file": "item-log.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-rat-hide": {
+      "file": "item-rat-hide.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-iron-shield": {
+      "file": "item-iron-shield.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-hide-jerkin": {
+      "file": "item-hide-jerkin.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-rat-skinned": {
+      "file": "corpse-rat-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-rat-skinned-worn": {
+      "file": "corpse-rat-skinned-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-rat-skinned-rotten": {
+      "file": "corpse-rat-skinned-rotten.png",
       "width": 32,
       "height": 32
     }

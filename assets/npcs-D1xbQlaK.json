@@ -149,7 +149,8 @@
           { "item": "bread", "price": 6 },
           { "item": "cheese", "price": 5 },
           { "item": "small-health-potion", "price": 15 },
-          { "item": "small-mana-potion", "price": 15 }
+          { "item": "small-mana-potion", "price": 15 },
+          { "item": "taming-bell", "price": 30 }
         ],
         "buys": [
           { "item": "rat-tail", "price": 1 },
@@ -161,7 +162,7 @@
     {
       "id": "house-agent",
       "name": "House agent",
-      "line": "Welcome home. What shall I see to in the house?",
+      "line": "Welcome home. Rent is taken from your backpack each month; after a few days of reminders an unpaid house is lost. What shall I see to?",
       "choices": [
         { "id": "floor-up", "text": "Build a floor above ({price} gold).", "effect": "house-floor-up", "next": "built" },
         { "id": "floor-down", "text": "Dig a floor below ({price} gold).", "effect": "house-floor-down", "next": "built" },
@@ -184,7 +185,7 @@
           ]
         }
       ],
-      "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5 }
+      "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5, "rent": { "gold": 1, "reminderDays": 3 } }
     },
     {
       "id": "boatman",
@@ -213,14 +214,14 @@
       ]
     },
     {
-      "id": "depot-keeper",
-      "name": "Depot keeper",
-      "line": "Your things are safe with me. Shall I open your depot?",
+      "id": "smith",
+      "name": "Smith",
+      "line": "Bring me two of a kind and some coins, and I will make one better piece of them.",
       "choices": [
-        { "id": "open", "text": "Show me my depot.", "effect": "depot-open" },
-        { "id": "bye", "text": "Not now.", "effect": "end" }
+        { "id": "merge", "text": "Let's merge two pieces.", "effect": "merge" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
       ],
-      "depot": true
+      "smith": { "feePercent": 50 }
     }
   ]
 }
