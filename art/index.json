@@ -1635,6 +1635,501 @@
       "file": "corpse-rat-skinned-rotten.png",
       "width": 32,
       "height": 32
+    },
+    "linden-top": {
+      "file": "linden-top.png",
+      "width": 96,
+      "height": 32
+    },
+    "linden-middle": {
+      "file": "linden-middle.png",
+      "width": 96,
+      "height": 32
+    },
+    "linden-trunk": {
+      "file": "linden-trunk.png",
+      "width": 96,
+      "height": 32
+    },
+    "birch-top": {
+      "file": "birch-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "birch-trunk": {
+      "file": "birch-trunk.png",
+      "width": 64,
+      "height": 32
+    },
+    "bush": {
+      "file": "bush.png",
+      "width": 32,
+      "height": 32
+    },
+    "berry-bush": {
+      "file": "berry-bush.png",
+      "width": 32,
+      "height": 32
+    },
+    "tall-grass": {
+      "file": "tall-grass.png",
+      "width": 32,
+      "height": 32
+    },
+    "grass-2": {
+      "file": "grass-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "flower-bed-a": {
+      "file": "flower-bed-a.png",
+      "width": 32,
+      "height": 32
+    },
+    "flower-bed-b": {
+      "file": "flower-bed-b.png",
+      "width": 32,
+      "height": 32
+    },
+    "rock-small": {
+      "file": "rock-small.png",
+      "width": 32,
+      "height": 32
+    },
+    "boulder": {
+      "file": "boulder.png",
+      "width": 32,
+      "height": 40
+    },
+    "reeds": {
+      "file": "reeds.png",
+      "width": 32,
+      "height": 32
+    },
+    "stump": {
+      "file": "stump.png",
+      "width": 32,
+      "height": 32
+    },
+    "log-pile": {
+      "file": "log-pile.png",
+      "width": 32,
+      "height": 32
+    },
+    "wheat": {
+      "file": "wheat.png",
+      "width": 32,
+      "height": 32
+    },
+    "hay-bale": {
+      "file": "hay-bale.png",
+      "width": 32,
+      "height": 32
+    },
+    "sand": {
+      "file": "sand.png",
+      "width": 32,
+      "height": 32
+    },
+    "cobbles": {
+      "file": "cobbles.png",
+      "width": 32,
+      "height": 32
+    },
+    "pier-planks": {
+      "file": "pier-planks.png",
+      "width": 32,
+      "height": 32
+    },
+    "rug": {
+      "file": "rug.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-h": {
+      "file": "fence-h.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-v": {
+      "file": "fence-v.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-corner-a": {
+      "file": "fence-corner-a.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-corner-b": {
+      "file": "fence-corner-b.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-corner-c": {
+      "file": "fence-corner-c.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-corner-d": {
+      "file": "fence-corner-d.png",
+      "width": 32,
+      "height": 32
+    },
+    "fence-gate": {
+      "file": "fence-gate.png",
+      "width": 32,
+      "height": 32
+    },
+    "well-top": {
+      "file": "well-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "well-left": {
+      "file": "well-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "well-right": {
+      "file": "well-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "stall-top": {
+      "file": "stall-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "stall-left": {
+      "file": "stall-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "stall-right": {
+      "file": "stall-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "notice-board-top": {
+      "file": "notice-board-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "notice-board-left": {
+      "file": "notice-board-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "notice-board-right": {
+      "file": "notice-board-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "bench-top": {
+      "file": "bench-top.png",
+      "width": 64,
+      "height": 32
+    },
+    "bench-left": {
+      "file": "bench-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "bench-right": {
+      "file": "bench-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "table-left": {
+      "file": "table-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "table-right": {
+      "file": "table-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "lamp-post-top": {
+      "file": "lamp-post-top.png",
+      "width": 32,
+      "height": 32
+    },
+    "lamp-post-base": {
+      "file": "lamp-post-base.png",
+      "width": 32,
+      "height": 32
+    },
+    "signpost-top": {
+      "file": "signpost-top.png",
+      "width": 32,
+      "height": 32
+    },
+    "signpost-base": {
+      "file": "signpost-base.png",
+      "width": 32,
+      "height": 32
+    },
+    "shrine-top": {
+      "file": "shrine-top.png",
+      "width": 32,
+      "height": 32
+    },
+    "shrine-base": {
+      "file": "shrine-base.png",
+      "width": 32,
+      "height": 32
+    },
+    "barrel": {
+      "file": "barrel.png",
+      "width": 32,
+      "height": 32
+    },
+    "crate": {
+      "file": "crate.png",
+      "width": 32,
+      "height": 32
+    },
+    "sack": {
+      "file": "sack.png",
+      "width": 32,
+      "height": 32
+    },
+    "stool": {
+      "file": "stool.png",
+      "width": 32,
+      "height": 32
+    },
+    "scarecrow": {
+      "file": "scarecrow.png",
+      "width": 32,
+      "height": 40
+    },
+    "boar-down": {
+      "file": "boar-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-down-step1": {
+      "file": "boar-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-down-step2": {
+      "file": "boar-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-left": {
+      "file": "boar-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-left-step1": {
+      "file": "boar-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-left-step2": {
+      "file": "boar-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-right": {
+      "file": "boar-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-right-step1": {
+      "file": "boar-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-right-step2": {
+      "file": "boar-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-up": {
+      "file": "boar-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-up-step1": {
+      "file": "boar-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "boar-up-step2": {
+      "file": "boar-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar": {
+      "file": "corpse-boar.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-worn": {
+      "file": "corpse-boar-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-rotten": {
+      "file": "corpse-boar-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-bones": {
+      "file": "corpse-boar-bones.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-skinned": {
+      "file": "corpse-boar-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-skinned-worn": {
+      "file": "corpse-boar-skinned-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-boar-skinned-rotten": {
+      "file": "corpse-boar-skinned-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-down": {
+      "file": "wolf-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-down-step1": {
+      "file": "wolf-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-down-step2": {
+      "file": "wolf-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-left": {
+      "file": "wolf-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-left-step1": {
+      "file": "wolf-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-left-step2": {
+      "file": "wolf-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-right": {
+      "file": "wolf-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-right-step1": {
+      "file": "wolf-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-right-step2": {
+      "file": "wolf-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-up": {
+      "file": "wolf-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-up-step1": {
+      "file": "wolf-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "wolf-up-step2": {
+      "file": "wolf-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf": {
+      "file": "corpse-wolf.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-worn": {
+      "file": "corpse-wolf-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-rotten": {
+      "file": "corpse-wolf-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-bones": {
+      "file": "corpse-wolf-bones.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-skinned": {
+      "file": "corpse-wolf-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-skinned-worn": {
+      "file": "corpse-wolf-skinned-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-wolf-skinned-rotten": {
+      "file": "corpse-wolf-skinned-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-boar-corpse": {
+      "file": "item-boar-corpse.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-wolf-corpse": {
+      "file": "item-wolf-corpse.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-boar-tusk": {
+      "file": "item-boar-tusk.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-boar-hide": {
+      "file": "item-boar-hide.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-wolf-pelt": {
+      "file": "item-wolf-pelt.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-warden-shard": {
+      "file": "item-warden-shard.png",
+      "width": 32,
+      "height": 32
+    },
+    "table-top": {
+      "file": "table-top.png",
+      "width": 64,
+      "height": 32
     }
   }
 }

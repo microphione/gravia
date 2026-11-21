@@ -1,0 +1,269 @@
+{
+  "format": 1,
+  "quests": [
+    {
+      "id": "rat-tails",
+      "name": "Rat tails",
+      "giver": "farmer",
+      "want": {
+        "item": "rat-tail",
+        "count": 5
+      },
+      "reward": {
+        "items": [
+          {
+            "item": "gold-coin",
+            "count": 20
+          },
+          {
+            "item": "bread",
+            "count": 1
+          }
+        ],
+        "standing": [
+          {
+            "faction": "village",
+            "amount": 20
+          }
+        ]
+      },
+      "minLevel": 1
+    },
+    {
+      "id": "herb-bundle",
+      "name": "Herbs for the sick",
+      "giver": "farmer",
+      "want": {
+        "item": "healing-herb",
+        "count": 6
+      },
+      "minLevel": 2,
+      "reward": {
+        "items": [
+          {
+            "item": "gold-coin",
+            "count": 40
+          },
+          {
+            "item": "bread",
+            "count": 2
+          }
+        ],
+        "standing": [
+          {
+            "faction": "village",
+            "amount": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "farmer-potions",
+      "name": "Potions for the farm",
+      "giver": "farmer",
+      "want": {
+        "item": "health-potion",
+        "count": 2
+      },
+      "minLevel": 3,
+      "reward": {
+        "items": [
+          {
+            "item": "gold-coin",
+            "count": 70
+          },
+          {
+            "item": "bread",
+            "count": 2
+          }
+        ],
+        "standing": [
+          {
+            "faction": "village",
+            "amount": 20
+          }
+        ]
+      }
+    },
+    {
+      "id": "granary-rats",
+      "name": "Rats in the granary",
+      "giver": "thomas",
+      "want": {
+        "item": "rat-tail",
+        "count": 5
+      },
+      "minLevel": 1,
+      "reward": {
+        "items": [
+          {
+            "item": "gold-coin",
+            "count": 20
+          },
+          {
+            "item": "bread",
+            "count": 1
+          }
+        ],
+        "standing": []
+      }
+    },
+    {
+      "id": "mothers-remedy",
+      "name": "Mother's remedy",
+      "giver": "martha",
+      "want": {
+        "item": "health-potion",
+        "count": 1
+      },
+      "minLevel": 2,
+      "reward": {
+        "items": [
+          {
+            "item": "small-health-potion",
+            "count": 2
+          },
+          {
+            "item": "gold-coin",
+            "count": 30
+          }
+        ],
+        "standing": []
+      }
+    },
+    {
+      "id": "winter-jerkin",
+      "name": "A jerkin before winter",
+      "giver": "agnes",
+      "want": {
+        "item": "hide-jerkin",
+        "count": 1
+      },
+      "minLevel": 3,
+      "reward": {
+        "items": [
+          {
+            "item": "rat-hide",
+            "count": 4
+          },
+          {
+            "item": "gold-coin",
+            "count": 60
+          }
+        ],
+        "standing": []
+      }
+    },
+    {
+      "id": "boars-in-the-wood",
+      "name": "Boars in the wood",
+      "giver": "simon",
+      "want": {
+        "item": "boar-tusk",
+        "count": 4
+      },
+      "minLevel": 4,
+      "reward": {
+        "items": [
+          {
+            "item": "log",
+            "count": 6
+          },
+          {
+            "item": "gold-coin",
+            "count": 80
+          }
+        ],
+        "standing": []
+      }
+    },
+    {
+      "id": "iron-for-the-gate",
+      "name": "Iron for the gate",
+      "giver": "jacob",
+      "want": {
+        "item": "iron-shield",
+        "count": 1
+      },
+      "minLevel": 5,
+      "reward": {
+        "items": [
+          {
+            "item": "plank-shield-1",
+            "count": 1
+          },
+          {
+            "item": "gold-coin",
+            "count": 120
+          }
+        ],
+        "standing": []
+      }
+    },
+    {
+      "id": "the-hill-wakes",
+      "name": "The hill wakes",
+      "giver": "anselm",
+      "want": {
+        "item": "warden-shard",
+        "count": 1
+      },
+      "minLevel": 7,
+      "reward": {
+        "items": [
+          {
+            "item": "ward-charm",
+            "count": 1
+          },
+          {
+            "item": "gold-coin",
+            "count": 300
+          }
+        ],
+        "standing": []
+      }
+    }
+  ],
+  "stories": [
+    {
+      "id": "farmers-trouble",
+      "name": "The farmer's troubles",
+      "zone": "test-island",
+      "opensAtLevel": 1,
+      "quests": [
+        "rat-tails",
+        "herb-bundle",
+        "farmer-potions"
+      ]
+    },
+    {
+      "id": "the-hill-wakes",
+      "name": "The hill wakes",
+      "zone": "linden-isle",
+      "opensAtLevel": 1,
+      "xpPercent": 0,
+      "quests": [
+        "granary-rats",
+        "mothers-remedy",
+        "winter-jerkin",
+        "boars-in-the-wood",
+        "iron-for-the-gate",
+        "the-hill-wakes"
+      ]
+    }
+  ],
+  "pacing": [
+    {
+      "level": 1,
+      "minutes": 30
+    },
+    {
+      "level": 2,
+      "minutes": 90
+    },
+    {
+      "level": 3,
+      "minutes": 150
+    }
+  ]
+}
