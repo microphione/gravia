@@ -1491,8 +1491,53 @@
       "width": 32,
       "height": 32
     },
+    "ui-star": {
+      "file": "ui-star.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-star-off": {
+      "file": "ui-star-off.png",
+      "width": 32,
+      "height": 32
+    },
     "ui-attack": {
       "file": "ui-attack.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-frame": {
+      "file": "ui-frame.png",
+      "width": 18,
+      "height": 18
+    },
+    "ui-button": {
+      "file": "ui-button.png",
+      "width": 10,
+      "height": 10
+    },
+    "ui-button-pressed": {
+      "file": "ui-button-pressed.png",
+      "width": 10,
+      "height": 10
+    },
+    "ui-button-primary": {
+      "file": "ui-button-primary.png",
+      "width": 10,
+      "height": 10
+    },
+    "ui-button-disabled": {
+      "file": "ui-button-disabled.png",
+      "width": 10,
+      "height": 10
+    },
+    "ui-boards": {
+      "file": "ui-boards.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-close": {
+      "file": "ui-close.png",
       "width": 32,
       "height": 32
     },
