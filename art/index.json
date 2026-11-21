@@ -2126,6 +2126,811 @@
       "width": 32,
       "height": 32
     },
+    "burrow-rat-down": {
+      "file": "burrow-rat-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-down-step1": {
+      "file": "burrow-rat-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-down-step2": {
+      "file": "burrow-rat-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-left": {
+      "file": "burrow-rat-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-left-step1": {
+      "file": "burrow-rat-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-left-step2": {
+      "file": "burrow-rat-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-right": {
+      "file": "burrow-rat-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-right-step1": {
+      "file": "burrow-rat-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-right-step2": {
+      "file": "burrow-rat-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-up": {
+      "file": "burrow-rat-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-up-step1": {
+      "file": "burrow-rat-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "burrow-rat-up-step2": {
+      "file": "burrow-rat-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-burrow-rat": {
+      "file": "corpse-burrow-rat.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-down": {
+      "file": "hare-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-down-step1": {
+      "file": "hare-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-down-step2": {
+      "file": "hare-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-left": {
+      "file": "hare-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-left-step1": {
+      "file": "hare-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-left-step2": {
+      "file": "hare-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-right": {
+      "file": "hare-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-right-step1": {
+      "file": "hare-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-right-step2": {
+      "file": "hare-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-up": {
+      "file": "hare-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-up-step1": {
+      "file": "hare-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-up-step2": {
+      "file": "hare-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-hare": {
+      "file": "corpse-hare.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-down": {
+      "file": "deer-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-down-step1": {
+      "file": "deer-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-down-step2": {
+      "file": "deer-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-left": {
+      "file": "deer-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-left-step1": {
+      "file": "deer-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-left-step2": {
+      "file": "deer-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-right": {
+      "file": "deer-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-right-step1": {
+      "file": "deer-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-right-step2": {
+      "file": "deer-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-up": {
+      "file": "deer-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-up-step1": {
+      "file": "deer-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "deer-up-step2": {
+      "file": "deer-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-deer": {
+      "file": "corpse-deer.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-down": {
+      "file": "den-bear-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-down-step1": {
+      "file": "den-bear-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-down-step2": {
+      "file": "den-bear-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-left": {
+      "file": "den-bear-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-left-step1": {
+      "file": "den-bear-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-left-step2": {
+      "file": "den-bear-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-right": {
+      "file": "den-bear-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-right-step1": {
+      "file": "den-bear-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-right-step2": {
+      "file": "den-bear-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-up": {
+      "file": "den-bear-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-up-step1": {
+      "file": "den-bear-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "den-bear-up-step2": {
+      "file": "den-bear-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-den-bear": {
+      "file": "corpse-den-bear.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-down": {
+      "file": "crag-warg-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-down-step1": {
+      "file": "crag-warg-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-down-step2": {
+      "file": "crag-warg-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-left": {
+      "file": "crag-warg-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-left-step1": {
+      "file": "crag-warg-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-left-step2": {
+      "file": "crag-warg-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-right": {
+      "file": "crag-warg-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-right-step1": {
+      "file": "crag-warg-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-right-step2": {
+      "file": "crag-warg-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-up": {
+      "file": "crag-warg-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-up-step1": {
+      "file": "crag-warg-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-warg-up-step2": {
+      "file": "crag-warg-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-crag-warg": {
+      "file": "corpse-crag-warg.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-down": {
+      "file": "cave-spider-down.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-down-step1": {
+      "file": "cave-spider-down-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-down-step2": {
+      "file": "cave-spider-down-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-left": {
+      "file": "cave-spider-left.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-left-step1": {
+      "file": "cave-spider-left-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-left-step2": {
+      "file": "cave-spider-left-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-right": {
+      "file": "cave-spider-right.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-right-step1": {
+      "file": "cave-spider-right-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-right-step2": {
+      "file": "cave-spider-right-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-up": {
+      "file": "cave-spider-up.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-up-step1": {
+      "file": "cave-spider-up-step1.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-spider-up-step2": {
+      "file": "cave-spider-up-step2.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-cave-spider": {
+      "file": "corpse-cave-spider.png",
+      "width": 32,
+      "height": 32
+    },
+    "gully-goblin-down": {
+      "file": "gully-goblin-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-down-step1": {
+      "file": "gully-goblin-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-down-step2": {
+      "file": "gully-goblin-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-left": {
+      "file": "gully-goblin-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-left-step1": {
+      "file": "gully-goblin-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-left-step2": {
+      "file": "gully-goblin-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-right": {
+      "file": "gully-goblin-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-right-step1": {
+      "file": "gully-goblin-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-right-step2": {
+      "file": "gully-goblin-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-up": {
+      "file": "gully-goblin-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-up-step1": {
+      "file": "gully-goblin-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "gully-goblin-up-step2": {
+      "file": "gully-goblin-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-gully-goblin": {
+      "file": "corpse-gully-goblin.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-down": {
+      "file": "barrow-skeleton-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-down-step1": {
+      "file": "barrow-skeleton-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-down-step2": {
+      "file": "barrow-skeleton-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-left": {
+      "file": "barrow-skeleton-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-left-step1": {
+      "file": "barrow-skeleton-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-left-step2": {
+      "file": "barrow-skeleton-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-right": {
+      "file": "barrow-skeleton-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-right-step1": {
+      "file": "barrow-skeleton-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-right-step2": {
+      "file": "barrow-skeleton-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-up": {
+      "file": "barrow-skeleton-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-up-step1": {
+      "file": "barrow-skeleton-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "barrow-skeleton-up-step2": {
+      "file": "barrow-skeleton-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-barrow-skeleton": {
+      "file": "corpse-barrow-skeleton.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-down": {
+      "file": "stone-troll-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-down-step1": {
+      "file": "stone-troll-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-down-step2": {
+      "file": "stone-troll-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-left": {
+      "file": "stone-troll-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-left-step1": {
+      "file": "stone-troll-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-left-step2": {
+      "file": "stone-troll-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-right": {
+      "file": "stone-troll-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-right-step1": {
+      "file": "stone-troll-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-right-step2": {
+      "file": "stone-troll-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-up": {
+      "file": "stone-troll-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-up-step1": {
+      "file": "stone-troll-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "stone-troll-up-step2": {
+      "file": "stone-troll-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-stone-troll": {
+      "file": "corpse-stone-troll.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-down": {
+      "file": "horn-guard-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-down-step1": {
+      "file": "horn-guard-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-down-step2": {
+      "file": "horn-guard-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-left": {
+      "file": "horn-guard-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-left-step1": {
+      "file": "horn-guard-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-left-step2": {
+      "file": "horn-guard-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-right": {
+      "file": "horn-guard-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-right-step1": {
+      "file": "horn-guard-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-right-step2": {
+      "file": "horn-guard-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-up": {
+      "file": "horn-guard-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-up-step1": {
+      "file": "horn-guard-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "horn-guard-up-step2": {
+      "file": "horn-guard-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-horn-guard": {
+      "file": "corpse-horn-guard.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-down": {
+      "file": "cairn-lord-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-down-step1": {
+      "file": "cairn-lord-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-down-step2": {
+      "file": "cairn-lord-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-left": {
+      "file": "cairn-lord-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-left-step1": {
+      "file": "cairn-lord-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-left-step2": {
+      "file": "cairn-lord-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-right": {
+      "file": "cairn-lord-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-right-step1": {
+      "file": "cairn-lord-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-right-step2": {
+      "file": "cairn-lord-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-up": {
+      "file": "cairn-lord-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-up-step1": {
+      "file": "cairn-lord-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "cairn-lord-up-step2": {
+      "file": "cairn-lord-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-cairn-lord": {
+      "file": "corpse-cairn-lord.png",
+      "width": 64,
+      "height": 64
+    },
+    "corpse-burrow-rat-skinned": {
+      "file": "corpse-burrow-rat-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-hare-skinned": {
+      "file": "corpse-hare-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-den-bear-skinned": {
+      "file": "corpse-den-bear-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-crag-warg-skinned": {
+      "file": "corpse-crag-warg-skinned.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-burrow-tail": {
+      "file": "item-burrow-tail.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-spider-silk": {
+      "file": "item-spider-silk.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-goblin-ear": {
+      "file": "item-goblin-ear.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-bone-dust": {
+      "file": "item-bone-dust.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-bear-claw": {
+      "file": "item-bear-claw.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-bear-hide": {
+      "file": "item-bear-hide.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-warg-fang": {
+      "file": "item-warg-fang.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-troll-tooth": {
+      "file": "item-troll-tooth.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-horn-fragment": {
+      "file": "item-horn-fragment.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-hare-pelt": {
+      "file": "item-hare-pelt.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-venison": {
+      "file": "item-venison.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-old-ledger": {
+      "file": "item-old-ledger.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-cairn-seal": {
+      "file": "item-cairn-seal.png",
+      "width": 32,
+      "height": 32
+    },
+    "item-torch": {
+      "file": "item-torch.png",
+      "width": 32,
+      "height": 32
+    },
     "table-top": {
       "file": "table-top.png",
       "width": 64,
