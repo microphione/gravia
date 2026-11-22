@@ -407,7 +407,7 @@
         },
         {
           "id": "market",
-          "line": "Helen sells at her stall on the green and lives by Pier Street; Agnes weaves in her house across the square; Jacob works at the smithy and lives beside it.",
+          "line": "Helen sells at her stall on the green and lives by Pier Street. Agnes weaves in her house across the square; Jacob works at the smithy and lives beside it.",
           "choices": [
             { "id": "market-back", "text": "Thank you.", "effect": "say" }
           ]
