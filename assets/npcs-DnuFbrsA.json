@@ -246,7 +246,7 @@
         },
         {
           "id": "cellar-yes",
-          "line": "Take the stairs by the south-west fence and mind the dark; a torch may lie in a chest near the foot. Bring me six burrow tails.",
+          "line": "Take the stairs in the lane south-west of our house and mind the dark; a torch may lie in a chest near the foot. Bring me six burrow tails.",
           "choices": [
             { "id": "cellar-yes-back", "text": "I will see to it.", "effect": "say" }
           ]
@@ -325,7 +325,7 @@
       "nodes": [
         {
           "id": "herbs",
-          "line": "Healing herbs grow in the meadow to the south-east, and they grow back. Pick only what you need.",
+          "line": "Healing herbs grow in the meadow to the east, and they grow back. Pick only what you need.",
           "choices": [
             { "id": "brew", "text": "And how do I brew them?", "effect": "say", "next": "brew" },
             { "id": "herbs-back", "text": "Thank you, mother.", "effect": "say" }
@@ -399,22 +399,22 @@
         },
         {
           "id": "town",
-          "line": "Brother Anselm lives in the chapel, north of the green. The reeve is east of the green, and the storehouse is west of it.",
+          "line": "Brother Anselm lives in the chapel, north of the green. The reeve is across the High Street from the green, east of the chapel. The storehouse is west of the green.",
           "choices": [
-            { "id": "market", "text": "And Market row?", "effect": "say", "next": "market" },
+            { "id": "market", "text": "And the shops?", "effect": "say", "next": "market" },
             { "id": "town-back", "text": "Thank you.", "effect": "say" }
           ]
         },
         {
           "id": "market",
-          "line": "The grocer sells from her stall, and Agnes weaves in the house behind it. Jacob the smith lives over the smithy.",
+          "line": "Helen sells at her stall on the green and lives by Pier Street; Agnes weaves in her house across the square; Jacob works at the smithy and lives beside it.",
           "choices": [
             { "id": "market-back", "text": "Thank you.", "effect": "say" }
           ]
         },
         {
           "id": "outside",
-          "line": "Simon has a hut by Fir Wood in the north-west. The quarry is in the north-east, and the herb meadow in the south-east.",
+          "line": "Simon has a hut by Fir Wood in the north-west. The quarry is in the north-east, and the herb meadow to the east.",
           "choices": [
             { "id": "outside-back", "text": "Thank you.", "effect": "say" }
           ]

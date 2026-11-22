@@ -101,6 +101,166 @@
       "width": 32,
       "height": 32
     },
+    "slate-roof": {
+      "file": "slate-roof.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-n": {
+      "file": "slate-roof-n.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-s": {
+      "file": "slate-roof-s.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-e": {
+      "file": "slate-roof-e.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-w": {
+      "file": "slate-roof-w.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-nw": {
+      "file": "slate-roof-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-ne": {
+      "file": "slate-roof-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-sw": {
+      "file": "slate-roof-sw.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-se": {
+      "file": "slate-roof-se.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-in-nw": {
+      "file": "slate-roof-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-in-ne": {
+      "file": "slate-roof-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-in-nw-ne": {
+      "file": "slate-roof-in-nw-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-e-in-nw": {
+      "file": "slate-roof-e-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-w-in-ne": {
+      "file": "slate-roof-w-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-we": {
+      "file": "slate-roof-we.png",
+      "width": 32,
+      "height": 32
+    },
+    "slate-roof-nwe": {
+      "file": "slate-roof-nwe.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof": {
+      "file": "thatch-roof.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-n": {
+      "file": "thatch-roof-n.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-s": {
+      "file": "thatch-roof-s.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-e": {
+      "file": "thatch-roof-e.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-w": {
+      "file": "thatch-roof-w.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-nw": {
+      "file": "thatch-roof-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-ne": {
+      "file": "thatch-roof-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-sw": {
+      "file": "thatch-roof-sw.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-se": {
+      "file": "thatch-roof-se.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-in-nw": {
+      "file": "thatch-roof-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-in-ne": {
+      "file": "thatch-roof-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-in-nw-ne": {
+      "file": "thatch-roof-in-nw-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-e-in-nw": {
+      "file": "thatch-roof-e-in-nw.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-w-in-ne": {
+      "file": "thatch-roof-w-in-ne.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-we": {
+      "file": "thatch-roof-we.png",
+      "width": 32,
+      "height": 32
+    },
+    "thatch-roof-nwe": {
+      "file": "thatch-roof-nwe.png",
+      "width": 32,
+      "height": 32
+    },
     "stone-wall-h": {
       "file": "stone-wall-h.png",
       "width": 64,
@@ -148,6 +308,11 @@
     },
     "house-door-h-open": {
       "file": "house-door-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "house-door-h-shut": {
+      "file": "house-door-h-shut.png",
       "width": 64,
       "height": 64
     },
@@ -318,8 +483,8 @@
     },
     "house-sign": {
       "file": "house-sign.png",
-      "width": 64,
-      "height": 64
+      "width": 32,
+      "height": 32
     },
     "flower": {
       "file": "flower.png",
@@ -1916,6 +2081,26 @@
       "width": 32,
       "height": 32
     },
+    "shop-sign-anvil": {
+      "file": "shop-sign-anvil.png",
+      "width": 32,
+      "height": 32
+    },
+    "shop-sign-spool": {
+      "file": "shop-sign-spool.png",
+      "width": 32,
+      "height": 32
+    },
+    "shop-sign-key": {
+      "file": "shop-sign-key.png",
+      "width": 32,
+      "height": 32
+    },
+    "shop-sign-chest": {
+      "file": "shop-sign-chest.png",
+      "width": 32,
+      "height": 32
+    },
     "shrine-top": {
       "file": "shrine-top.png",
       "width": 32,
@@ -2973,6 +3158,41 @@
     },
     "item-torch": {
       "file": "item-torch.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-rock": {
+      "file": "crag-rock.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-rock-2": {
+      "file": "crag-rock-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-cliff-s": {
+      "file": "crag-cliff-s.png",
+      "width": 32,
+      "height": 32
+    },
+    "crag-cliff-e": {
+      "file": "crag-cliff-e.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-bones": {
+      "file": "cave-bones.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-mushrooms": {
+      "file": "cave-mushrooms.png",
+      "width": 32,
+      "height": 32
+    },
+    "ore-vein": {
+      "file": "ore-vein.png",
       "width": 32,
       "height": 32
     },
