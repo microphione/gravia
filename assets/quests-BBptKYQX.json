@@ -174,7 +174,8 @@
             "count": 80
           }
         ],
-        "standing": []
+        "standing": [],
+        "teaches": ["woodcutting"]
       }
     },
     {
@@ -197,7 +198,8 @@
             "count": 120
           }
         ],
-        "standing": []
+        "standing": [],
+        "teaches": ["merging"]
       }
     },
     {
