@@ -60,6 +60,7 @@
     { "id": "venison", "name": "Venison", "stackLimit": 10, "kind": "food", "weight": 400, "heal": 30, "value": 12 },
     { "id": "old-ledger", "name": "Old ledger", "stackLimit": 1, "kind": "other", "weight": 300, "value": 0 },
     { "id": "cairn-seal", "name": "Cairn seal", "stackLimit": 1, "kind": "other", "weight": 300, "value": 0 },
-    { "id": "torch", "name": "Torch", "stackLimit": 1, "kind": "other", "weight": 500, "value": 5, "slot": "shield", "armour": 0, "light": true }
+    { "id": "torch", "name": "Torch", "stackLimit": 1, "kind": "other", "weight": 500, "value": 5, "slot": "shield", "armour": 0, "light": true },
+    { "id": "apple", "name": "Apple", "stackLimit": 10, "kind": "food", "weight": 150, "value": 3 }
   ]
 }
