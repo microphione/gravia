@@ -128,7 +128,8 @@
             "count": 30
           }
         ],
-        "standing": []
+        "standing": [],
+        "teaches": ["herbalism"]
       }
     },
     {
@@ -151,7 +152,28 @@
             "count": 60
           }
         ],
-        "standing": []
+        "standing": [],
+        "teaches": ["skinning", "tailoring"]
+      }
+    },
+    {
+      "id": "logs-for-the-hearths",
+      "name": "Logs for the hearths",
+      "giver": "simon",
+      "want": {
+        "item": "log",
+        "count": 3
+      },
+      "minLevel": 4,
+      "reward": {
+        "items": [
+          {
+            "item": "gold-coin",
+            "count": 40
+          }
+        ],
+        "standing": [],
+        "teaches": ["woodcutting"]
       }
     },
     {
@@ -174,8 +196,7 @@
             "count": 80
           }
         ],
-        "standing": [],
-        "teaches": ["woodcutting"]
+        "standing": []
       }
     },
     {
@@ -199,7 +220,7 @@
           }
         ],
         "standing": [],
-        "teaches": ["merging"]
+        "teaches": ["mining", "smithing", "merging"]
       }
     },
     {
@@ -455,6 +476,7 @@
         "granary-rats",
         "mothers-remedy",
         "winter-jerkin",
+        "logs-for-the-hearths",
         "boars-in-the-wood",
         "iron-for-the-gate",
         "the-hill-wakes"

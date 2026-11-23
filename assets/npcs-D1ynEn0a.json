@@ -328,7 +328,7 @@
           "line": "Healing herbs grow in the meadow to the east, and they grow back. Pick only what you need.",
           "choices": [
             { "id": "brew", "text": "And how do I brew them?", "effect": "say", "next": "brew" },
-            { "id": "teach-herbs", "text": "Teach me, please. ({price} zloty)", "effect": "teach", "lesson": "herbalism", "price": 10, "next": "taught-herbs", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }] },
+            { "id": "teach-herbs", "text": "Teach me, please. ({price} zloty)", "effect": "teach", "lesson": "herbalism", "price": 10, "next": "taught-herbs", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "mothers-remedy", "state": "none" }] },
             { "id": "herbs-back", "text": "Thank you, mother.", "effect": "say" }
           ]
         },
@@ -358,7 +358,7 @@
         },
         {
           "id": "ask-yes",
-          "line": "The animals flee from the north, and frightened folk fall ill. Brew me a health potion at my table.",
+          "line": "The animals flee the north, and frightened folk fall ill. Pick three herbs in the meadow, brew them at my table, and bring me the potion.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will brew it.", "effect": "say" }
           ]
@@ -520,7 +520,7 @@
           "choices": [
             { "id": "loom", "text": "And the loom?", "effect": "say", "next": "loom" },
             { "id": "skin-sell", "text": "Will you buy hides and pelts?", "effect": "trade" },
-            { "id": "teach-skin", "text": "Teach me to skin. ({price} zloty)", "effect": "teach", "lesson": "skinning", "price": 15, "next": "taught-skin", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }] },
+            { "id": "teach-skin", "text": "Teach me to skin. ({price} zloty)", "effect": "teach", "lesson": "skinning", "price": 15, "next": "taught-skin", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
             { "id": "skin-back", "text": "Thank you.", "effect": "say" }
           ]
         },
@@ -535,7 +535,7 @@
           "id": "loom",
           "line": "Use my loom with four rat hides in your backpack and a hide jerkin comes of them. Wear it, and bites hurt less.",
           "choices": [
-            { "id": "teach-loom", "text": "Teach me to sew. ({price} zloty)", "effect": "teach", "lesson": "tailoring", "price": 20, "next": "taught-loom", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "mothers-remedy", "state": "done" }] },
+            { "id": "teach-loom", "text": "Teach me to sew. ({price} zloty)", "effect": "teach", "lesson": "tailoring", "price": 20, "next": "taught-loom", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "mothers-remedy", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
             { "id": "loom-back", "text": "I will try it.", "effect": "say" }
           ]
         },
@@ -558,7 +558,7 @@
         },
         {
           "id": "ask-yes",
-          "line": "The wind off the hill came early and cold. Make me a hide jerkin at my loom, from four rat hides.",
+          "line": "The wind off the hill came early and cold. Skin four rats, then sew me a hide jerkin at my loom.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will make it.", "effect": "say" }
           ]
@@ -673,7 +673,47 @@
           "line": "Use a fir tree and you take a log; the tree grows back in time. The more you cut, the better you cut.",
           "choices": [
             { "id": "logs", "text": "What are logs for?", "effect": "say", "next": "logs" },
+            { "id": "hearths-ask", "text": "Can I cut some for you?", "effect": "say", "next": "hearths", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
+            { "id": "teach-cutting", "text": "Teach me to cut. ({price} zloty)", "effect": "teach", "lesson": "woodcutting", "price": 25, "next": "taught-cutting", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "logs-for-the-hearths", "state": "none" }] },
             { "id": "firs-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths",
+          "line": "The hearths of the town are always hungry.",
+          "choices": [
+            { "id": "ask-hearths", "text": "I will cut them.", "effect": "quest-start", "quest": "logs-for-the-hearths", "next": "hearths-yes", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "logs-for-the-hearths", "state": "none" }] },
+            { "id": "hand-in-hearths", "text": "I have the three logs.", "effect": "quest-done", "quest": "logs-for-the-hearths", "next": "hearths-thanks", "requires": [{ "type": "quest", "quest": "logs-for-the-hearths", "state": "active" }] },
+            { "id": "after-hearths", "text": "About the hearths...", "effect": "say", "next": "hearths-after", "requires": [{ "type": "quest", "quest": "logs-for-the-hearths", "state": "done" }] },
+            { "id": "hearths-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-yes",
+          "line": "The hearths of the town eat logs all winter. Cut three firs and bring me the logs.",
+          "choices": [
+            { "id": "hearths-yes-back", "text": "I will begin.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-thanks",
+          "line": "Three good logs. Low, then across: that is how the axe goes.",
+          "choices": [
+            { "id": "hearths-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-after",
+          "line": "The hearths are warm. The firs grow back in time.",
+          "choices": [
+            { "id": "hearths-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-cutting",
+          "line": "Low, then across. Let the axe do the work.",
+          "choices": [
+            { "id": "taught-cutting-back", "text": "Thank you.", "effect": "say" }
           ]
         },
         {
@@ -702,7 +742,7 @@
         },
         {
           "id": "hand-in-thanks",
-          "line": "Four good tusks; something drove them down from the hill. Now take the axe: low, then across.",
+          "line": "Four good tusks; something drove them down from the hill.",
           "choices": [
             { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
           ]
@@ -732,7 +772,7 @@
           "line": "Use an iron ore rock in the quarry and you take ore; the rock grows back in time. Wolves roam there, so go ready.",
           "choices": [
             { "id": "forge", "text": "And the forge?", "effect": "say", "next": "forge" },
-            { "id": "teach-mining", "text": "Teach me to mine. ({price} zloty)", "effect": "teach", "lesson": "mining", "price": 30, "next": "taught-mining", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
+            { "id": "teach-mining", "text": "Teach me to mine. ({price} zloty)", "effect": "teach", "lesson": "mining", "price": 30, "next": "taught-mining", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
             { "id": "ore-back", "text": "Thank you.", "effect": "say" }
           ]
         },
@@ -748,8 +788,16 @@
           "line": "Use my forge with three iron ore and two logs in your backpack and an iron shield comes of them. Two equal pieces and coins, and I merge them into one better.",
           "choices": [
             { "id": "forge-sell", "text": "Do you buy anything from the hunt?", "effect": "trade" },
-            { "id": "teach-smithing", "text": "Teach me to forge. ({price} zloty)", "effect": "teach", "lesson": "smithing", "price": 40, "next": "taught-smithing", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }] },
+            { "id": "teach-smithing", "text": "Teach me to forge. ({price} zloty)", "effect": "teach", "lesson": "smithing", "price": 40, "next": "taught-smithing", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
+            { "id": "teach-merging", "text": "Show me how two become one. ({price} zloty)", "effect": "teach", "lesson": "merging", "price": 50, "next": "taught-merging", "requires": [{ "type": "level", "min": 6 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
             { "id": "forge-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-merging",
+          "line": "Two of a kind, a few coins, and the fire does the rest.",
+          "choices": [
+            { "id": "taught-merging-back", "text": "Thank you.", "effect": "say" }
           ]
         },
         {
@@ -771,7 +819,7 @@
         },
         {
           "id": "ask-yes",
-          "line": "The hill road needs a gate that holds. Forge me an iron shield, and mind the wolves at the quarry.",
+          "line": "The hill road needs a gate that holds. Mine three ore at the quarry and forge me an iron shield with two logs; mind the wolves.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will forge it.", "effect": "say" }
           ]
