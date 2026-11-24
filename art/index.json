@@ -1341,6 +1341,21 @@
       "width": 32,
       "height": 32
     },
+    "corpse-grey-rat-worn": {
+      "file": "corpse-grey-rat-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-grey-rat-rotten": {
+      "file": "corpse-grey-rat-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-grey-rat-bones": {
+      "file": "corpse-grey-rat-bones.png",
+      "width": 32,
+      "height": 32
+    },
     "corpse-grey-rat-skinned": {
       "file": "corpse-grey-rat-skinned.png",
       "width": 32,
@@ -1421,6 +1436,21 @@
       "width": 32,
       "height": 32
     },
+    "corpse-arena-rat-worn": {
+      "file": "corpse-arena-rat-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-arena-rat-rotten": {
+      "file": "corpse-arena-rat-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-arena-rat-bones": {
+      "file": "corpse-arena-rat-bones.png",
+      "width": 32,
+      "height": 32
+    },
     "arena-door": {
       "file": "arena-door.png",
       "width": 64,
@@ -1460,6 +1490,26 @@
       "file": "stone-warden-up.png",
       "width": 32,
       "height": 48
+    },
+    "corpse-stone-warden": {
+      "file": "corpse-stone-warden.png",
+      "width": 52,
+      "height": 52
+    },
+    "corpse-stone-warden-worn": {
+      "file": "corpse-stone-warden-worn.png",
+      "width": 52,
+      "height": 52
+    },
+    "corpse-stone-warden-rotten": {
+      "file": "corpse-stone-warden-rotten.png",
+      "width": 52,
+      "height": 52
+    },
+    "corpse-stone-warden-bones": {
+      "file": "corpse-stone-warden-bones.png",
+      "width": 52,
+      "height": 52
     },
     "corpse-rat": {
       "file": "corpse-rat.png",
@@ -2173,203 +2223,203 @@
     },
     "boar-down": {
       "file": "boar-down.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-down-step1": {
       "file": "boar-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-down-step2": {
       "file": "boar-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-left": {
       "file": "boar-left.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-left-step1": {
       "file": "boar-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-left-step2": {
       "file": "boar-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-right": {
       "file": "boar-right.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-right-step1": {
       "file": "boar-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-right-step2": {
       "file": "boar-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-up": {
       "file": "boar-up.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-up-step1": {
       "file": "boar-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "boar-up-step2": {
       "file": "boar-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 44,
+      "height": 44
     },
     "corpse-boar": {
       "file": "corpse-boar.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-worn": {
       "file": "corpse-boar-worn.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-rotten": {
       "file": "corpse-boar-rotten.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-bones": {
       "file": "corpse-boar-bones.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-skinned": {
       "file": "corpse-boar-skinned.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-skinned-worn": {
       "file": "corpse-boar-skinned-worn.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-boar-skinned-rotten": {
       "file": "corpse-boar-skinned-rotten.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "wolf-down": {
       "file": "wolf-down.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-down-step1": {
       "file": "wolf-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-down-step2": {
       "file": "wolf-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-left": {
       "file": "wolf-left.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-left-step1": {
       "file": "wolf-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-left-step2": {
       "file": "wolf-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-right": {
       "file": "wolf-right.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-right-step1": {
       "file": "wolf-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-right-step2": {
       "file": "wolf-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-up": {
       "file": "wolf-up.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-up-step1": {
       "file": "wolf-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "wolf-up-step2": {
       "file": "wolf-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 52,
+      "height": 52
     },
     "corpse-wolf": {
       "file": "corpse-wolf.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-worn": {
       "file": "corpse-wolf-worn.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-rotten": {
       "file": "corpse-wolf-rotten.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-bones": {
       "file": "corpse-wolf-bones.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-skinned": {
       "file": "corpse-wolf-skinned.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-skinned-worn": {
       "file": "corpse-wolf-skinned-worn.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-wolf-skinned-rotten": {
       "file": "corpse-wolf-skinned-rotten.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "item-boar-corpse": {
       "file": "item-boar-corpse.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "item-wolf-corpse": {
       "file": "item-wolf-corpse.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "item-boar-tusk": {
       "file": "item-boar-tusk.png",
@@ -2456,135 +2506,200 @@
       "width": 32,
       "height": 32
     },
-    "hare-down": {
-      "file": "hare-down.png",
+    "corpse-burrow-rat-worn": {
+      "file": "corpse-burrow-rat-worn.png",
       "width": 32,
       "height": 32
+    },
+    "corpse-burrow-rat-rotten": {
+      "file": "corpse-burrow-rat-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-burrow-rat-bones": {
+      "file": "corpse-burrow-rat-bones.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-burrow-rat-skinned-worn": {
+      "file": "corpse-burrow-rat-skinned-worn.png",
+      "width": 32,
+      "height": 32
+    },
+    "corpse-burrow-rat-skinned-rotten": {
+      "file": "corpse-burrow-rat-skinned-rotten.png",
+      "width": 32,
+      "height": 32
+    },
+    "hare-down": {
+      "file": "hare-down.png",
+      "width": 40,
+      "height": 40
     },
     "hare-down-step1": {
       "file": "hare-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-down-step2": {
       "file": "hare-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-left": {
       "file": "hare-left.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-left-step1": {
       "file": "hare-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-left-step2": {
       "file": "hare-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-right": {
       "file": "hare-right.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-right-step1": {
       "file": "hare-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-right-step2": {
       "file": "hare-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-up": {
       "file": "hare-up.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-up-step1": {
       "file": "hare-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "hare-up-step2": {
       "file": "hare-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
     },
     "corpse-hare": {
       "file": "corpse-hare.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
+    },
+    "corpse-hare-worn": {
+      "file": "corpse-hare-worn.png",
+      "width": 36,
+      "height": 36
+    },
+    "corpse-hare-rotten": {
+      "file": "corpse-hare-rotten.png",
+      "width": 36,
+      "height": 36
+    },
+    "corpse-hare-bones": {
+      "file": "corpse-hare-bones.png",
+      "width": 36,
+      "height": 36
+    },
+    "corpse-hare-skinned-worn": {
+      "file": "corpse-hare-skinned-worn.png",
+      "width": 36,
+      "height": 36
+    },
+    "corpse-hare-skinned-rotten": {
+      "file": "corpse-hare-skinned-rotten.png",
+      "width": 36,
+      "height": 36
     },
     "deer-down": {
       "file": "deer-down.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-down-step1": {
       "file": "deer-down-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-down-step2": {
       "file": "deer-down-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-left": {
       "file": "deer-left.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-left-step1": {
       "file": "deer-left-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-left-step2": {
       "file": "deer-left-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-right": {
       "file": "deer-right.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-right-step1": {
       "file": "deer-right-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-right-step2": {
       "file": "deer-right-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-up": {
       "file": "deer-up.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-up-step1": {
       "file": "deer-up-step1.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "deer-up-step2": {
       "file": "deer-up-step2.png",
-      "width": 32,
-      "height": 32
+      "width": 48,
+      "height": 48
     },
     "corpse-deer": {
       "file": "corpse-deer.png",
-      "width": 32,
-      "height": 32
+      "width": 40,
+      "height": 40
+    },
+    "corpse-deer-worn": {
+      "file": "corpse-deer-worn.png",
+      "width": 40,
+      "height": 40
+    },
+    "corpse-deer-rotten": {
+      "file": "corpse-deer-rotten.png",
+      "width": 40,
+      "height": 40
+    },
+    "corpse-deer-bones": {
+      "file": "corpse-deer-bones.png",
+      "width": 40,
+      "height": 40
     },
     "den-bear-down": {
       "file": "den-bear-down.png",
@@ -3113,8 +3228,8 @@
     },
     "corpse-hare-skinned": {
       "file": "corpse-hare-skinned.png",
-      "width": 32,
-      "height": 32
+      "width": 36,
+      "height": 36
     },
     "corpse-den-bear-skinned": {
       "file": "corpse-den-bear-skinned.png",
