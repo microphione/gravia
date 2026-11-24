@@ -1,10 +1,10 @@
 {
   "format": 1,
-  "rev": 2,
-  "savedAt": "2026-11-24T10:31:02.325Z",
+  "rev": 3,
+  "savedAt": "2026-11-24T10:40:26.715Z",
   "by": "mapmaker",
   "files": {
-    "maps/test.json": "500fc7536a2b467a39575559ae8ae95503f08bd350aff1188a582fb8c6dafe11",
+    "maps/test.json": "eb821930ab3629f615d29f1c57bfec0dfb02b3b23f857f6255a4794ebec45bc5",
     "tiles.json": "27c94479a725079308925810c02a0cde0d4d3c4bef422695b679d37961a8795e",
     "monsters.json": "f6eaf357c47af5555c996b08c18e859e656ff7806d266c12299390960b33e99c"
   }
