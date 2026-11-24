@@ -351,16 +351,23 @@
           "line": "I may need a hand when the time is right.",
           "choices": [
             { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "mothers-remedy", "next": "ask-yes", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "mothers-remedy", "state": "none" }] },
-            { "id": "hand-in", "text": "I have the health potion.", "effect": "quest-done", "quest": "mothers-remedy", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "mothers-remedy", "state": "active" }] },
+            { "id": "hand-in", "text": "I have something for the remedy.", "effect": "quest-done", "quest": "mothers-remedy", "next": "hand-in-thanks", "stageNext": ["herbs-seen"], "requires": [{ "type": "quest", "quest": "mothers-remedy", "state": "active" }] },
             { "id": "after", "text": "About the remedy...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "mothers-remedy", "state": "done" }] },
             { "id": "work-back", "text": "Never mind.", "effect": "say" }
           ]
         },
         {
           "id": "ask-yes",
-          "line": "The animals flee the north, and frightened folk fall ill. Pick three herbs in the meadow, brew them at my table, and bring me the potion.",
+          "line": "The animals flee the north, and frightened folk fall ill. Pick three herbs in the meadow and show them to me.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will brew it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "herbs-seen",
+          "line": "Good leaves, and the roots left whole. Now brew them at my table and bring me the potion.",
+          "choices": [
+            { "id": "herbs-seen-back", "text": "I will brew it.", "effect": "say" }
           ]
         },
         {
@@ -551,16 +558,23 @@
           "line": "There is always cloth to mend.",
           "choices": [
             { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "winter-jerkin", "next": "ask-yes", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "mothers-remedy", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
-            { "id": "hand-in", "text": "I have the hide jerkin.", "effect": "quest-done", "quest": "winter-jerkin", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "winter-jerkin", "state": "active" }] },
+            { "id": "hand-in", "text": "I have something for the jerkin.", "effect": "quest-done", "quest": "winter-jerkin", "next": "hand-in-thanks", "stageNext": ["hides-seen"], "requires": [{ "type": "quest", "quest": "winter-jerkin", "state": "active" }] },
             { "id": "after", "text": "About the jerkin...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
             { "id": "work-back", "text": "Never mind.", "effect": "say" }
           ]
         },
         {
           "id": "ask-yes",
-          "line": "The wind off the hill came early and cold. Skin four rats, then sew me a hide jerkin at my loom.",
+          "line": "The wind off the hill came early and cold. Skin four rats and show me the hides.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will make it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hides-seen",
+          "line": "Four good hides. Now sew them into a jerkin at my loom: small stitches, even stitches.",
+          "choices": [
+            { "id": "hides-seen-back", "text": "I will sew it.", "effect": "say" }
           ]
         },
         {
@@ -812,16 +826,23 @@
           "line": "The forge is never idle.",
           "choices": [
             { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "iron-for-the-gate", "next": "ask-yes", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
-            { "id": "hand-in", "text": "I have the iron shield.", "effect": "quest-done", "quest": "iron-for-the-gate", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "iron-for-the-gate", "state": "active" }] },
+            { "id": "hand-in", "text": "I have something for the gate.", "effect": "quest-done", "quest": "iron-for-the-gate", "next": "hand-in-thanks", "stageNext": ["ore-seen"], "requires": [{ "type": "quest", "quest": "iron-for-the-gate", "state": "active" }] },
             { "id": "after", "text": "About the gate...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "iron-for-the-gate", "state": "done" }] },
             { "id": "work-back", "text": "Never mind.", "effect": "say" }
           ]
         },
         {
           "id": "ask-yes",
-          "line": "The hill road needs a gate that holds. Mine three ore at the quarry and forge me an iron shield with two logs; mind the wolves.",
+          "line": "The hill road needs a gate that holds. Mine three ore at the quarry and show it to me; mind the wolves.",
           "choices": [
             { "id": "ask-yes-back", "text": "I will forge it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ore-seen",
+          "line": "Good ore; it rings true. Now forge it with two logs at my forge into an iron shield.",
+          "choices": [
+            { "id": "ore-seen-back", "text": "I will forge it.", "effect": "say" }
           ]
         },
         {

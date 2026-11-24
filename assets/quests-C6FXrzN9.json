@@ -116,6 +116,7 @@
         "item": "health-potion",
         "count": 1
       },
+      "stages": [{ "want": { "item": "healing-herb", "count": 3 }, "works": ["herbalism"] }],
       "minLevel": 2,
       "reward": {
         "items": [
@@ -140,6 +141,7 @@
         "item": "hide-jerkin",
         "count": 1
       },
+      "stages": [{ "want": { "item": "rat-hide", "count": 4 }, "works": ["skinning"] }],
       "minLevel": 3,
       "reward": {
         "items": [
@@ -207,6 +209,7 @@
         "item": "iron-shield",
         "count": 1
       },
+      "stages": [{ "want": { "item": "iron-ore", "count": 3 }, "works": ["mining"] }],
       "minLevel": 5,
       "reward": {
         "items": [
