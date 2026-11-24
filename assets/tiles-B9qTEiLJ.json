@@ -167,6 +167,7 @@
     { "id": 165, "name": "cave-mushrooms", "image": "cave-mushrooms", "layer": 1, "blocks": false },
     { "id": 166, "name": "ore-vein", "image": "ore-vein", "layer": 1, "blocks": false },
     { "id": 167, "name": "crag-base-s", "image": "crag-cliff-s", "layer": 1, "blocks": true },
-    { "id": 168, "name": "crag-base-e", "image": "crag-cliff-e", "layer": 1, "blocks": true }
+    { "id": 168, "name": "crag-base-e", "image": "crag-cliff-e", "layer": 1, "blocks": true },
+    { "id": 169, "name": "fir-tree-2", "image": "fir-tree-2", "layer": 1, "blocks": true, "node": { "trade": "woodcutting", "item": "log", "regrowMs": 240000 }, "pickedImage": "fir-stump" }
   ]
 }

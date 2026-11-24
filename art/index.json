@@ -518,12 +518,12 @@
     },
     "tree-top": {
       "file": "tree-top.png",
-      "width": 64,
+      "width": 96,
       "height": 32
     },
     "tree-trunk": {
       "file": "tree-trunk.png",
-      "width": 64,
+      "width": 96,
       "height": 32
     },
     "player-down": {
@@ -1928,6 +1928,11 @@
     },
     "fir-tree": {
       "file": "fir-tree.png",
+      "width": 96,
+      "height": 96
+    },
+    "fir-tree-2": {
+      "file": "fir-tree-2.png",
       "width": 64,
       "height": 64
     },
@@ -2003,28 +2008,28 @@
     },
     "birch-top": {
       "file": "birch-top.png",
-      "width": 64,
+      "width": 96,
       "height": 32
     },
     "birch-trunk": {
       "file": "birch-trunk.png",
-      "width": 64,
+      "width": 96,
       "height": 32
     },
     "bush": {
       "file": "bush.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "berry-bush": {
       "file": "berry-bush.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "tall-grass": {
       "file": "tall-grass.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "grass-2": {
       "file": "grass-2.png",
@@ -2033,13 +2038,13 @@
     },
     "flower-bed-a": {
       "file": "flower-bed-a.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "flower-bed-b": {
       "file": "flower-bed-b.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "rock-small": {
       "file": "rock-small.png",
@@ -2048,23 +2053,23 @@
     },
     "boulder": {
       "file": "boulder.png",
-      "width": 32,
-      "height": 40
+      "width": 64,
+      "height": 64
     },
     "reeds": {
       "file": "reeds.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "stump": {
       "file": "stump.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "log-pile": {
       "file": "log-pile.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "wheat": {
       "file": "wheat.png",
@@ -2073,8 +2078,8 @@
     },
     "hay-bale": {
       "file": "hay-bale.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "sand": {
       "file": "sand.png",
@@ -3563,8 +3568,8 @@
     },
     "cave-mushrooms": {
       "file": "cave-mushrooms.png",
-      "width": 32,
-      "height": 32
+      "width": 64,
+      "height": 64
     },
     "ore-vein": {
       "file": "ore-vein.png",

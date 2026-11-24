@@ -1369,8 +1369,44 @@ var e = {
 					id: "brew",
 					line: "Use my table with three healing herbs in your backpack, and a health potion comes of them. Keep one in your quick slot for a bad moment.",
 					choices: [{
+						id: "teach-brewing",
+						text: "Teach me to brew. ({price} zloty)",
+						effect: "teach",
+						lesson: "brewing",
+						price: 10,
+						next: "taught-brewing",
+						requires: [
+							{
+								type: "level",
+								min: 2
+							},
+							{
+								type: "quest",
+								quest: "granary-rats",
+								state: "done"
+							},
+							{
+								type: "quest",
+								quest: "mothers-remedy",
+								state: "none"
+							},
+							{
+								type: "lesson",
+								lesson: "herbalism"
+							}
+						]
+					}, {
 						id: "brew-back",
 						text: "I will remember.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "taught-brewing",
+					line: "Three leaves in the pot, and the fire kept low. Patience does the rest.",
+					choices: [{
+						id: "taught-brewing-back",
+						text: "Thank you, mother.",
 						effect: "say"
 					}]
 				},
