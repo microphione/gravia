@@ -1,11 +1,10 @@
 {
   "format": 1,
-  "rev": 1,
-  "savedAt": "2026-11-24T09:38:28.401Z",
-  "by": "script",
-  "note": "rev 1: the map of 2026-11-24 (2.94 W7)",
+  "rev": 2,
+  "savedAt": "2026-11-24T10:31:02.325Z",
+  "by": "mapmaker",
   "files": {
-    "maps/test.json": "b98ffb4c81bf54d1a7fb5fa8ed095e8bc3298d4b296405669da528a73dc473bf",
+    "maps/test.json": "500fc7536a2b467a39575559ae8ae95503f08bd350aff1188a582fb8c6dafe11",
     "tiles.json": "27c94479a725079308925810c02a0cde0d4d3c4bef422695b679d37961a8795e",
     "monsters.json": "f6eaf357c47af5555c996b08c18e859e656ff7806d266c12299390960b33e99c"
   }
