@@ -60,7 +60,8 @@ var e = {
 			weight: 300,
 			value: 12,
 			slot: "helmet",
-			armour: 1
+			armour: 1,
+			visibility: 30
 		},
 		{
 			id: "wooden-amulet",
@@ -80,7 +81,8 @@ var e = {
 			weight: 1500,
 			value: 25,
 			slot: "armour",
-			armour: 1
+			armour: 1,
+			visibility: 60
 		},
 		{
 			id: "linen-trousers",
@@ -90,7 +92,8 @@ var e = {
 			weight: 600,
 			value: 10,
 			slot: "legs",
-			armour: 1
+			armour: 1,
+			visibility: 70
 		},
 		{
 			id: "leather-boots",
@@ -100,7 +103,8 @@ var e = {
 			weight: 500,
 			value: 10,
 			slot: "boots",
-			armour: 0
+			armour: 0,
+			visibility: 25
 		},
 		{
 			id: "work-gloves",
@@ -130,7 +134,8 @@ var e = {
 			weight: 2500,
 			value: 20,
 			slot: "shield",
-			armour: 1
+			armour: 1,
+			visibility: 70
 		},
 		{
 			id: "grey-fang",
@@ -249,6 +254,7 @@ var e = {
 			value: 50,
 			slot: "shield",
 			armour: 3,
+			visibility: 90,
 			recipe: [{
 				item: "iron-ore",
 				count: 3
@@ -267,6 +273,7 @@ var e = {
 			value: 30,
 			slot: "armour",
 			armour: 2,
+			visibility: 20,
 			recipe: [{
 				item: "rat-hide",
 				count: 4
@@ -282,6 +289,7 @@ var e = {
 			value: 30,
 			slot: "helmet",
 			armour: 2,
+			visibility: 30,
 			base: "leather-cap",
 			grade: 1
 		},
@@ -294,6 +302,7 @@ var e = {
 			value: 75,
 			slot: "helmet",
 			armour: 3,
+			visibility: 30,
 			base: "leather-cap",
 			grade: 2
 		},
@@ -306,6 +315,7 @@ var e = {
 			value: 188,
 			slot: "helmet",
 			armour: 4,
+			visibility: 30,
 			base: "leather-cap",
 			grade: 3
 		},
@@ -318,6 +328,7 @@ var e = {
 			value: 63,
 			slot: "armour",
 			armour: 2,
+			visibility: 60,
 			base: "padded-vest",
 			grade: 1
 		},
@@ -330,6 +341,7 @@ var e = {
 			value: 158,
 			slot: "armour",
 			armour: 3,
+			visibility: 60,
 			base: "padded-vest",
 			grade: 2
 		},
@@ -342,6 +354,7 @@ var e = {
 			value: 395,
 			slot: "armour",
 			armour: 4,
+			visibility: 60,
 			base: "padded-vest",
 			grade: 3
 		},
@@ -354,6 +367,7 @@ var e = {
 			value: 25,
 			slot: "legs",
 			armour: 2,
+			visibility: 70,
 			base: "linen-trousers",
 			grade: 1
 		},
@@ -366,6 +380,7 @@ var e = {
 			value: 63,
 			slot: "legs",
 			armour: 3,
+			visibility: 70,
 			base: "linen-trousers",
 			grade: 2
 		},
@@ -378,6 +393,7 @@ var e = {
 			value: 158,
 			slot: "legs",
 			armour: 4,
+			visibility: 70,
 			base: "linen-trousers",
 			grade: 3
 		},
@@ -390,6 +406,7 @@ var e = {
 			value: 50,
 			slot: "shield",
 			armour: 2,
+			visibility: 70,
 			base: "plank-shield",
 			grade: 1
 		},
@@ -402,6 +419,7 @@ var e = {
 			value: 125,
 			slot: "shield",
 			armour: 3,
+			visibility: 70,
 			base: "plank-shield",
 			grade: 2
 		},
@@ -414,6 +432,7 @@ var e = {
 			value: 313,
 			slot: "shield",
 			armour: 4,
+			visibility: 70,
 			base: "plank-shield",
 			grade: 3
 		},
@@ -579,6 +598,7 @@ var e = {
 			value: 5,
 			slot: "shield",
 			armour: 0,
+			visibility: 100,
 			light: !0
 		},
 		{
@@ -589,6 +609,60 @@ var e = {
 			weight: 150,
 			heal: 5,
 			value: 3
+		},
+		{
+			id: "chest",
+			name: "Chest",
+			stackLimit: 1,
+			kind: "other",
+			weight: 12e3,
+			value: 0,
+			thing: 46
+		},
+		{
+			id: "bed",
+			name: "Bed",
+			stackLimit: 1,
+			kind: "other",
+			weight: 2e4,
+			value: 0,
+			thing: 58
+		},
+		{
+			id: "stash",
+			name: "Stash",
+			stackLimit: 1,
+			kind: "other",
+			weight: 12e3,
+			value: 0,
+			thing: 59
+		},
+		{
+			id: "barrel",
+			name: "Barrel",
+			stackLimit: 1,
+			kind: "other",
+			weight: 1e4,
+			value: 0,
+			thing: 119
+		},
+		{
+			id: "crate",
+			name: "Crate",
+			stackLimit: 1,
+			kind: "other",
+			weight: 8e3,
+			value: 0,
+			thing: 120
+		},
+		{
+			id: "stool",
+			name: "Stool",
+			stackLimit: 1,
+			kind: "other",
+			weight: 3e3,
+			value: 0,
+			thing: 122
 		}
 	]
 }, t = {
@@ -1011,6 +1085,31 @@ var e = {
 					reminderDays: 3
 				}
 			}
+		},
+		{
+			id: "house-guide",
+			name: "House guide",
+			line: "Welcome, look around as you like, but please touch nothing. This house is for sale for {price} gold.",
+			choices: [{
+				id: "buy",
+				text: "I will buy it ({price} gold).",
+				effect: "house-buy",
+				next: "sold"
+			}, {
+				id: "bye",
+				text: "Just looking.",
+				effect: "end"
+			}],
+			nodes: [{
+				id: "sold",
+				line: "It is yours now. The house agent will look after it.",
+				choices: [{
+					id: "sold-back",
+					text: "Thank you.",
+					effect: "say"
+				}]
+			}],
+			houseGuide: !0
 		},
 		{
 			id: "boatman",
@@ -2948,7 +3047,7 @@ var e = {
 				},
 				{
 					id: "house",
-					line: "Find a house with a sign for sale, stand before it and use the sign. The price is taken from your backpack.",
+					line: "A house nobody owns keeps its door open: step inside and talk to the house guide, from 8:00 to 20:00. The price is taken from your backpack.",
 					choices: [{
 						id: "inside",
 						text: "And inside?",
@@ -3503,7 +3602,7 @@ function s(e) {
 	if (typeof t != "object" || !t || Array.isArray(t)) return o("not a JSON object");
 	let s = t;
 	for (let e of Object.keys(s)) if (!r.includes(e)) return o(`unknown key "${e}"`);
-	if (s.format !== 1) return o("format must be 1");
+	if (s.format !== 2) return o("format must be 2");
 	let c = s.rev;
 	if (typeof c != "number" || !Number.isInteger(c) || c < 1) return o("rev must be a positive whole number");
 	let l = s.savedAt;
@@ -3523,7 +3622,7 @@ function s(e) {
 		p[e] = t;
 	}
 	let m = {
-		format: 1,
+		format: 2,
 		rev: c,
 		savedAt: l,
 		by: u,
@@ -3550,41 +3649,54 @@ var l = [
 	"ring",
 	"shield",
 	"backpack"
+], u = [
+	"invited",
+	"coOwners",
+	"blocked"
 ];
+// ../../packages/shared/src/convert.ts
+function d(e, t) {
+	return Math.floor((2 * e + t) / (2 * t));
+}
+function f(e, t) {
+	return d(e * t, 1e3);
+}
+// ../../packages/shared/src/depot.ts
+var p = 1e3;
 l.indexOf("backpack");
-var u = [0];
+var m = [0];
 for (let e = 1; e <= 100; e += 1) {
 	let t = e - 1;
-	u.push(10 * t * t * t + 40 * t * t);
+	m.push(10 * t * t * t + 40 * t * t);
 }
 // ../../packages/shared/src/trades.ts
-var d = [
+var h = [
 	"mining",
 	"woodcutting",
 	"skinning",
 	"smithing",
 	"tailoring"
-], f = [
+], g = [
 	"id",
 	"name",
 	"level",
 	"minLevel",
 	"homes",
 	"pinned"
-], p = ["x", "y"];
-function m(e) {
+], _ = ["x", "y"];
+function v(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function h(e) {
+function y(e) {
 	return typeof e == "number" && Number.isInteger(e);
 }
-function g(e, t, n) {
+function b(e, t, n) {
 	let r = [];
 	return e.forEach((e, i) => {
 		let a = `${t}[${i}]`;
-		if (!m(e) || !h(e.x) || !h(e.y)) n.push(`${a} must be a tile with whole numbers x and y.`);
+		if (!v(e) || !y(e.x) || !y(e.y)) n.push(`${a} must be a tile with whole numbers x and y.`);
 		else {
-			for (let t of Object.keys(e)) p.includes(t) || n.push(`${a}: the key "${t}" is not part of the format.`);
+			for (let t of Object.keys(e)) _.includes(t) || n.push(`${a}: the key "${t}" is not part of the format.`);
 			r.push({
 				x: e.x,
 				y: e.y,
@@ -3593,20 +3705,20 @@ function g(e, t, n) {
 		}
 	}), r;
 }
-function _(e, t, n) {
+function x(e, t, n) {
 	if (!Array.isArray(e)) return ["markers.spots must be a list."];
 	let r = [];
 	e.length > 200 && r.push("markers.spots has more than 200 spots.");
 	let i = /* @__PURE__ */ new Set();
-	for (let e of Array.isArray(t) ? t : []) m(e) && h(e.x) && h(e.y) && h(e.level) && i.add(`${e.level},${e.x},${e.y}`);
+	for (let e of Array.isArray(t) ? t : []) v(e) && y(e.x) && y(e.y) && y(e.level) && i.add(`${e.level},${e.x},${e.y}`);
 	let a = /* @__PURE__ */ new Map(), o = /* @__PURE__ */ new Map();
 	return e.slice(0, 200).forEach((e, t) => {
 		let s = `markers.spots[${t}]`;
-		if (!m(e)) {
+		if (!v(e)) {
 			r.push(`${s} must be an object.`);
 			return;
 		}
-		for (let t of Object.keys(e)) f.includes(t) || r.push(`${s}: the key "${t}" is not part of the format.`);
+		for (let t of Object.keys(e)) g.includes(t) || r.push(`${s}: the key "${t}" is not part of the format.`);
 		let c = e.id;
 		if (typeof c != "string" || !/^[a-z0-9-]+$/.test(c)) r.push(`${s}: "id" must be a lower-case slug (a to z, 0 to 9 and -).`);
 		else {
@@ -3615,82 +3727,82 @@ function _(e, t, n) {
 		}
 		let l = e.name;
 		(typeof l != "string" || l.length < 1 || l.length > 40) && r.push(`${s}: "name" must be 1 to 40 characters.`);
-		let u = e.level, d = h(u) && u >= 0 && u < n;
+		let u = e.level, d = y(u) && u >= 0 && u < n;
 		d || r.push(`${s}: "level" must be a whole number of a level of the map (0 to ${n - 1}).`);
-		let p = e.minLevel;
-		(!h(p) || p < 1 || p > 100) && r.push(`${s}: "minLevel" must be a whole number from 1 to 100.`);
-		let _ = e.homes, v = /* @__PURE__ */ new Set();
-		if (!Array.isArray(_)) r.push(`${s}: "homes" must be a list of tiles.`);
-		else if (_.length === 0) r.push(`${s} has no home; a spot needs 1 to 200.`);
+		let f = e.minLevel;
+		(!y(f) || f < 1 || f > 100) && r.push(`${s}: "minLevel" must be a whole number from 1 to 100.`);
+		let p = e.homes, m = /* @__PURE__ */ new Set();
+		if (!Array.isArray(p)) r.push(`${s}: "homes" must be a list of tiles.`);
+		else if (p.length === 0) r.push(`${s} has no home; a spot needs 1 to 200.`);
 		else {
-			_.length > 200 && r.push(`${s} has more than 200 homes.`);
-			for (let { x: e, y: n, index: a } of g(_.slice(0, 200), `${s}.homes`, r)) {
+			p.length > 200 && r.push(`${s} has more than 200 homes.`);
+			for (let { x: e, y: n, index: a } of b(p.slice(0, 200), `${s}.homes`, r)) {
 				let c = `${s}.homes[${a}]: (${e}, ${n})`, l = `${u},${e},${n}`;
-				if (v.has(`${e},${n}`)) {
+				if (m.has(`${e},${n}`)) {
 					r.push(`${c} is listed twice in this spot.`);
 					continue;
 				}
-				if (v.add(`${e},${n}`), !d) continue;
+				if (m.add(`${e},${n}`), !d) continue;
 				i.has(l) || r.push(`${c} is not the tile of a spawn on level ${u}.`);
 				let f = o.get(l);
 				f === void 0 ? o.set(l, t) : r.push(`${c} is already a home of markers.spots[${f}].`);
 			}
 		}
-		let y = e.pinned;
-		if (y !== void 0) {
-			if (!Array.isArray(y)) r.push(`${s}: "pinned" must be a list of tiles.`);
+		let h = e.pinned;
+		if (h !== void 0) {
+			if (!Array.isArray(h)) r.push(`${s}: "pinned" must be a list of tiles.`);
 			else {
 				let e = /* @__PURE__ */ new Set();
-				for (let { x: t, y: n, index: i } of g(y, `${s}.pinned`, r)) e.has(`${t},${n}`) ? r.push(`${s}.pinned[${i}]: (${t}, ${n}) is listed twice.`) : v.has(`${t},${n}`) || r.push(`${s}.pinned[${i}]: (${t}, ${n}) is not one of the homes of this spot.`), e.add(`${t},${n}`);
+				for (let { x: t, y: n, index: i } of b(h, `${s}.pinned`, r)) e.has(`${t},${n}`) ? r.push(`${s}.pinned[${i}]: (${t}, ${n}) is listed twice.`) : m.has(`${t},${n}`) || r.push(`${s}.pinned[${i}]: (${t}, ${n}) is not one of the homes of this spot.`), e.add(`${t},${n}`);
 			}
 		}
 	}), r;
 }
 // ../../packages/shared/src/zone.ts
-var v = ["kind", "area"], y = [
+var S = ["kind", "area"], C = [
 	"x0",
 	"y0",
 	"x1",
 	"y1"
 ];
-function b(e) {
+function w(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function x(e, t, n) {
+function T(e, t, n) {
 	if (!Array.isArray(e)) return ["markers.zones must be a list."];
 	let r = [];
 	return e.forEach((e, i) => {
 		let a = `markers.zones[${i}]`;
-		if (!b(e)) {
+		if (!w(e)) {
 			r.push(`${a} must be an object.`);
 			return;
 		}
-		for (let t of Object.keys(e)) v.includes(t) || r.push(`${a}: the key "${t}" is not part of the format.`);
+		for (let t of Object.keys(e)) S.includes(t) || r.push(`${a}: the key "${t}" is not part of the format.`);
 		e.kind !== "protection" && r.push(`${a}: "kind" must be "protection".`);
 		let o = e.area;
-		if (!b(o)) {
+		if (!w(o)) {
 			r.push(`${a}: "area" must be an object with x0, y0, x1 and y1.`);
 			return;
 		}
-		for (let e of Object.keys(o)) y.includes(e) || r.push(`${a}.area: the key "${e}" is not part of the format.`);
+		for (let e of Object.keys(o)) C.includes(e) || r.push(`${a}.area: the key "${e}" is not part of the format.`);
 		let s = !0;
-		for (let e of y) typeof o[e] == "number" && Number.isInteger(o[e]) || (r.push(`${a}.area: "${e}" must be a whole number.`), s = !1);
+		for (let e of C) typeof o[e] == "number" && Number.isInteger(o[e]) || (r.push(`${a}.area: "${e}" must be a whole number.`), s = !1);
 		if (!s) return;
 		let { x0: c, y0: l, x1: u, y1: d } = o;
 		(c > u || l > d) && r.push(`${a}.area: x0 and y0 must not be greater than x1 and y1.`), Number.isFinite(t) && Number.isFinite(n) && (c < 0 || l < 0 || u >= t || d >= n) && r.push(`${a}.area: the rectangle must lie inside the map (${t} by ${n} tiles).`);
 	}), r;
 }
-var S = ["forge", "loom"], C = [
+var E = ["forge", "loom"], D = [
 	"north",
 	"south",
 	"west",
 	"east"
-], w = [
+], ee = [
 	"north",
 	"east",
 	"south",
 	"west"
-], T = [
+], O = [
 	"x",
 	"y",
 	"level",
@@ -3698,7 +3810,7 @@ var S = ["forge", "loom"], C = [
 	"openable",
 	"shutterable",
 	"loot"
-], E = [
+], te = [
 	"id",
 	"kind",
 	"x",
@@ -3707,7 +3819,7 @@ var S = ["forge", "loom"], C = [
 	"facing",
 	"push"
 ];
-function D(e, t, n, r, i) {
+function k(e, t, n, r, i) {
 	if (r < 0 || i < 0 || r >= e.widthChunks * 16 || i >= e.heightChunks * 16) return 0;
 	let a = e.levels[t]?.layers[n];
 	if (a === void 0) return 0;
@@ -3716,40 +3828,45 @@ function D(e, t, n, r, i) {
 	let l = c[(i - s * 16) * 16 + (r - o * 16)];
 	return l === void 0 ? 0 : l;
 }
-function O(e) {
+function A(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function k(e) {
+function j(e) {
 	return typeof e == "number" && Number.isInteger(e);
 }
-function A(e) {
+function M(e) {
 	return typeof e == "string" && e.length > 0;
 }
-function j(e) {
+function ne(e) {
 	return typeof e == "string" && /^[a-z0-9-]+$/.test(e);
 }
-var M = 100;
-function N(e) {
-	return e.length > M;
+var N = 100, re = 1e3;
+function P(e) {
+	return e.length > N;
 }
-function P(e, t, n, r) {
+function ie(e, t, n, r) {
+	let { x0: i, y0: a, x1: o, y1: s } = r, c = (r, i) => t.get(k(e, n, 0, r, i))?.blocks === !1, l = (r, i) => c(r, i) && t.get(k(e, n, 1, r, i))?.blocks !== !0, u = 0;
+	for (let r = a; r <= s; r += 1) for (let d = i; d <= o; d += 1) if ((d === i || d === o || r === a || r === s) && t.get(k(e, n, 1, d, r))?.opens === "door" && c(d, r) && (u += 1, d === i ? l(d - 1, r) : d === o ? l(d + 1, r) : l(d, r + (r === a ? -1 : 1)))) return null;
+	return u === 0 ? "door" : "outside";
+}
+function F(e, t, n, r) {
 	for (let i of Object.keys(e)) t.includes(i) || r.push(`${n}: the key "${i}" is not part of the format.`);
 }
-function ee(e, t) {
+function ae(e, t) {
 	let n = /* @__PURE__ */ new Map();
-	if (!O(e)) return t.push("The tile types file is not an object."), n;
-	P(e, ["format", "tiles"], "The tile types file", t), e.format !== 1 && t.push("The tile types file must have format 1.");
+	if (!A(e)) return t.push("The tile types file is not an object."), n;
+	F(e, ["format", "tiles"], "The tile types file", t), e.format !== 1 && t.push("The tile types file must have format 1.");
 	let r = e.tiles;
 	if (!Array.isArray(r)) return t.push("The tile types file must have a \"tiles\" list."), n;
 	let i = /* @__PURE__ */ new Set();
 	return r.forEach((e, r) => {
-		if (N(t)) return;
-		if (!O(e)) {
+		if (P(t)) return;
+		if (!A(e)) {
 			t.push(`Tile type entry ${r} is not an object.`);
 			return;
 		}
-		let a = e.id, o = k(a) ? `tile type ${a}` : `tile type entry ${r}`;
-		P(e, [
+		let a = e.id, o = j(a) ? `tile type ${a}` : `tile type entry ${r}`;
+		F(e, [
 			"id",
 			"name",
 			"image",
@@ -3774,24 +3891,24 @@ function ee(e, t) {
 			"shutImage"
 		], o, t);
 		let s = !0;
-		!k(a) || a < 1 ? (t.push(`${o}: the id must be a whole number of 1 or more.`), s = !1) : i.has(a) ? (t.push(`${o}: the id is used more than once.`), s = !1) : i.add(a);
+		!j(a) || a < 1 ? (t.push(`${o}: the id must be a whole number of 1 or more.`), s = !1) : i.has(a) ? (t.push(`${o}: the id is used more than once.`), s = !1) : i.add(a);
 		let c = e.layer;
 		c !== 0 && c !== 1 && c !== 3 && (t.push(`${o}: the layer must be 0, 1 or 3.`), s = !1);
 		let l = e.blocks;
-		typeof l == "boolean" ? c === 3 && l && (t.push(`${o}: a layer 3 tile type cannot block.`), s = !1) : (t.push(`${o}: "blocks" must be true or false.`), s = !1), A(e.name) || (t.push(`${o}: the name must be a non-empty string.`), s = !1), A(e.image) || (t.push(`${o}: the image must be a non-empty string.`), s = !1);
+		typeof l == "boolean" ? c === 3 && l && (t.push(`${o}: a layer 3 tile type cannot block.`), s = !1) : (t.push(`${o}: "blocks" must be true or false.`), s = !1), M(e.name) || (t.push(`${o}: the name must be a non-empty string.`), s = !1), M(e.image) || (t.push(`${o}: the image must be a non-empty string.`), s = !1);
 		let u = e.opens;
-		u === void 0 ? e.openImage !== void 0 && (t.push(`${o}: "openImage" is only allowed with "opens".`), s = !1) : u !== "door" && u !== "window" ? (t.push(`${o}: "opens" must be "door" or "window".`), s = !1) : (c !== 1 && (t.push(`${o}: a tile type that opens must be on layer 1.`), s = !1), l !== !0 && (t.push(`${o}: a tile type that opens must block.`), s = !1), A(e.openImage) || (t.push(`${o}: a tile type that opens needs an "openImage" that is a non-empty string.`), s = !1));
-		let f = e.swing;
-		f !== void 0 && (C.some((e) => e === f) ? u !== "door" && (t.push(`${o}: "swing" is only allowed on a door (a type with "opens": "door").`), s = !1) : (t.push(`${o}: "swing" must be "north", "south", "west" or "east".`), s = !1));
-		let p = e.container;
-		p !== void 0 && (p === !0 ? c === 1 ? l === !0 ? u !== void 0 && (t.push(`${o}: a container tile type cannot open.`), s = !1) : (t.push(`${o}: a container tile type must block.`), s = !1) : (t.push(`${o}: a container tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "container" must be true when present.`), s = !1));
-		let m = e.bed;
-		m !== void 0 && (m === !0 ? c === 1 ? l === !0 ? u === void 0 ? p !== void 0 && (t.push(`${o}: a bed tile type cannot be a container.`), s = !1) : (t.push(`${o}: a bed tile type cannot open.`), s = !1) : (t.push(`${o}: a bed tile type must block.`), s = !1) : (t.push(`${o}: a bed tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "bed" must be true when present.`), s = !1));
-		let h = e.depot;
-		h !== void 0 && (h === !0 ? c === 1 ? l === !0 ? [
+		u === void 0 ? e.openImage !== void 0 && (t.push(`${o}: "openImage" is only allowed with "opens".`), s = !1) : u !== "door" && u !== "window" ? (t.push(`${o}: "opens" must be "door" or "window".`), s = !1) : (c !== 1 && (t.push(`${o}: a tile type that opens must be on layer 1.`), s = !1), l !== !0 && (t.push(`${o}: a tile type that opens must block.`), s = !1), M(e.openImage) || (t.push(`${o}: a tile type that opens needs an "openImage" that is a non-empty string.`), s = !1));
+		let d = e.swing;
+		d !== void 0 && (D.some((e) => e === d) ? u !== "door" && (t.push(`${o}: "swing" is only allowed on a door (a type with "opens": "door").`), s = !1) : (t.push(`${o}: "swing" must be "north", "south", "west" or "east".`), s = !1));
+		let f = e.container;
+		f !== void 0 && (f === !0 ? c === 1 ? l === !0 ? u !== void 0 && (t.push(`${o}: a container tile type cannot open.`), s = !1) : (t.push(`${o}: a container tile type must block.`), s = !1) : (t.push(`${o}: a container tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "container" must be true when present.`), s = !1));
+		let p = e.bed;
+		p !== void 0 && (p === !0 ? c === 1 ? l === !0 ? u === void 0 ? f !== void 0 && (t.push(`${o}: a bed tile type cannot be a container.`), s = !1) : (t.push(`${o}: a bed tile type cannot open.`), s = !1) : (t.push(`${o}: a bed tile type must block.`), s = !1) : (t.push(`${o}: a bed tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "bed" must be true when present.`), s = !1));
+		let m = e.depot;
+		m !== void 0 && (m === !0 ? c === 1 ? l === !0 ? [
 			u,
+			f,
 			p,
-			m,
 			e.herb,
 			e.node,
 			e.workplace
@@ -3799,77 +3916,77 @@ function ee(e, t) {
 		let g = e.gate;
 		g !== void 0 && (g === !0 ? c === 1 ? l === !0 ? [
 			u,
+			f,
 			p,
-			m,
 			e.herb,
 			e.node,
 			e.workplace,
 			e.depot
 		].some((e) => e !== void 0) && (t.push(`${o}: a gate tile type cannot be a door, window, container, bed, herb, node, workplace or depot.`), s = !1) : (t.push(`${o}: a gate tile type must block.`), s = !1) : (t.push(`${o}: a gate tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "gate" must be true when present.`), s = !1));
 		let _ = e.walkCost;
-		_ !== void 0 && (!k(_) || _ < 50 || _ > 250 ? (t.push(`${o}: "walkCost" must be a whole number from 50 to 250.`), s = !1) : c === 0 ? l !== !1 && (t.push(`${o}: a tile type with "walkCost" must not block.`), s = !1) : (t.push(`${o}: a tile type with "walkCost" must be on layer 0.`), s = !1));
+		_ !== void 0 && (!j(_) || _ < 50 || _ > 250 ? (t.push(`${o}: "walkCost" must be a whole number from 50 to 250.`), s = !1) : c === 0 ? l !== !1 && (t.push(`${o}: a tile type with "walkCost" must not block.`), s = !1) : (t.push(`${o}: a tile type with "walkCost" must be on layer 0.`), s = !1));
 		let v = e.herb, y = e.workplace, b = e.node;
-		b !== void 0 && (O(b) ? (P(b, [
+		b !== void 0 && (A(b) ? (F(b, [
 			"trade",
 			"item",
 			"regrowMs"
-		], `${o} node`, t), d.some((e) => e === b.trade) || (t.push(`${o}: the node "trade" must be one of ${d.join(", ")}.`), s = !1), A(b.item) || (t.push(`${o}: the node "item" must be the id of an item, a non-empty string.`), s = !1), (!k(b.regrowMs) || b.regrowMs < 1) && (t.push(`${o}: the node "regrowMs" must be a whole number of milliseconds, 1 or more.`), s = !1)) : (t.push(`${o}: "node" must be an object with "trade", "item" and "regrowMs".`), s = !1)), b !== void 0 && !A(e.pickedImage) && (t.push(`${o}: a node tile type needs a "pickedImage" that is a non-empty string.`), s = !1), v === void 0 ? e.pickedImage !== void 0 && b === void 0 && (t.push(`${o}: "pickedImage" is only allowed with "herb" or "node".`), s = !1) : (A(v) || (t.push(`${o}: "herb" must be the id of an item, a non-empty string.`), s = !1), A(e.pickedImage) || (t.push(`${o}: a herb tile type needs a "pickedImage" that is a non-empty string.`), s = !1)), y !== void 0 && y !== !0 && !S.some((e) => e === y) && (t.push(`${o}: "workplace" must be true when present, or "forge" or "loom".`), s = !1), (v !== void 0 || y !== void 0 || b !== void 0) && (c === 1 ? l !== !0 && (t.push(`${o}: a herb or workplace tile type must block.`), s = !1) : (t.push(`${o}: a herb or workplace tile type must be on layer 1.`), s = !1), [
+		], `${o} node`, t), h.some((e) => e === b.trade) || (t.push(`${o}: the node "trade" must be one of ${h.join(", ")}.`), s = !1), M(b.item) || (t.push(`${o}: the node "item" must be the id of an item, a non-empty string.`), s = !1), (!j(b.regrowMs) || b.regrowMs < 1) && (t.push(`${o}: the node "regrowMs" must be a whole number of milliseconds, 1 or more.`), s = !1)) : (t.push(`${o}: "node" must be an object with "trade", "item" and "regrowMs".`), s = !1)), b !== void 0 && !M(e.pickedImage) && (t.push(`${o}: a node tile type needs a "pickedImage" that is a non-empty string.`), s = !1), v === void 0 ? e.pickedImage !== void 0 && b === void 0 && (t.push(`${o}: "pickedImage" is only allowed with "herb" or "node".`), s = !1) : (M(v) || (t.push(`${o}: "herb" must be the id of an item, a non-empty string.`), s = !1), M(e.pickedImage) || (t.push(`${o}: a herb tile type needs a "pickedImage" that is a non-empty string.`), s = !1)), y !== void 0 && y !== !0 && !E.some((e) => e === y) && (t.push(`${o}: "workplace" must be true when present, or "forge" or "loom".`), s = !1), (v !== void 0 || y !== void 0 || b !== void 0) && (c === 1 ? l !== !0 && (t.push(`${o}: a herb or workplace tile type must block.`), s = !1) : (t.push(`${o}: a herb or workplace tile type must be on layer 1.`), s = !1), [
 			u,
+			f,
 			p,
-			m,
 			v,
 			b,
 			y
 		].filter((e) => e !== void 0).length > 1 && (t.push(`${o}: a tile type can be only one of a door or window, container, bed, herb, node and workplace.`), s = !1));
 		let x = e.quest;
-		x !== void 0 && (x === !0 ? p !== !0 && (t.push(`${o}: "quest" is only for a container tile type.`), s = !1) : (t.push(`${o}: "quest" must be true when present.`), s = !1));
-		let w = e.movable;
-		w !== void 0 && (w === !0 ? c === 1 ? [
+		x !== void 0 && (x === !0 ? f !== !0 && (t.push(`${o}: "quest" is only for a container tile type.`), s = !1) : (t.push(`${o}: "quest" must be true when present.`), s = !1));
+		let S = e.movable;
+		S !== void 0 && (S === !0 ? c === 1 ? [
 			u,
 			g,
-			h,
+			m,
 			v,
 			b,
 			x
 		].some((e) => e !== void 0) && (t.push(`${o}: a door, window, gate, depot, herb, node or quest chest cannot be movable.`), s = !1) : (t.push(`${o}: a movable tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "movable" must be true when present.`), s = !1));
-		let T = e.joined;
-		T !== void 0 && (C.some((e) => e === T) ? c !== 1 && (t.push(`${o}: a joined tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "joined" must be "north", "south", "west" or "east".`), s = !1));
-		let E = e.item;
-		E !== void 0 && (A(E) ? w === !0 ? T !== void 0 && (t.push(`${o}: a joined tile type is never lifted, so it has no "item".`), s = !1) : (t.push(`${o}: "item" is only for a movable tile type.`), s = !1) : (t.push(`${o}: "item" must be the id of an item, a non-empty string.`), s = !1));
-		let D = e.shutImage;
-		D !== void 0 && (A(D) ? u !== "window" && (t.push(`${o}: "shutImage" is only allowed on a window (a type with "opens": "window").`), s = !1) : (t.push(`${o}: "shutImage" must be a non-empty string.`), s = !1)), s && k(a) && n.set(a, e);
+		let C = e.joined;
+		C !== void 0 && (D.some((e) => e === C) ? c !== 1 && (t.push(`${o}: a joined tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "joined" must be "north", "south", "west" or "east".`), s = !1));
+		let w = e.item;
+		w !== void 0 && (M(w) ? S === !0 ? C !== void 0 && (t.push(`${o}: a joined tile type is never lifted, so it has no "item".`), s = !1) : (t.push(`${o}: "item" is only for a movable tile type.`), s = !1) : (t.push(`${o}: "item" must be the id of an item, a non-empty string.`), s = !1));
+		let T = e.shutImage;
+		T !== void 0 && (M(T) ? u !== "window" && (t.push(`${o}: "shutImage" is only allowed on a window (a type with "opens": "window").`), s = !1) : (t.push(`${o}: "shutImage" must be a non-empty string.`), s = !1)), s && j(a) && n.set(a, e);
 	}), n;
 }
-function te(e, t, n, r) {
-	for (let i = 0; i < r; i += 1) for (let r = n.y0; r <= n.y1; r += 1) for (let a = n.x0; a <= n.x1; a += 1) if (t.get(D(e, i, 1, a, r))?.depot === !0) return {
+function oe(e, t, n, r) {
+	for (let i = 0; i < r; i += 1) for (let r = n.y0; r <= n.y1; r += 1) for (let a = n.x0; a <= n.x1; a += 1) if (t.get(k(e, i, 1, a, r))?.depot === !0) return {
 		x: a,
 		y: r,
 		level: i
 	};
 }
-function F(e, t, n, r = []) {
-	return O(e) && P(e, [
+function I(e, t, n, r = []) {
+	return A(e) && F(e, [
 		"x",
 		"y",
 		"level",
 		...r
-	], t, n), !O(e) || !k(e.x) || !k(e.y) || !k(e.level) ? (n.push(`${t} must have whole numbers x, y and level.`), !1) : !0;
+	], t, n), !A(e) || !j(e.x) || !j(e.y) || !j(e.level) ? (n.push(`${t} must have whole numbers x, y and level.`), !1) : !0;
 }
-function I(e, t, n, r, i, a) {
+function L(e, t, n, r, i, a) {
 	let o = !0;
 	return (e.level < 0 || e.level >= i) && (a.push(`${t}: level ${e.level} does not exist.`), o = !1), (e.x < 0 || e.y < 0 || e.x >= n || e.y >= r) && (a.push(`${t}: tile (${e.x}, ${e.y}) is outside the map.`), o = !1), o;
 }
-function L(e, t, n, r, i) {
+function se(e, t, n, r, i) {
 	let a = [];
-	return R(e, t, a, n, r, i), N(a) && (a.length = M, a.push(`There are more than ${M} problems; the rest are not listed.`)), a;
+	return ce(e, t, a, n, r, i), P(a) && (a.length = N, a.push(`There are more than ${N} problems; the rest are not listed.`)), a;
 }
-function R(e, t, n, r, i, a) {
-	let o = ee(t, n);
-	if (!O(e)) {
+function ce(e, t, n, r, i, a) {
+	let o = ae(t, n);
+	if (!A(e)) {
 		n.push("The map is not an object.");
 		return;
 	}
-	P(e, [
+	F(e, [
 		"format",
 		"name",
 		"widthChunks",
@@ -3877,23 +3994,23 @@ function R(e, t, n, r, i, a) {
 		"levels",
 		"groundLevel",
 		"markers"
-	], "The map", n), e.format !== 1 && n.push("The map must have format 1."), j(e.name) || n.push("The map name must be made of the characters a to z, 0 to 9 and \"-\" only.");
+	], "The map", n), e.format !== 1 && n.push("The map must have format 1."), ne(e.name) || n.push("The map name must be made of the characters a to z, 0 to 9 and \"-\" only.");
 	let s = e.widthChunks, c = e.heightChunks, l = !0;
-	for (let [e, t] of [["widthChunks", s], ["heightChunks", c]]) (!k(t) || t < 1 || t > 64) && (n.push(`${e} must be a whole number from 1 to 64.`), l = !1);
+	for (let [e, t] of [["widthChunks", s], ["heightChunks", c]]) (!j(t) || t < 1 || t > 64) && (n.push(`${e} must be a whole number from 1 to 64.`), l = !1);
 	let u = e.levels, d = !0;
 	Array.isArray(u) && u.length !== 0 || (n.push("The map must have a list of levels with at least one level."), d = !1);
 	let f = e.groundLevel;
-	!k(f) || f < 0 || Array.isArray(u) && f >= u.length ? n.push("groundLevel must be the whole-number index of a level in \"levels\".") : Array.isArray(u) && (f > 8 && n.push(`The map has ${f} levels below the ground level; at most 8 are allowed.`), u.length - 1 - f > 8 && n.push(`The map has ${u.length - 1 - f} levels above the ground level; at most 8 are allowed.`));
+	!j(f) || f < 0 || Array.isArray(u) && f >= u.length ? n.push("groundLevel must be the whole-number index of a level in \"levels\".") : Array.isArray(u) && (f > 8 && n.push(`The map has ${f} levels below the ground level; at most 8 are allowed.`), u.length - 1 - f > 8 && n.push(`The map has ${u.length - 1 - f} levels above the ground level; at most 8 are allowed.`));
 	let p = n.length;
 	if (l && Array.isArray(u)) {
 		let e = s * c;
 		u.forEach((t, r) => {
-			if (N(n)) return;
-			O(t) && P(t, ["layers"], `level ${r}`, n);
-			let i = O(t) ? t.layers : void 0;
-			if (!O(i)) n.push(`level ${r}: there is no "layers" object.`), d = !1;
+			if (P(n)) return;
+			A(t) && F(t, ["layers"], `level ${r}`, n);
+			let i = A(t) ? t.layers : void 0;
+			if (!A(i)) n.push(`level ${r}: there is no "layers" object.`), d = !1;
 			else {
-				P(i, [
+				F(i, [
 					"0",
 					"1",
 					"3"
@@ -3905,7 +4022,7 @@ function R(e, t, n, r, i, a) {
 				]) {
 					let a = `level ${r}, layer ${t}`, s = i[String(t)];
 					Array.isArray(s) ? (s.length !== e && n.push(`${a}: ${s.length} chunks, expected ${e}.`), s.forEach((e, r) => {
-						if (e === null || N(n)) return;
+						if (e === null || P(n)) return;
 						if (!Array.isArray(e)) {
 							n.push(`${a}, chunk ${r}: it must be a list of tile ids or null.`);
 							return;
@@ -3915,10 +4032,10 @@ function R(e, t, n, r, i, a) {
 							return;
 						}
 						let i = !1;
-						for (let s = 0; s < e.length && !N(n); s += 1) {
+						for (let s = 0; s < e.length && !P(n); s += 1) {
 							let c = e[s];
 							if (c === 0) continue;
-							if (i = !0, !k(c) || c < 0) {
+							if (i = !0, !j(c) || c < 0) {
 								n.push(`${a}, chunk ${r}, tile ${s}: the id must be a whole number of 0 or more.`);
 								continue;
 							}
@@ -3931,12 +4048,12 @@ function R(e, t, n, r, i, a) {
 			}
 		});
 	}
-	let m = l && d && n.length === p, h = l ? s * 16 : 0, g = l ? c * 16 : 0, v = Array.isArray(u) ? u.length : 0, y = e.markers;
-	if (!O(y)) {
+	let m = l && d && n.length === p, h = l ? s * 16 : 0, g = l ? c * 16 : 0, _ = Array.isArray(u) ? u.length : 0, v = e.markers;
+	if (!A(v)) {
 		n.push("The map must have a \"markers\" object.");
 		return;
 	}
-	P(y, [
+	F(v, [
 		"start",
 		"respawn",
 		"stairs",
@@ -3950,110 +4067,111 @@ function R(e, t, n, r, i, a) {
 		"npcs",
 		"things"
 	], "markers", n);
-	let b = y.start;
-	if (F(b, "The start marker", n) && l && I(b, "The start marker", h, g, v, n) && m) {
-		let t = `The start marker at (${b.x}, ${b.y}) on level ${b.level}`, r = e, i = o.get(D(r, b.level, 0, b.x, b.y)), a = o.get(D(r, b.level, 1, b.x, b.y));
+	let y = v.start;
+	if (I(y, "The start marker", n) && l && L(y, "The start marker", h, g, _, n) && m) {
+		let t = `The start marker at (${y.x}, ${y.y}) on level ${y.level}`, r = e, i = o.get(k(r, y.level, 0, y.x, y.y)), a = o.get(k(r, y.level, 1, y.x, y.y));
 		i === void 0 ? n.push(`${t} has no floor tile.`) : i.blocks ? n.push(`${t} is on a floor that cannot be walked on.`) : a !== void 0 && a.blocks && n.push(`${t} is on a solid tile.`);
 	}
-	let S = y.stairs;
-	if (!Array.isArray(S)) n.push("markers.stairs must be a list.");
+	let b = v.stairs;
+	if (!Array.isArray(b)) n.push("markers.stairs must be a list.");
 	else {
 		let t = /* @__PURE__ */ new Map();
-		S.forEach((e, n) => {
-			if (O(e) && k(e.x) && k(e.y) && k(e.level)) {
+		b.forEach((e, n) => {
+			if (A(e) && j(e.x) && j(e.y) && j(e.level)) {
 				let r = `${e.level},${e.x},${e.y}`;
 				t.has(r) || t.set(r, n);
 			}
 		});
 		let r = /* @__PURE__ */ new Set();
-		for (let t of Array.isArray(y.portals) ? y.portals : []) O(t) && t.toMap === e.name && k(t.x) && k(t.y) && k(t.level) && r.add(`${t.level},${t.x},${t.y}`);
-		S.forEach((i, a) => {
-			if (N(n)) return;
+		for (let t of Array.isArray(v.portals) ? v.portals : []) A(t) && t.toMap === e.name && j(t.x) && j(t.y) && j(t.level) && r.add(`${t.level},${t.x},${t.y}`);
+		b.forEach((i, a) => {
+			if (P(n)) return;
 			let s = `Stairs ${a}`;
-			if (!F(i, s, n, ["to", "facing"]) || !l) return;
+			if (!I(i, s, n, ["to", "facing"]) || !l) return;
 			let c = i.facing;
-			c !== void 0 && !w.some((e) => e === c) && n.push(`${s} has a facing that is not north, east, south or west.`);
+			c !== void 0 && !ee.some((e) => e === c) && n.push(`${s} has a facing that is not north, east, south or west.`);
 			let u = t.get(`${i.level},${i.x},${i.y}`);
-			if (u !== void 0 && u !== a && n.push(`${s} is on the same tile as stairs ${u}.`), I(i, s, h, g, v, n) && m) {
-				let t = `${s} at (${i.x}, ${i.y}) on level ${i.level}`, r = e, a = o.get(D(r, i.level, 0, i.x, i.y)), c = o.get(D(r, i.level, 1, i.x, i.y));
+			if (u !== void 0 && u !== a && n.push(`${s} is on the same tile as stairs ${u}.`), L(i, s, h, g, _, n) && m) {
+				let t = `${s} at (${i.x}, ${i.y}) on level ${i.level}`, r = e, a = o.get(k(r, i.level, 0, i.x, i.y)), c = o.get(k(r, i.level, 1, i.x, i.y));
 				a === void 0 ? n.push(`${t} has no floor tile.`) : a.blocks ? n.push(`${t} is on a floor that cannot be walked on.`) : c !== void 0 && c.blocks && n.push(`${t} is on a solid tile.`);
 			}
 			let d = i.to;
-			if (F(d, `${s} target`, n)) {
-				if (I(d, `${s} target`, h, g, v, n) && m) {
-					let t = `${s} target at (${d.x}, ${d.y}) on level ${d.level}`, r = o.get(D(e, d.level, 0, d.x, d.y)), i = o.get(D(e, d.level, 1, d.x, d.y));
+			if (I(d, `${s} target`, n)) {
+				if (L(d, `${s} target`, h, g, _, n) && m) {
+					let t = `${s} target at (${d.x}, ${d.y}) on level ${d.level}`, r = o.get(k(e, d.level, 0, d.x, d.y)), i = o.get(k(e, d.level, 1, d.x, d.y));
 					r === void 0 ? n.push(`${t} has no floor tile.`) : r.blocks ? n.push(`${t} is on a floor that cannot be walked on.`) : i !== void 0 && i.blocks && n.push(`${t} is on a solid tile.`);
 				}
 				Math.abs(d.level - i.level) !== 1 && n.push(`${s} target: level ${d.level} is not one level above or below level ${i.level}.`), t.has(`${d.level},${d.x},${d.y}`) && n.push(`${s} target: tile (${d.x}, ${d.y}) on level ${d.level} is itself a stairs tile.`), r.has(`${d.level},${d.x},${d.y}`) && n.push(`${s} target: tile (${d.x}, ${d.y}) on level ${d.level} is a portal tile.`);
 			}
 		});
 	}
-	let C = y.respawn;
-	if (C !== void 0 && F(C, "The respawn marker", n) && l && I(C, "The respawn marker", h, g, v, n) && m) {
-		let t = `The respawn marker at (${C.x}, ${C.y}) on level ${C.level}`, r = e, i = o.get(D(r, C.level, 0, C.x, C.y)), a = o.get(D(r, C.level, 1, C.x, C.y)), s = Array.isArray(S) && S.some((e) => O(e) && e.x === C.x && e.y === C.y && e.level === C.level);
+	let S = v.respawn;
+	if (S !== void 0 && I(S, "The respawn marker", n) && l && L(S, "The respawn marker", h, g, _, n) && m) {
+		let t = `The respawn marker at (${S.x}, ${S.y}) on level ${S.level}`, r = e, i = o.get(k(r, S.level, 0, S.x, S.y)), a = o.get(k(r, S.level, 1, S.x, S.y)), s = Array.isArray(b) && b.some((e) => A(e) && e.x === S.x && e.y === S.y && e.level === S.level);
 		i === void 0 ? n.push(`${t} has no floor tile.`) : i.blocks ? n.push(`${t} is on a floor that cannot be walked on.`) : a !== void 0 && a.blocks ? n.push(`${t} is on a solid tile.`) : s && n.push(`${t} is on a stairs tile.`);
 	}
-	let T = y.arrivals;
-	if (T !== void 0 && !Array.isArray(T)) n.push("markers.arrivals must be a list.");
-	else if (T !== void 0) {
+	let C = v.arrivals;
+	if (C !== void 0 && !Array.isArray(C)) n.push("markers.arrivals must be a list.");
+	else if (C !== void 0) {
 		let t = /* @__PURE__ */ new Set();
-		T.forEach((r, i) => {
-			if (N(n)) return;
+		C.forEach((r, i) => {
+			if (P(n)) return;
 			let a = `Arrival ${i}`;
-			if (!O(r)) {
+			if (!A(r)) {
 				n.push(`${a} must be an object.`);
 				return;
 			}
-			P(r, [
+			F(r, [
 				"id",
 				"x",
 				"y",
 				"level"
 			], a, n);
 			let s = r.id;
-			j(s) ? t.has(s) ? n.push(`${a} has the same id as an earlier arrival.`) : t.add(s) : n.push(`${a}: id must be made of the characters a to z, 0 to 9 and "-" only.`);
+			ne(s) ? t.has(s) ? n.push(`${a} has the same id as an earlier arrival.`) : t.add(s) : n.push(`${a}: id must be made of the characters a to z, 0 to 9 and "-" only.`);
 			let c = r.x, u = r.y, d = r.level;
-			if (!k(c) || !k(u) || !k(d)) {
+			if (!j(c) || !j(u) || !j(d)) {
 				n.push(`${a} must have whole numbers x, y and level.`);
 				return;
 			}
-			if (!l || !I({
+			if (!l || !L({
 				x: c,
 				y: u,
 				level: d
-			}, a, h, g, v, n) || !m) return;
-			let f = `${a} at (${c}, ${u}) on level ${d}`, p = e, _ = o.get(D(p, d, 0, c, u)), b = o.get(D(p, d, 1, c, u)), x = (e) => Array.isArray(e) && e.some((e) => O(e) && e.x === c && e.y === u && e.level === d);
-			_ === void 0 ? n.push(`${f} has no floor tile.`) : _.blocks ? n.push(`${f} is on a floor that cannot be walked on.`) : b !== void 0 && b.blocks ? n.push(`${f} is on a solid tile.`) : x(S) ? n.push(`${f} is on a stairs tile.`) : x(y.portals) && n.push(`${f} is on a portal tile.`);
+			}, a, h, g, _, n) || !m) return;
+			let f = `${a} at (${c}, ${u}) on level ${d}`, p = e, y = o.get(k(p, d, 0, c, u)), x = o.get(k(p, d, 1, c, u)), S = (e) => Array.isArray(e) && e.some((e) => A(e) && e.x === c && e.y === u && e.level === d);
+			y === void 0 ? n.push(`${f} has no floor tile.`) : y.blocks ? n.push(`${f} is on a floor that cannot be walked on.`) : x !== void 0 && x.blocks ? n.push(`${f} is on a solid tile.`) : S(b) ? n.push(`${f} is on a stairs tile.`) : S(v.portals) && n.push(`${f} is on a portal tile.`);
 		});
 	}
-	let M = y.houses;
-	if (M !== void 0 && !Array.isArray(M)) n.push("markers.houses must be a list.");
-	else if (M !== void 0) {
+	let w = v.houses;
+	if (w !== void 0 && !Array.isArray(w)) n.push("markers.houses must be a list.");
+	else if (w !== void 0) {
+		w.length > re && n.push(`markers.houses must hold at most ${re} houses.`);
 		let t = /* @__PURE__ */ new Set(), r = /* @__PURE__ */ new Set(), i = [];
-		M.forEach((a, s) => {
-			if (N(n)) return;
+		w.forEach((a, s) => {
+			if (P(n)) return;
 			let c = `House ${s}`;
-			if (!O(a)) {
+			if (!A(a)) {
 				n.push(`${c} must be an object.`);
 				return;
 			}
-			P(a, [
+			F(a, [
 				"id",
 				"price",
 				"sign",
 				"area"
-			], c, n), j(a.id) ? t.has(a.id) ? n.push(`${c} has the same id as an earlier house.`) : t.add(a.id) : n.push(`${c}: id must be made of the characters a to z, 0 to 9 and "-" only.`);
+			], c, n), ne(a.id) ? t.has(a.id) ? n.push(`${c} has the same id as an earlier house.`) : t.add(a.id) : n.push(`${c}: id must be made of the characters a to z, 0 to 9 and "-" only.`);
 			let u = a.price;
-			(!k(u) || u < 1 || u > 1e6) && n.push(`${c}: price must be a whole number from 1 to 1000000.`);
+			(!j(u) || u < 1 || u > 1e6) && n.push(`${c}: price must be a whole number from 1 to 1000000.`);
 			let d = a.area, f;
-			if (!O(d) || ![
+			if (!A(d) || ![
 				"x0",
 				"y0",
 				"x1",
 				"y1"
-			].every((e) => k(d[e]))) n.push(`${c}: area must have whole numbers x0, y0, x1 and y1.`);
+			].every((e) => j(d[e]))) n.push(`${c}: area must have whole numbers x0, y0, x1 and y1.`);
 			else {
-				P(d, [
+				F(d, [
 					"x0",
 					"y0",
 					"x1",
@@ -4068,7 +4186,7 @@ function R(e, t, n, r, i, a) {
 				};
 			}
 			let p = a.sign;
-			if (F(p, `${c} sign`, n)) {
+			if (I(p, `${c} sign`, n)) {
 				let t = `${p.level},${p.y},${p.x}`;
 				if (r.has(t) && n.push(`${c} has the same sign point as an earlier house.`), r.add(t), f !== void 0) {
 					let { x0: e, y0: t, x1: r, y1: a } = f, o = i.find((n) => e <= n.x1 && n.x0 <= r && t <= n.y1 && n.y0 <= a);
@@ -4078,74 +4196,76 @@ function R(e, t, n, r, i, a) {
 					});
 				}
 				if (f !== void 0 && l && m) {
-					let t = te(e, o, f, v);
+					let t = oe(e, o, f, _);
 					t !== void 0 && n.push(`${c} area holds a depot chest at (${t.x}, ${t.y}) on level ${t.level}.`);
 				}
-				if (l && I(p, `${c} sign`, h, g, v, n) && m) {
-					let t = o.get(D(e, p.level, 1, p.x, p.y));
-					t === void 0 || !t.blocks ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} must be on a solid tile.`) : t.opens !== void 0 || t.container === !0 || t.bed === !0 ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a door, window, chest or bed.`) : t.depot === !0 ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a depot chest.`) : (t.herb !== void 0 || t.node !== void 0 || t.workplace !== void 0) && n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a herb or a workplace.`);
+				if (l && L(p, `${c} sign`, h, g, _, n) && m) {
+					let t = k(e, p.level, 1, p.x, p.y), r = o.get(t);
+					t === 0 || (r === void 0 || !r.blocks ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} must be on a solid tile or an empty one.`) : r.opens !== void 0 || r.container === !0 || r.bed === !0 ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a door, window, chest or bed.`) : r.depot === !0 ? n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a depot chest.`) : (r.herb !== void 0 || r.node !== void 0 || r.workplace !== void 0) && n.push(`${c} sign at (${p.x}, ${p.y}) on level ${p.level} cannot be on a herb or a workplace.`));
+					let i = f === void 0 ? null : ie(e, o, p.level, f);
+					i === "door" ? n.push(`${c} has no door on the outer ring of its area on its ground level.`) : i === "outside" && n.push(`${c} has no door on the outer ring of its area with free ground outside it.`);
 				}
 			}
 		});
 	}
-	if (y.zones !== void 0) for (let e of x(y.zones, l ? h : Infinity, l ? g : Infinity)) {
-		if (N(n)) break;
+	if (v.zones !== void 0) for (let e of T(v.zones, l ? h : Infinity, l ? g : Infinity)) {
+		if (P(n)) break;
 		n.push(e);
 	}
-	if (y.spots !== void 0) for (let e of _(y.spots, y.spawns, v)) {
-		if (N(n)) break;
+	if (v.spots !== void 0) for (let e of x(v.spots, v.spawns, _)) {
+		if (P(n)) break;
 		n.push(e);
 	}
-	let L = y.portals;
-	if (!Array.isArray(L)) n.push("markers.portals must be a list.");
+	let E = v.portals;
+	if (!Array.isArray(E)) n.push("markers.portals must be a list.");
 	else {
 		let t = /* @__PURE__ */ new Map();
-		L.forEach((e, n) => {
-			if (O(e) && k(e.x) && k(e.y) && k(e.level)) {
+		E.forEach((e, n) => {
+			if (A(e) && j(e.x) && j(e.y) && j(e.level)) {
 				let r = `${e.level},${e.x},${e.y}`;
 				t.has(r) || t.set(r, n);
 			}
 		});
 		let r = /* @__PURE__ */ new Set();
-		for (let e of Array.isArray(S) ? S : []) O(e) && k(e.x) && k(e.y) && k(e.level) && r.add(`${e.level},${e.x},${e.y}`);
+		for (let e of Array.isArray(b) ? b : []) A(e) && j(e.x) && j(e.y) && j(e.level) && r.add(`${e.level},${e.x},${e.y}`);
 		let i = (t, r) => {
-			let i = e, a = `${r} at (${t.x}, ${t.y}) on level ${t.level}`, s = o.get(D(i, t.level, 0, t.x, t.y)), c = o.get(D(i, t.level, 1, t.x, t.y));
+			let i = e, a = `${r} at (${t.x}, ${t.y}) on level ${t.level}`, s = o.get(k(i, t.level, 0, t.x, t.y)), c = o.get(k(i, t.level, 1, t.x, t.y));
 			s === void 0 ? n.push(`${a} has no floor tile.`) : s.blocks ? n.push(`${a} is on a floor that cannot be walked on.`) : c !== void 0 && c.blocks && n.push(`${a} is on a solid tile.`);
 		};
-		L.forEach((a, o) => {
-			if (N(n)) return;
+		E.forEach((a, o) => {
+			if (P(n)) return;
 			let s = `Portal ${o}`;
-			if (!F(a, s, n, ["toMap", "to"])) return;
-			let c = l && I(a, s, h, g, v, n), u = a;
-			j(u.toMap) || n.push(`${s}: toMap must be made of the characters a to z, 0 to 9 and "-" only.`);
-			let d = u.to, f = F(d, `${s} target`, n);
+			if (!I(a, s, n, ["toMap", "to"])) return;
+			let c = l && L(a, s, h, g, _, n), u = a;
+			ne(u.toMap) || n.push(`${s}: toMap must be made of the characters a to z, 0 to 9 and "-" only.`);
+			let d = u.to, f = I(d, `${s} target`, n);
 			if (f && (d.x < 0 || d.y < 0 || d.level < 0) && n.push(`${s} target: x, y and level cannot be negative.`), u.toMap !== e.name) return;
-			let p = `${a.level},${a.x},${a.y}`, _ = t.get(p);
-			if (_ !== void 0 && _ !== o && n.push(`${s} is on the same tile as portal ${_}.`), r.has(p) && n.push(`${s} is on a stairs tile.`), c && m && i(a, s), f) {
-				l && I(d, `${s} target`, h, g, v, n) && m && i(d, `${s} target`);
+			let p = `${a.level},${a.x},${a.y}`, v = t.get(p);
+			if (v !== void 0 && v !== o && n.push(`${s} is on the same tile as portal ${v}.`), r.has(p) && n.push(`${s} is on a stairs tile.`), c && m && i(a, s), f) {
+				l && L(d, `${s} target`, h, g, _, n) && m && i(d, `${s} target`);
 				let e = `${d.level},${d.x},${d.y}`;
 				r.has(e) && n.push(`${s} target: tile (${d.x}, ${d.y}) on level ${d.level} is a stairs tile.`), t.has(e) && n.push(`${s} target: tile (${d.x}, ${d.y}) on level ${d.level} is a portal tile.`);
 			}
 		});
 	}
-	let R = y.gates;
-	if (R !== void 0 && !Array.isArray(R)) n.push("markers.gates must be a list.");
-	else if (R !== void 0) {
+	let D = v.gates;
+	if (D !== void 0 && !Array.isArray(D)) n.push("markers.gates must be a list.");
+	else if (D !== void 0) {
 		let t = /* @__PURE__ */ new Set();
-		for (let e of [...Array.isArray(S) ? S : [], ...Array.isArray(L) ? L : []]) O(e) && k(e.x) && k(e.y) && k(e.level) && t.add(`${e.level},${e.x},${e.y}`);
+		for (let e of [...Array.isArray(b) ? b : [], ...Array.isArray(E) ? E : []]) A(e) && j(e.x) && j(e.y) && j(e.level) && t.add(`${e.level},${e.x},${e.y}`);
 		let r = [];
-		R.forEach((i, a) => {
-			if (N(n)) return;
+		D.forEach((i, a) => {
+			if (P(n)) return;
 			let s = `Gate ${a}`;
-			if (!F(i, s, n, ["to", "rooms"])) return;
+			if (!I(i, s, n, ["to", "rooms"])) return;
 			let c = i;
-			l && I(i, s, h, g, v, n) && m && o.get(D(e, i.level, 1, i.x, i.y))?.gate !== !0 && n.push(`${s} at (${i.x}, ${i.y}) on level ${i.level} has no gate tile under it.`);
+			l && L(i, s, h, g, _, n) && m && o.get(k(e, i.level, 1, i.x, i.y))?.gate !== !0 && n.push(`${s} at (${i.x}, ${i.y}) on level ${i.level} has no gate tile under it.`);
 			let u = c.to, d = 0;
 			!Array.isArray(u) || u.length === 0 ? n.push(`${s}: "to" must be a non-empty list of places.`) : (d = u.length, u.forEach((r, i) => {
 				let a = `${s} target ${i}`;
-				if (F(r, a, n)) {
-					if (l && I(r, a, h, g, v, n) && m) {
-						let t = `${a} at (${r.x}, ${r.y}) on level ${r.level}`, i = o.get(D(e, r.level, 0, r.x, r.y)), s = o.get(D(e, r.level, 1, r.x, r.y));
+				if (I(r, a, n)) {
+					if (l && L(r, a, h, g, _, n) && m) {
+						let t = `${a} at (${r.x}, ${r.y}) on level ${r.level}`, i = o.get(k(e, r.level, 0, r.x, r.y)), s = o.get(k(e, r.level, 1, r.x, r.y));
 						i === void 0 ? n.push(`${t} has no floor tile.`) : i.blocks ? n.push(`${t} is on a floor that cannot be walked on.`) : s !== void 0 && s.blocks && n.push(`${t} is on a solid tile.`);
 					}
 					t.has(`${r.level},${r.x},${r.y}`) && n.push(`${a}: tile (${r.x}, ${r.y}) on level ${r.level} is a stairs or portal tile.`);
@@ -4158,14 +4278,14 @@ function R(e, t, n, r, i, a) {
 				return;
 			}
 			d > 0 && f.length !== d && n.push(`${s}: "to" has ${d} places but "rooms" has ${f.length}.`);
-			let p = -1, _ = -1;
+			let p = -1, v = -1;
 			f.forEach((e, t) => {
 				let i = `${s} room ${t}`;
-				if (!O(e)) {
+				if (!A(e)) {
 					n.push(`${i} must be an object.`);
 					return;
 				}
-				P(e, [
+				F(e, [
 					"x0",
 					"y0",
 					"x1",
@@ -4173,7 +4293,7 @@ function R(e, t, n, r, i, a) {
 					"level"
 				], i, n);
 				let { x0: o, y0: c, x1: d, y1: f, level: m } = e;
-				if (!k(o) || !k(c) || !k(d) || !k(f) || !k(m)) {
+				if (!j(o) || !j(c) || !j(d) || !j(f) || !j(m)) {
 					n.push(`${i} must have whole numbers x0, y0, x1, y1 and level.`);
 					return;
 				}
@@ -4181,12 +4301,12 @@ function R(e, t, n, r, i, a) {
 					n.push(`${i} must have x0 not above x1 and y0 not above y1.`);
 					return;
 				}
-				if (l && (m < 0 || m >= v || o < 0 || c < 0 || d >= h || f >= g)) {
+				if (l && (m < 0 || m >= _ || o < 0 || c < 0 || d >= h || f >= g)) {
 					n.push(`${i} is outside the map.`);
 					return;
 				}
 				let y = Array.isArray(u) ? u[t] : void 0;
-				O(y) && k(y.x) && k(y.y) && k(y.level) && (y.level !== m || y.x < o || y.x > d || y.y < c || y.y > f) && n.push(`${s} target ${t} is outside its room.`), p === -1 ? (p = d - o, _ = f - c) : (d - o !== p || f - c !== _) && n.push(`${i} is not the same size as the first room of the gate.`);
+				A(y) && j(y.x) && j(y.y) && j(y.level) && (y.level !== m || y.x < o || y.x > d || y.y < c || y.y > f) && n.push(`${s} target ${t} is outside its room.`), p === -1 ? (p = d - o, v = f - c) : (d - o !== p || f - c !== v) && n.push(`${i} is not the same size as the first room of the gate.`);
 				let b = r.find((e) => e.level === m && o <= e.x1 && e.x0 <= d && c <= e.y1 && e.y0 <= f);
 				b !== void 0 && n.push(`${i} overlaps gate ${b.gate} room ${b.room}.`), r.push({
 					gate: a,
@@ -4200,32 +4320,32 @@ function R(e, t, n, r, i, a) {
 			});
 		});
 	}
-	let z = y.spawns;
-	if (z !== void 0 && !Array.isArray(z)) n.push("markers.spawns must be a list.");
-	else if (z !== void 0) {
+	let O = v.spawns;
+	if (O !== void 0 && !Array.isArray(O)) n.push("markers.spawns must be a list.");
+	else if (O !== void 0) {
 		let t = /* @__PURE__ */ new Map(), i = (e, n) => {
-			O(e) && k(e.x) && k(e.y) && k(e.level) && t.set(`${e.level},${e.x},${e.y}`, n);
+			A(e) && j(e.x) && j(e.y) && j(e.level) && t.set(`${e.level},${e.x},${e.y}`, n);
 		};
-		i(b, "the start tile");
-		for (let e of Array.isArray(L) ? L : []) i(e, "a portal tile");
-		for (let e of Array.isArray(S) ? S : []) i(e, "a stairs tile");
-		for (let e of Array.isArray(S) ? S : []) i(O(e) ? e.to : void 0, "a stairs landing");
-		for (let t of Array.isArray(L) ? L : []) i(O(t) && t.toMap === e.name ? t.to : void 0, "a portal landing");
-		for (let e of Array.isArray(R) ? R : []) for (let t of O(e) && Array.isArray(e.to) ? e.to : []) i(t, "a gate landing");
-		let a = y.zones !== void 0 && x(y.zones, Infinity, Infinity).length === 0 ? y.zones : [], s = /* @__PURE__ */ new Map();
-		z.forEach((e, t) => {
-			if (O(e) && k(e.x) && k(e.y) && k(e.level)) {
+		i(y, "the start tile");
+		for (let e of Array.isArray(E) ? E : []) i(e, "a portal tile");
+		for (let e of Array.isArray(b) ? b : []) i(e, "a stairs tile");
+		for (let e of Array.isArray(b) ? b : []) i(A(e) ? e.to : void 0, "a stairs landing");
+		for (let t of Array.isArray(E) ? E : []) i(A(t) && t.toMap === e.name ? t.to : void 0, "a portal landing");
+		for (let e of Array.isArray(D) ? D : []) for (let t of A(e) && Array.isArray(e.to) ? e.to : []) i(t, "a gate landing");
+		let a = v.zones !== void 0 && T(v.zones, Infinity, Infinity).length === 0 ? v.zones : [], s = /* @__PURE__ */ new Map();
+		O.forEach((e, t) => {
+			if (A(e) && j(e.x) && j(e.y) && j(e.level)) {
 				let n = `${e.level},${e.x},${e.y}`;
 				s.has(n) || s.set(n, t);
 			}
-		}), z.forEach((i, c) => {
-			if (N(n)) return;
+		}), O.forEach((i, c) => {
+			if (P(n)) return;
 			let u = `Spawn ${c}`;
-			if (!O(i)) {
+			if (!A(i)) {
 				n.push(`${u} must be an object.`);
 				return;
 			}
-			P(i, [
+			F(i, [
 				"kind",
 				"x",
 				"y",
@@ -4233,118 +4353,118 @@ function R(e, t, n, r, i, a) {
 				"facing"
 			], u, n);
 			let d = i.kind;
-			A(d) ? r !== void 0 && !r.includes(d) && n.push(`${u}: the kind "${d}" is not a known monster.`) : n.push(`${u}: kind must be a non-empty string.`);
+			M(d) ? r !== void 0 && !r.includes(d) && n.push(`${u}: the kind "${d}" is not a known monster.`) : n.push(`${u}: kind must be a non-empty string.`);
 			let f = i.facing;
-			f !== void 0 && !(k(f) && f >= 0 && f <= 3) && n.push(`${u} has a facing that is not 0 (down), 1 (left), 2 (right) or 3 (up).`);
-			let p = i.x, _ = i.y, y = i.level;
-			if (!k(p) || !k(_) || !k(y)) {
+			f !== void 0 && !(j(f) && f >= 0 && f <= 3) && n.push(`${u} has a facing that is not 0 (down), 1 (left), 2 (right) or 3 (up).`);
+			let p = i.x, v = i.y, y = i.level;
+			if (!j(p) || !j(v) || !j(y)) {
 				n.push(`${u} must have whole numbers x, y and level.`);
 				return;
 			}
-			let b = `${y},${p},${_}`, x = s.get(b);
-			if (x !== void 0 && x !== c && n.push(`${u} is on the same tile as spawn ${x}.`), !l || !I({
+			let b = `${y},${p},${v}`, x = s.get(b);
+			if (x !== void 0 && x !== c && n.push(`${u} is on the same tile as spawn ${x}.`), !l || !L({
 				x: p,
-				y: _,
+				y: v,
 				level: y
-			}, u, h, g, v, n)) return;
-			let S = `${u} at (${p}, ${_}) on level ${y}`;
+			}, u, h, g, _, n)) return;
+			let S = `${u} at (${p}, ${v}) on level ${y}`;
 			if (m) {
-				let t = e, r = o.get(D(t, y, 0, p, _)), i = o.get(D(t, y, 1, p, _));
+				let t = e, r = o.get(k(t, y, 0, p, v)), i = o.get(k(t, y, 1, p, v));
 				r === void 0 ? n.push(`${S} has no floor tile.`) : r.blocks ? n.push(`${S} is on a floor that cannot be walked on.`) : i !== void 0 && i.blocks && n.push(`${S} is on a solid tile.`);
 			}
 			let C = t.get(b);
 			C !== void 0 && n.push(`${S} is on ${C}.`);
-			let w = a.findIndex((e) => p >= e.area.x0 && p <= e.area.x1 && _ >= e.area.y0 && _ <= e.area.y1);
+			let w = a.findIndex((e) => p >= e.area.x0 && p <= e.area.x1 && v >= e.area.y0 && v <= e.area.y1);
 			w >= 0 && n.push(`${S} is inside protection zone ${w}, where a monster may not step.`);
 		});
 	}
-	let B = y.npcs;
-	if (B !== void 0 && !Array.isArray(B)) n.push("markers.npcs must be a list.");
-	else if (B !== void 0) {
+	let N = v.npcs;
+	if (N !== void 0 && !Array.isArray(N)) n.push("markers.npcs must be a list.");
+	else if (N !== void 0) {
 		let t = /* @__PURE__ */ new Map(), r = (e, n) => {
-			O(e) && k(e.x) && k(e.y) && k(e.level) && t.set(`${e.level},${e.x},${e.y}`, n);
+			A(e) && j(e.x) && j(e.y) && j(e.level) && t.set(`${e.level},${e.x},${e.y}`, n);
 		};
-		r(b, "the start tile");
-		for (let e of Array.isArray(L) ? L : []) r(e, "a portal tile");
-		for (let e of Array.isArray(S) ? S : []) r(e, "a stairs tile");
-		for (let e of Array.isArray(z) ? z : []) r(e, "the tile of a spawn");
-		for (let e of Array.isArray(T) ? T : []) r(e, "an arrival tile");
-		let a = Array.isArray(z) ? z.length : 0;
-		a > 481 && B.some((e) => O(e) && k(e.id) && e.id >= 500) && n.push(`The map has ${a} spawns and an NPC with an id of 500 or more: with more than 481 spawns the monster ids reach 500 and meet the NPC ids.`);
+		r(y, "the start tile");
+		for (let e of Array.isArray(E) ? E : []) r(e, "a portal tile");
+		for (let e of Array.isArray(b) ? b : []) r(e, "a stairs tile");
+		for (let e of Array.isArray(O) ? O : []) r(e, "the tile of a spawn");
+		for (let e of Array.isArray(C) ? C : []) r(e, "an arrival tile");
+		let a = Array.isArray(O) ? O.length : 0;
+		a > 481 && N.some((e) => A(e) && j(e.id) && e.id >= 500) && n.push(`The map has ${a} spawns and an NPC with an id of 500 or more: with more than 481 spawns the monster ids reach 500 and meet the NPC ids.`);
 		let s = /* @__PURE__ */ new Map(), c = /* @__PURE__ */ new Map();
-		B.forEach((e, t) => {
-			if (O(e) && k(e.x) && k(e.y) && k(e.level)) {
+		N.forEach((e, t) => {
+			if (A(e) && j(e.x) && j(e.y) && j(e.level)) {
 				let n = `${e.level},${e.x},${e.y}`;
 				s.has(n) || s.set(n, t);
 			}
-			O(e) && k(e.id) && !c.has(e.id) && c.set(e.id, t);
-		}), B.forEach((r, a) => {
-			if (N(n)) return;
+			A(e) && j(e.id) && !c.has(e.id) && c.set(e.id, t);
+		}), N.forEach((r, a) => {
+			if (P(n)) return;
 			let u = `NPC ${a}`;
-			if (!O(r)) {
+			if (!A(r)) {
 				n.push(`${u} must be an object.`);
 				return;
 			}
-			P(r, E, u, n);
+			F(r, te, u, n);
 			let d = r.id;
-			!k(d) || !(d >= 4 && d <= 18 || d >= 500 && d <= 999) ? n.push(`${u}: id must be a whole number from 4 to 18 or from 500 to 999 (1 to 3 are stand-ins, and monsters are numbered from 19 by spawn order).`) : c.get(d) !== a && n.push(`${u} has the same id as NPC ${c.get(d)}.`);
+			!j(d) || !(d >= 4 && d <= 18 || d >= 500 && d <= 999) ? n.push(`${u}: id must be a whole number from 4 to 18 or from 500 to 999 (1 to 3 are stand-ins, and monsters are numbered from 19 by spawn order).`) : c.get(d) !== a && n.push(`${u} has the same id as NPC ${c.get(d)}.`);
 			let f = r.kind;
-			A(f) ? i !== void 0 && f !== "trainer" && !i.includes(f) && n.push(`${u}: the kind "${f}" is not a known NPC.`) : n.push(`${u}: kind must be a non-empty string.`);
+			M(f) ? i !== void 0 && f !== "trainer" && !i.includes(f) && n.push(`${u}: the kind "${f}" is not a known NPC.`) : n.push(`${u}: kind must be a non-empty string.`);
 			let p = r.facing;
-			p !== void 0 && !(k(p) && p >= 0 && p <= 3) && n.push(`${u} has a facing that is not 0 (down), 1 (left), 2 (right) or 3 (up).`);
-			let _ = r.x, y = r.y, b = r.level;
-			if (!k(_) || !k(y) || !k(b)) {
+			p !== void 0 && !(j(p) && p >= 0 && p <= 3) && n.push(`${u} has a facing that is not 0 (down), 1 (left), 2 (right) or 3 (up).`);
+			let v = r.x, y = r.y, b = r.level;
+			if (!j(v) || !j(y) || !j(b)) {
 				n.push(`${u} must have whole numbers x, y and level.`);
 				return;
 			}
 			let x = r.push;
 			if (x !== void 0) {
 				if (f === "trainer") n.push(`${u}: the trainer cannot be pushed, so it has no push.`);
-				else if (!O(x)) n.push(`${u}: push must be an object.`);
+				else if (!A(x)) n.push(`${u}: push must be an object.`);
 				else {
-					P(x, [
+					F(x, [
 						"x0",
 						"y0",
 						"x1",
 						"y1"
 					], `${u} push`, n);
 					let { x0: e, y0: t, x1: r, y1: i } = x;
-					!k(e) || !k(t) || !k(r) || !k(i) ? n.push(`${u}: push needs whole numbers x0, y0, x1 and y1.`) : e > r || t > i ? n.push(`${u}: push must have x0 <= x1 and y0 <= y1.`) : l && (e < 0 || t < 0 || r >= h || i >= g) ? n.push(`${u}: push is not inside the map.`) : (_ < e || _ > r || y < t || y > i) && n.push(`${u}: push must contain the NPC's own tile.`);
+					!j(e) || !j(t) || !j(r) || !j(i) ? n.push(`${u}: push needs whole numbers x0, y0, x1 and y1.`) : e > r || t > i ? n.push(`${u}: push must have x0 <= x1 and y0 <= y1.`) : l && (e < 0 || t < 0 || r >= h || i >= g) ? n.push(`${u}: push is not inside the map.`) : (v < e || v > r || y < t || y > i) && n.push(`${u}: push must contain the NPC's own tile.`);
 				}
 			}
-			let S = `${b},${_},${y}`, C = s.get(S);
-			if (C !== void 0 && C !== a && n.push(`${u} is on the same tile as NPC ${C}.`), !l || !I({
-				x: _,
+			let S = `${b},${v},${y}`, C = s.get(S);
+			if (C !== void 0 && C !== a && n.push(`${u} is on the same tile as NPC ${C}.`), !l || !L({
+				x: v,
 				y,
 				level: b
-			}, u, h, g, v, n)) return;
-			let w = `${u} at (${_}, ${y}) on level ${b}`;
+			}, u, h, g, _, n)) return;
+			let w = `${u} at (${v}, ${y}) on level ${b}`;
 			if (m) {
-				let t = e, r = o.get(D(t, b, 0, _, y)), i = o.get(D(t, b, 1, _, y));
+				let t = e, r = o.get(k(t, b, 0, v, y)), i = o.get(k(t, b, 1, v, y));
 				r === void 0 ? n.push(`${w} has no floor tile.`) : r.blocks ? n.push(`${w} is on a floor that cannot be walked on.`) : i !== void 0 && i.blocks && n.push(`${w} is on a solid tile.`);
 			}
 			let T = t.get(S);
 			T !== void 0 && n.push(`${w} is on ${T}.`);
 		});
 	}
-	let V = y.things;
-	if (V !== void 0 && !Array.isArray(V)) {
+	let se = v.things;
+	if (se !== void 0 && !Array.isArray(se)) {
 		n.push("markers.things must be a list.");
 		return;
 	}
-	let H = /* @__PURE__ */ new Set();
-	for (let e of [...Array.isArray(S) ? S : [], ...Array.isArray(L) ? L : []]) O(e) && k(e.x) && k(e.y) && k(e.level) && H.add(`${e.level},${e.x},${e.y}`);
-	let U = [];
-	(Array.isArray(M) ? M : []).forEach((e, t) => {
-		let n = O(e) ? e.area : void 0;
-		O(n) && k(n.x0) && k(n.y0) && k(n.x1) && k(n.y1) && U.push({
+	let ce = /* @__PURE__ */ new Set();
+	for (let e of [...Array.isArray(b) ? b : [], ...Array.isArray(E) ? E : []]) A(e) && j(e.x) && j(e.y) && j(e.level) && ce.add(`${e.level},${e.x},${e.y}`);
+	let le = [];
+	(Array.isArray(w) ? w : []).forEach((e, t) => {
+		let n = A(e) ? e.area : void 0;
+		A(n) && j(n.x0) && j(n.y0) && j(n.x1) && j(n.y1) && le.push({
 			index: t,
 			x0: n.x0,
 			y0: n.y0,
 			x1: n.x1,
 			y1: n.y1
 		});
-	}), ne(V ?? [], {
+	}), ue(se ?? [], {
 		map: e,
 		known: o,
 		items: a,
@@ -4352,12 +4472,12 @@ function R(e, t, n, r, i, a) {
 		structureOk: m,
 		widthTiles: h,
 		heightTiles: g,
-		levelCount: v,
-		jumps: H,
-		areas: U
+		levelCount: _,
+		jumps: ce,
+		areas: le
 	}, n);
 }
-var z = {
+var le = {
 	north: [
 		0,
 		-1,
@@ -4379,12 +4499,12 @@ var z = {
 		"west"
 	]
 };
-function ne(e, t, n) {
+function ue(e, t, n) {
 	let { map: r, known: i } = t, a = (e, t, n) => `${e},${t},${n}`, o = /* @__PURE__ */ new Map(), s;
 	e.forEach((e, c) => {
-		if (N(n)) return;
+		if (P(n)) return;
 		let l = `Thing marker ${c}`;
-		if (!F(e, l, n, T.filter((e) => e !== "x" && e !== "y" && e !== "level"))) return;
+		if (!I(e, l, n, O.filter((e) => e !== "x" && e !== "y" && e !== "level"))) return;
 		if (s !== void 0) {
 			let t = e.level - s.point.level || e.y - s.point.y || e.x - s.point.x;
 			t === 0 ? n.push(`${l} is on the same tile as thing marker ${s.index}.`) : t < 0 && n.push(`${l} is out of order: thing markers are sorted by level, y, then x.`);
@@ -4394,8 +4514,8 @@ function ne(e, t, n) {
 			index: c
 		};
 		let u = e, d = u.movable, f = u.openable, p = u.shutterable, m = u.loot;
-		if (d !== void 0 && typeof d != "boolean" && n.push(`${l}: "movable" must be true or false.`), f !== void 0 && f !== !1 && n.push(`${l}: "openable" must be false when present.`), p !== void 0 && p !== !1 && n.push(`${l}: "shutterable" must be false when present.`), d === void 0 && f === void 0 && p === void 0 && m === void 0 && n.push(`${l} changes nothing: it needs "movable", "openable", "shutterable" or "loot".`), m !== void 0 && B(m, l, t.items, n), !t.sizeOk || !I(e, l, t.widthTiles, t.heightTiles, t.levelCount, n) || !t.structureOk) return;
-		let h = `${l} at (${e.x}, ${e.y}) on level ${e.level}`, g = i.get(D(r, e.level, 1, e.x, e.y));
+		if (d !== void 0 && typeof d != "boolean" && n.push(`${l}: "movable" must be true or false.`), f !== void 0 && f !== !1 && n.push(`${l}: "openable" must be false when present.`), p !== void 0 && p !== !1 && n.push(`${l}: "shutterable" must be false when present.`), d === void 0 && f === void 0 && p === void 0 && m === void 0 && n.push(`${l} changes nothing: it needs "movable", "openable", "shutterable" or "loot".`), m !== void 0 && de(m, l, t.items, n), !t.sizeOk || !L(e, l, t.widthTiles, t.heightTiles, t.levelCount, n) || !t.structureOk) return;
+		let h = `${l} at (${e.x}, ${e.y}) on level ${e.level}`, g = i.get(k(r, e.level, 1, e.x, e.y));
 		if (g === void 0) {
 			n.push(`${h} has no layer 1 tile under it.`);
 			return;
@@ -4408,7 +4528,7 @@ function ne(e, t, n) {
 			type: g
 		});
 		let v = g.movable === !0;
-		if (d === !0 && (g.opens !== void 0 || g.gate === !0 || g.depot === !0 || g.herb !== void 0 || g.node !== void 0 || g.quest === !0) ? n.push(`${h} cannot be movable: a door, window, gate, depot, herb, node or quest chest never moves.`) : d === !0 && t.jumps.has(_) ? n.push(`${h} is on a stairs or portal tile and cannot be movable.`) : typeof d == "boolean" && d === v && n.push(`${h}: "movable" is the tile type's own value and changes nothing.`), f === !1 && g.opens !== "window" && n.push(`${h}: "openable" is only for a window.`), p === !1 && (g.opens !== "window" || g.shutImage === void 0) && n.push(`${h}: "shutterable" is only for a window whose tile type has a "shutImage".`), m !== void 0) {
+		if (d === !0 && (g.opens !== void 0 || g.gate === !0 || g.depot === !0 || g.herb !== void 0 || g.node !== void 0 || g.quest === !0) ? n.push(`${h} cannot be movable: a door, window, gate, depot, herb, node or quest chest never moves.`) : d === !0 && t.jumps.has(_) ? n.push(`${h} is on a stairs or portal tile and cannot be movable.`) : typeof d == "boolean" && d === v && n.push(`${h}: "movable" is the tile type's own value and changes nothing.`), f === !1 && g.opens === void 0 && n.push(`${h}: "openable" is only for a window or a door.`), p === !1 && (g.opens !== "window" || g.shutImage === void 0) && n.push(`${h}: "shutterable" is only for a window whose tile type has a "shutImage".`), m !== void 0) {
 			if (g.container !== !0) n.push(`${h}: "loot" is only for a container.`);
 			else {
 				(typeof d == "boolean" ? d : v) && n.push(`${h}: a container with "loot" is never movable.`);
@@ -4422,8 +4542,8 @@ function ne(e, t, n) {
 		return typeof n == "boolean" ? n : t.movable === !0;
 	};
 	for (let { index: e, point: t, record: s, type: l } of o.values()) {
-		if (l.joined === void 0 || N(n)) continue;
-		let [u, d, f] = z[l.joined], p = i.get(D(r, t.level, 1, t.x + u, t.y + d));
+		if (l.joined === void 0 || P(n)) continue;
+		let [u, d, f] = le[l.joined], p = i.get(k(r, t.level, 1, t.x + u, t.y + d));
 		if (p?.joined !== f) continue;
 		let m = o.get(a(t.level, t.x + u, t.y + d));
 		m !== void 0 && m.index < e || c(s, l) !== c(m?.record, p) && n.push(`Thing marker ${e} at (${t.x}, ${t.y}) on level ${t.level}: both halves of a joined thing must have the same "movable" (the other half is at (${t.x + u}, ${t.y + d})).`);
@@ -4431,7 +4551,7 @@ function ne(e, t, n) {
 	let l = new Set([...i.values()].filter((e) => e.quest === !0).map((e) => e.id));
 	t.structureOk && l.size !== 0 && r.levels.forEach((e, t) => {
 		e.layers[1].forEach((e, i) => {
-			for (let s = 0; e !== null && s < e.length && !N(n); s += 1) {
+			for (let s = 0; e !== null && s < e.length && !P(n); s += 1) {
 				if (!l.has(e[s] ?? 0)) continue;
 				let c = i % r.widthChunks * 16 + s % 16, u = Math.floor(i / r.widthChunks) * 16 + Math.floor(s / 16);
 				o.get(a(t, c, u))?.record.loot === void 0 && n.push(`The quest chest at (${c}, ${u}) on level ${t} needs a thing marker with "loot".`);
@@ -4439,62 +4559,55 @@ function ne(e, t, n) {
 		});
 	});
 }
-function B(e, t, n, r) {
+function de(e, t, n, r) {
 	!Array.isArray(e) || e.length < 1 || e.length > 25 ? r.push(`${t}: "loot" must be a list of 1 to 25 stacks.`) : e.forEach((e, i) => {
 		let a = `${t} loot stack ${i}`;
-		if (!O(e)) {
+		if (!A(e)) {
 			r.push(`${a} must be an object with "item" and "count".`);
 			return;
 		}
-		P(e, ["item", "count"], a, r);
+		F(e, ["item", "count"], a, r);
 		let o = e.item, s = n?.find((e) => e.id === o);
-		A(o) ? n !== void 0 && s === void 0 && r.push(`${a}: the item "${o}" is not known.`) : r.push(`${a}: "item" must be the id of an item, a non-empty string.`);
+		M(o) ? n !== void 0 && s === void 0 && r.push(`${a}: the item "${o}" is not known.`) : r.push(`${a}: "item" must be the id of an item, a non-empty string.`);
 		let c = s?.stackLimit ?? 999, l = e.count;
-		(!k(l) || l < 1 || l > c) && r.push(`${a}: "count" must be a whole number from 1 to ${c}.`);
+		(!j(l) || l < 1 || l > c) && r.push(`${a}: "count" must be a whole number from 1 to ${c}.`);
 	});
 }
-// ../../packages/shared/src/convert.ts
-function V(e, t) {
-	return Math.floor((2 * e + t) / (2 * t));
-}
-function H(e, t) {
-	return V(e * t, 1e3);
-}
 // ../../packages/shared/src/boss.ts
-function U(e) {
+function fe(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function W(e) {
+function pe(e) {
 	return typeof e == "number" && Number.isInteger(e);
 }
-function G(e, t, n, r) {
+function me(e, t, n, r) {
 	for (let i of Object.keys(e)) t.includes(i) || r.push(`${n}: the key "${i}" is not part of the format.`);
 }
-function K(e, t, n, r, i, a) {
+function R(e, t, n, r, i, a) {
 	let o = e[t];
-	(!W(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
+	(!pe(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
 }
-function re(e, t, n) {
-	if (!U(e)) {
+function he(e, t, n) {
+	if (!fe(e)) {
 		n.push(`${t}: must be an object.`);
 		return;
 	}
-	G(e, [
+	me(e, [
 		"rangeTiles",
 		"recoveryMs",
 		"attacks"
-	], t, n), K(e, "rangeTiles", 1, 30, t, n), K(e, "recoveryMs", 0, 6e5, t, n);
+	], t, n), R(e, "rangeTiles", 1, 30, t, n), R(e, "recoveryMs", 0, 6e5, t, n);
 	let r = e.attacks;
 	if (!Array.isArray(r) || r.length !== 1) {
 		n.push(`${t}: "attacks" must be a list of exactly one attack.`);
 		return;
 	}
 	let i = `${t} attack 0`, a = r[0];
-	if (!U(a)) {
+	if (!fe(a)) {
 		n.push(`${i}: must be an object.`);
 		return;
 	}
-	G(a, [
+	me(a, [
 		"id",
 		"shape",
 		"length",
@@ -4503,82 +4616,82 @@ function re(e, t, n) {
 		"damage"
 	], i, n);
 	let o = a.id;
-	typeof o == "string" && /^[a-z0-9-]+$/.test(o) || n.push(`${i}: the id must be a non-empty string of lower case letters, digits and hyphens.`), a.shape !== "line" && n.push(`${i}: "shape" must be "line".`), K(a, "length", 1, 30, i, n);
+	typeof o == "string" && /^[a-z0-9-]+$/.test(o) || n.push(`${i}: the id must be a non-empty string of lower case letters, digits and hyphens.`), a.shape !== "line" && n.push(`${i}: "shape" must be "line".`), R(a, "length", 1, 30, i, n);
 	let s = a.width;
-	(!W(s) || s < 1 || s > 15 || s % 2 == 0) && n.push(`${i}: "width" must be an odd whole number from 1 to 15.`), K(a, "delayMs", 200, 6e4, i, n), K(a, "damage", 1, 1e5, i, n);
+	(!pe(s) || s < 1 || s > 15 || s % 2 == 0) && n.push(`${i}: "width" must be an odd whole number from 1 to 15.`), R(a, "delayMs", 200, 6e4, i, n), R(a, "damage", 1, 1e5, i, n);
 }
 // ../../packages/shared/src/step-time.ts
-var ie = 1e3;
+var ge = 1e3;
 // ../../packages/shared/src/monsters.ts
-function q(e) {
+function z(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function J(e) {
+function B(e) {
 	return typeof e == "number" && Number.isInteger(e);
 }
-function Y(e, t, n, r) {
+function V(e, t, n, r) {
 	for (let i of Object.keys(e)) t.includes(i) || r.push(`${n}: the key "${i}" is not part of the format.`);
 }
-function X(e, t, n, r, i, a) {
+function H(e, t, n, r, i, a) {
 	let o = e[t];
-	(!J(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
+	(!B(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
 }
-function ae(e, t, n, r) {
+function _e(e, t, n, r) {
 	Array.isArray(e) ? e.forEach((e, i) => {
 		let a = `${n} loot line ${i}`;
-		if (!q(e)) {
+		if (!z(e)) {
 			r.push(`${a} is not an object.`);
 			return;
 		}
-		Y(e, [
+		V(e, [
 			"item",
 			"chance",
 			"count",
 			"countMax"
 		], a, r);
 		let o = e.item;
-		if (typeof o != "string" || o === "" ? r.push(`${a}: "item" must be a non-empty string.`) : t !== void 0 && !t.items.some((e) => e.id === o) && r.push(`${a}: the item "${o}" is not in the items file.`), X(e, "chance", 1, 100, a, r), X(e, "count", 1, 999, a, r), e.countMax !== void 0) {
+		if (typeof o != "string" || o === "" ? r.push(`${a}: "item" must be a non-empty string.`) : t !== void 0 && !t.items.some((e) => e.id === o) && r.push(`${a}: the item "${o}" is not in the items file.`), H(e, "chance", 1, 100, a, r), H(e, "count", 1, 999, a, r), e.countMax !== void 0) {
 			let t = e.count;
-			X(e, "countMax", J(t) && t >= 1 ? t : 1, 999, a, r);
+			H(e, "countMax", B(t) && t >= 1 ? t : 1, 999, a, r);
 		}
 	}) : r.push(`${n}: "loot" must be a list.`);
 }
-function Z(e) {
+function ve(e) {
 	let t = e.loot, n = [];
-	if (Array.isArray(t)) for (let e of t) q(e) && typeof e.item == "string" && n.push(e.item);
+	if (Array.isArray(t)) for (let e of t) z(e) && typeof e.item == "string" && n.push(e.item);
 	return n;
 }
-function oe(e, t, n, r, i) {
+function ye(e, t, n, r, i) {
 	let a = e.rare;
-	if (!q(a)) {
+	if (!z(a)) {
 		i.push(`${r}: "rare" must be an object with "item".`);
 		return;
 	}
 	let o = `${r} rare`;
-	Y(a, ["item"], o, i);
+	V(a, ["item"], o, i);
 	let s = a.item;
 	if (typeof s != "string" || s === "") i.push(`${o}: "item" must be a non-empty string.`);
 	else {
-		n !== void 0 && !n.items.some((e) => e.id === s) && i.push(`${o}: the item "${s}" is not in the items file.`), Z(e).includes(s) || i.push(`${o}: the item "${s}" is not in its loot.`);
-		for (let n of t) q(n) && n !== e && Z(n).includes(s) && i.push(`${o}: the item "${s}" is also in the loot of monster "${String(n.id)}".`);
+		n !== void 0 && !n.items.some((e) => e.id === s) && i.push(`${o}: the item "${s}" is not in the items file.`), ve(e).includes(s) || i.push(`${o}: the item "${s}" is not in its loot.`);
+		for (let n of t) z(n) && n !== e && ve(n).includes(s) && i.push(`${o}: the item "${s}" is also in the loot of monster "${String(n.id)}".`);
 	}
 	let c = e.respawnMs, l = e.respawnMaxMs;
-	(!J(c) || !J(l) || l <= c) && i.push(`${r}: a rare monster needs "respawnMaxMs" above "respawnMs".`);
+	(!B(c) || !B(l) || l <= c) && i.push(`${r}: a rare monster needs "respawnMaxMs" above "respawnMs".`);
 }
-function se(e, t) {
+function be(e, t) {
 	let n = [];
-	if (!q(e)) return ["The monsters file is not an object."];
-	Y(e, ["format", "monsters"], "The monsters file", n), e.format !== 1 && n.push("The monsters file must have format 1.");
+	if (!z(e)) return ["The monsters file is not an object."];
+	V(e, ["format", "monsters"], "The monsters file", n), e.format !== 1 && n.push("The monsters file must have format 1.");
 	let r = e.monsters;
 	if (!Array.isArray(r)) return n.push("The monsters file must have a \"monsters\" list."), n;
 	let i = /* @__PURE__ */ new Set();
 	return r.forEach((e, a) => {
-		if (!q(e)) {
+		if (!z(e)) {
 			n.push(`Monster entry ${a} is not an object.`);
 			return;
 		}
 		let o = e.id, s = typeof o == "string" ? `monster "${o}"` : `monster entry ${a}`;
-		"speedTilesPerSecond" in e && n.push(`${s}: the key "speedTilesPerSecond" is not part of the format; use "speed" in points, 100 = a new player.`), Y(Object.fromEntries(Object.entries(e).filter(([e]) => e !== "speedTilesPerSecond")), [
+		"speedTilesPerSecond" in e && n.push(`${s}: the key "speedTilesPerSecond" is not part of the format; use "speed" in points, 100 = a new player.`), V(Object.fromEntries(Object.entries(e).filter(([e]) => e !== "speedTilesPerSecond")), [
 			"id",
 			"name",
 			"health",
@@ -4597,30 +4710,31 @@ function se(e, t) {
 			"boss",
 			"hide",
 			"nameColour",
-			"critChance"
-		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), X(e, "health", 1, 1e5, s, n), X(e, "speed", 1, ie, s, n);
+			"critChance",
+			"noticeTiles"
+		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), H(e, "health", 1, 1e5, s, n), H(e, "speed", 1, ge, s, n);
 		let c = e.body;
-		(!J(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
+		(!B(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
 		let l = e.damage;
-		if (q(l) ? (Y(l, ["min", "max"], `${s} damage`, n), X(l, "min", 0, 1e5, `${s} damage`, n), X(l, "max", 0, 1e5, `${s} damage`, n), J(l.min) && J(l.max) && l.min > l.max && n.push(`${s}: the damage "min" must not be above "max".`)) : n.push(`${s}: "damage" must be an object with "min" and "max".`), X(e, "attackIntervalMs", 50, 6e5, s, n), e.passive !== void 0 && e.passive !== !0 && n.push(`${s}: "passive" must be true when it is written.`), e.flees !== void 0 && e.flees !== "always" && e.flees !== "hurt" && n.push(`${s}: "flees" must be "always" or "hurt" when it is written.`), X(e, "leashTiles", 1, 100, s, n), X(e, "respawnMs", 0, 864e5, s, n), e.respawnMaxMs !== void 0) {
+		if (z(l) ? (V(l, ["min", "max"], `${s} damage`, n), H(l, "min", 0, 1e5, `${s} damage`, n), H(l, "max", 0, 1e5, `${s} damage`, n), B(l.min) && B(l.max) && l.min > l.max && n.push(`${s}: the damage "min" must not be above "max".`)) : n.push(`${s}: "damage" must be an object with "min" and "max".`), H(e, "attackIntervalMs", 50, 6e5, s, n), e.passive !== void 0 && e.passive !== !0 && n.push(`${s}: "passive" must be true when it is written.`), e.flees !== void 0 && e.flees !== "always" && e.flees !== "hurt" && n.push(`${s}: "flees" must be "always" or "hurt" when it is written.`), H(e, "leashTiles", 1, 100, s, n), H(e, "respawnMs", 0, 864e5, s, n), e.respawnMaxMs !== void 0) {
 			let t = e.respawnMs;
-			X(e, "respawnMaxMs", J(t) && t >= 0 ? t : 0, 864e5, s, n);
+			H(e, "respawnMaxMs", B(t) && t >= 0 ? t : 0, 864e5, s, n);
 		}
-		X(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && X(e, "critChance", 0, 100, s, n), e.loot !== void 0 && ae(e.loot, t, s, n), e.rare !== void 0 && oe(e, r, t, s, n), e.hide !== void 0 && ce(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && re(e.boss, `${s} boss`, n);
+		H(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && H(e, "critChance", 0, 100, s, n), e.noticeTiles !== void 0 && H(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && _e(e.loot, t, s, n), e.rare !== void 0 && ye(e, r, t, s, n), e.hide !== void 0 && xe(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && he(e.boss, `${s} boss`, n);
 	}), n;
 }
-function ce(e, t, n, r) {
-	if (!q(e)) {
+function xe(e, t, n, r) {
+	if (!z(e)) {
 		r.push(`${n} must be an object with "item" and "count".`);
 		return;
 	}
-	Y(e, ["item", "count"], n, r);
+	V(e, ["item", "count"], n, r);
 	let i = e.item;
-	(typeof i != "string" || t !== void 0 && !t.items.some((e) => e.id === i)) && r.push(`${n}: "item" must be the id of an item in the items file.`), X(e, "count", 1, 3, n, r);
+	(typeof i != "string" || t !== void 0 && !t.items.some((e) => e.id === i)) && r.push(`${n}: "item" must be the id of an item in the items file.`), H(e, "count", 1, 3, n, r);
 }
-H(12e4, 20), l.indexOf("amulet"), l.indexOf("amulet");
+f(12e4, 20), l.indexOf("amulet"), l.indexOf("amulet");
 // ../../packages/shared/src/house-floors.ts
-var le = {
+var Se = {
 	north: {
 		dx: 0,
 		dy: -1
@@ -4638,10 +4752,256 @@ var le = {
 		dy: 0
 	}
 };
-[...w.map((e) => le[e])];
+[...ee.map((e) => Se[e])];
+// ../../packages/shared/src/protocol.ts
+var Ce = 2147483647, we = 1048574, Te = 1023, Ee = ["local", "global"], De = [
+	"too-large",
+	"not-json",
+	"too-deep",
+	"forbidden-key",
+	"old-protocol",
+	"not-finite",
+	"too-long",
+	"too-many",
+	"not-object",
+	"unknown-type",
+	"missing-field",
+	"extra-field",
+	"wrong-type",
+	"out-of-range",
+	"bad-text",
+	"stale-seq",
+	"rate-limited",
+	"no-hello"
+], Oe = /^[A-Za-z0-9_-]+$/;
+function U(e, t) {
+	return {
+		ok: !1,
+		problem: e,
+		path: t
+	};
+}
+function W(e, t) {
+	return e === "" ? String(t) : `${e}.${t}`;
+}
+function ke(e) {
+	return typeof e == "object" && !!e && !Array.isArray(e);
+}
+var Ae = () => null;
+function G(e, t) {
+	return (n, r) => typeof n != "number" || !Number.isInteger(n) ? U("wrong-type", r) : n < e || n > t ? U("out-of-range", r) : null;
+}
+function je(e) {
+	for (let t = 0; t < e.length; t += 1) {
+		let n = e.charCodeAt(t);
+		if (n < 32 || n >= 127 && n <= 159) return !0;
+	}
+	return !1;
+}
+function Me(e, t) {
+	return (n, r) => typeof n == "string" ? n.length > e ? U("too-long", r) : n.length === 0 || je(n) || t !== void 0 && !t.test(n) ? U("bad-text", r) : null : U("wrong-type", r);
+}
+function K(e) {
+	return (t, n) => e.includes(t) ? null : e.some((e) => typeof e == typeof t) ? U("out-of-range", n) : U("wrong-type", n);
+}
+function Ne(e) {
+	return (t, n) => t === null ? null : e(t, n);
+}
+function Pe(e) {
+	return (t, n) => {
+		if (!Array.isArray(t)) return U("wrong-type", n);
+		for (let r = 0; r < t.length; r += 1) {
+			let i = e(t[r], W(n, r));
+			if (i !== null) return i;
+		}
+		return null;
+	};
+}
+var Fe = (e, t) => ke(e) ? null : U("wrong-type", t), Ie = (e, t) => typeof e == "string" ? null : U("wrong-type", t), Le = (e, t) => typeof e == "boolean" ? null : U("wrong-type", t);
+function Re(e, t) {
+	return (n, r) => {
+		if (!ke(n)) return U(r === "" ? "not-object" : "wrong-type", r);
+		for (let i of Object.keys(n)) if (!Object.hasOwn(e, i) && !Object.hasOwn(t, i)) return U("extra-field", W(r, i));
+		for (let [t, i] of Object.entries(e)) {
+			if (!Object.hasOwn(n, t)) return U("missing-field", W(r, t));
+			let e = i(n[t], W(r, t));
+			if (e !== null) return e;
+		}
+		for (let [e, i] of Object.entries(t)) {
+			let t = Object.hasOwn(n, e) ? i(n[e], W(r, e)) : null;
+			if (t !== null) return t;
+		}
+		return null;
+	};
+}
+function q(e, t) {
+	return Re(e, t);
+}
+function J(e, t) {
+	let n = /* @__PURE__ */ new Map();
+	for (let [r, i] of Object.entries(t)) n.set(r, Re({
+		[e]: Ae,
+		...i
+	}, {}));
+	return (t, r) => {
+		if (!ke(t)) return U(r === "" ? "not-object" : "wrong-type", r);
+		let i = t[e], a = typeof i == "string" ? n.get(i) : void 0;
+		return a === void 0 ? U("unknown-type", W(r, e)) : a(t, r);
+	};
+}
+var Y = G(1, we), ze = G(0, Te), Be = G(0, 24), Ve = G(0, 24), X = Me(64), Z = Re({
+	x: ze,
+	y: ze
+}, {}), He = G(1, 100), Ue = J("side", {
+	backpack: { slot: Be },
+	container: { slot: Ve },
+	worn: { slot: G(0, l.length - 1) },
+	ground: {
+		x: ze,
+		y: ze
+	}
+}), We = J("type", {
+	move: {
+		from: Be,
+		to: Be
+	},
+	active: { slot: G(0, 4) },
+	withdraw: {
+		from: Ve,
+		to: Be
+	},
+	deposit: {
+		from: Be,
+		to: Ve
+	},
+	arrange: {
+		from: Ve,
+		to: Ve
+	},
+	quickLoot: {},
+	close: {},
+	page: { page: G(0, p / 25 - 1) },
+	put: {
+		from: Ue,
+		to: Ue
+	},
+	enter: { place: Ue },
+	leave: {}
+}), Ge = J("type", {
+	buy: {
+		npc: Y,
+		item: X,
+		count: He
+	},
+	sell: {
+		npc: Y,
+		item: X,
+		count: He
+	}
+}), Ke = J("kind", {
+	item: {
+		from: Z,
+		to: Z
+	},
+	npc: {
+		npc: Y,
+		to: Z
+	},
+	thing: {
+		from: Z,
+		to: Z
+	},
+	corpse: {
+		from: Z,
+		to: Z
+	}
+}), qe = q({
+	seq: G(1, Ce),
+	dir: G(0, 16)
+}, {
+	face: G(0, 3),
+	action: X,
+	choice: X,
+	target: Ne(Y),
+	stance: K(["sword", "shield"]),
+	inventory: We,
+	profession: X,
+	talk: q({
+		npc: Y,
+		choice: X
+	}, {}),
+	trade: Ge,
+	merge: q({
+		npc: Y,
+		kind: X
+	}, {}),
+	houseList: q({
+		op: K(["add", "remove"]),
+		list: K(u),
+		name: X
+	}, {}),
+	houseEdit: q({ kind: K([
+		"wall",
+		"door",
+		"window",
+		"remove",
+		"stairs"
+	]) }, { joint: G(0, 5) }),
+	shove: Ke,
+	respawn: K([!0])
+}), Je = J("type", {
+	outfit: { id: X },
+	companion: { kind: X },
+	claimDaily: {},
+	pickRest: {
+		activity: K(Object.keys({
+			training: !0,
+			hunting: !0,
+			gathering: !0
+		})),
+		hours: G(1, 72)
+	}
+});
+J("type", {
+	hello: {
+		token: Me(128, Oe),
+		protocol: G(1, Ce)
+	},
+	input: { input: qe },
+	say: {
+		channel: K(Ee),
+		text: Me(200)
+	},
+	ping: {},
+	command: { command: Je }
+});
+var Q = G(0, 2 ** 53 - 1);
+J("type", {
+	welcome: {
+		protocol: Q,
+		content: Ie,
+		playerId: Q,
+		tick: Q,
+		tickHz: Q
+	},
+	snapshot: {
+		ack: Q,
+		state: Fe,
+		whole: Le,
+		creatures: Pe(Fe),
+		gone: Pe(Q)
+	},
+	chat: {
+		from: Ie,
+		channel: K(Ee),
+		text: Ie
+	},
+	pong: {},
+	refused: { problem: K(De) }
+});
 // src/live/live-read.ts
-var ue = 3;
-function de(e, t) {
+var Ye = 3;
+function Xe(e, t) {
 	try {
 		return {
 			ok: !0,
@@ -4654,25 +5014,25 @@ function de(e, t) {
 		};
 	}
 }
-function Q(e, t) {
-	return `${e} cannot be used: ${t.slice(0, ue).join(" ")}`;
+function Ze(e, t) {
+	return `${e} cannot be used: ${t.slice(0, Ye).join(" ")}`;
 }
-function fe(e, t) {
+function Qe(e, t) {
 	let r = {};
 	for (let t of n) {
-		let n = de(t, e[t]);
+		let n = Xe(t, e[t]);
 		if (!n.ok) return n;
 		r[t] = n.value;
 	}
-	let i = se(r["monsters.json"], t.items);
+	let i = be(r["monsters.json"], t.items);
 	if (i.length > 0) return {
 		ok: !1,
-		reason: Q("monsters.json", i)
+		reason: Ze("monsters.json", i)
 	};
-	let a = r["monsters.json"], o = L(r["maps/test.json"], r["tiles.json"], a.monsters.map((e) => e.id), t.npcs.npcs.map((e) => e.id));
+	let a = r["monsters.json"], o = se(r["maps/test.json"], r["tiles.json"], a.monsters.map((e) => e.id), t.npcs.npcs.map((e) => e.id), t.items.items);
 	return o.length > 0 ? {
 		ok: !1,
-		reason: Q("The live map", o)
+		reason: Ze("The live map", o)
 	} : {
 		ok: !0,
 		files: {
@@ -4683,7 +5043,7 @@ function fe(e, t) {
 	};
 }
 // src/live/live-payload.ts
-var pe = "test", me = "Live map save ", he = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, ge = /^[A-Za-z0-9+/]+={0,2}$/, _e = /^[0-9a-f]{16}$/, ve = /^[0-9A-Za-z._-]{1,64}$/, ye = /[\p{C}\p{Zl}\p{Zp}]/u, be = [
+var $e = "test", et = "Live map save ", tt = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, nt = /^[A-Za-z0-9+/]+={0,2}$/, rt = /^[0-9a-f]{16}$/, it = /^[0-9A-Za-z._-]{1,64}$/, at = /[\p{C}\p{Zl}\p{Zp}]/u, ot = [
 	"format",
 	"expectedRev",
 	"build",
@@ -4691,8 +5051,8 @@ var pe = "test", me = "Live map save ", he = /^gravia-live-save 1 sha256=([0-9a-
 	"nonce",
 	"note",
 	"files"
-], xe = "the save is too big for one GitHub issue";
-function Se(e) {
+], st = "the save is too big for one GitHub issue";
+function ct(e) {
 	return Uint8Array.from(atob(e), (e) => e.charCodeAt(0));
 }
 function $(e) {
@@ -4702,44 +5062,44 @@ function $(e) {
 		reason: e
 	};
 }
-function Ce(e) {
-	if (e.length > 60200) return $(xe);
+function lt(e) {
+	if (e.length > 60200) return $(st);
 	let t = e.split("\n");
 	if (t.length !== 2) return $("the body must be a header line and one data line");
-	let n = he.exec(t[0]);
+	let n = tt.exec(t[0]);
 	if (n === null) return $("the header line is not \"gravia-live-save 1 sha256=<hex>\"");
 	let r = t[1];
-	return !ge.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
+	return !nt.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
 		ok: !0,
 		sha256: n[1],
 		base64: r
 	};
 }
-function we(e) {
+function ut(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function Te(e) {
+function dt(e) {
 	let t;
 	try {
 		t = JSON.parse(e);
 	} catch {
 		return $("the payload is not valid JSON");
 	}
-	if (!we(t)) return $("the payload is not a JSON object");
-	for (let e of Object.keys(t)) if (!be.includes(e)) return $(`unknown key "${e}"`);
+	if (!ut(t)) return $("the payload is not a JSON object");
+	for (let e of Object.keys(t)) if (!ot.includes(e)) return $(`unknown key "${e}"`);
 	if (t.format !== 1) return $("format must be 1");
 	let { expectedRev: r, build: i, savedAt: o, nonce: s, files: c } = t;
 	if (typeof r != "number" || !Number.isInteger(r) || r < 1) return $("expectedRev must be a positive whole number");
-	if (typeof i != "string" || !ve.test(i)) return $("build is not a build id");
+	if (typeof i != "string" || !it.test(i)) return $("build is not a build id");
 	if (typeof o != "string" || !a.test(o) || Number.isNaN(Date.parse(o))) return $("savedAt must be an ISO 8601 UTC time");
-	if (typeof s != "string" || !_e.test(s)) return $("nonce must be 16 hex characters");
+	if (typeof s != "string" || !rt.test(s)) return $("nonce must be 16 hex characters");
 	if (Object.hasOwn(t, "note")) {
 		let e = t.note;
 		if (typeof e != "string") return $("note must be a string");
 		if (Array.from(e).length > 200) return $("note is over 200 characters");
-		if (ye.test(e)) return $("note has a character that cannot be shown");
+		if (at.test(e)) return $("note has a character that cannot be shown");
 	}
-	if (!we(c)) return $("files must be an object");
+	if (!ut(c)) return $("files must be an object");
 	for (let e of Object.keys(c)) if (!n.includes(e)) return $(`unknown file "${e}"`);
 	let l = {};
 	for (let e of n) {
@@ -4760,12 +5120,12 @@ function Te(e) {
 		payload: u
 	};
 }
-async function Ee(e, t, n = c) {
-	let r = Ce(e);
+async function ft(e, t, n = c) {
+	let r = lt(e);
 	if (!r.ok) return r;
 	let i;
 	try {
-		let e = await t(Se(r.base64));
+		let e = await t(ct(r.base64));
 		i = new TextDecoder("utf-8", {
 			fatal: !0,
 			ignoreBOM: !0
@@ -4773,9 +5133,9 @@ async function Ee(e, t, n = c) {
 	} catch {
 		return $("the data is not valid compressed text");
 	}
-	return await n(i) === r.sha256 ? Te(i) : $("the sha-256 of the payload differs from the header");
+	return await n(i) === r.sha256 ? dt(i) : $("the sha-256 of the payload differs from the header");
 }
-function De(e, t) {
+function pt(e, t) {
 	let n = t.getTime() - Date.parse(e);
 	return Number.isNaN(n) || n > 18e5 ? {
 		ok: !1,
@@ -4783,22 +5143,22 @@ function De(e, t) {
 		reason: "the save waited too long for the checker and is not applied"
 	} : { ok: !0 };
 }
-function Oe(e, t) {
-	let n = fe(e.files, t);
+function mt(e, t) {
+	let n = Qe(e.files, t);
 	return n.ok ? n.files.map.name === "test" ? {
 		ok: !0,
 		...n.files
 	} : {
 		ok: !1,
 		verdict: "invalid",
-		reason: `The live map is named "${pe}" and cannot be renamed.`
+		reason: `The live map is named "${$e}" and cannot be renamed.`
 	} : {
 		ok: !1,
 		verdict: "invalid",
 		reason: n.reason
 	};
 }
-async function ke(e, t, r, i = c) {
+async function ht(e, t, r, i = c) {
 	let a = {};
 	for (let t of n) a[t] = await i(e.files[t]);
 	if (n.every((e) => a[e] === t.files[e])) return {
@@ -4814,7 +5174,7 @@ async function ke(e, t, r, i = c) {
 		}
 	};
 	let o = {
-		format: 1,
+		format: 2,
 		rev: t.rev + 1,
 		savedAt: r.toISOString(),
 		by: "mapmaker",
@@ -4826,8 +5186,8 @@ async function ke(e, t, r, i = c) {
 	};
 }
 // src/live/live-check-entry.ts
-var Ae = {
+var gt = {
 	items: e,
 	npcs: t
 };
-export { me as LIVE_TITLE_PREFIX, Oe as checkLivePayload, De as checkLivePayloadAge, Ee as decodeLivePayload, Ae as known, ke as nextManifest, s as parseLiveManifest, Ce as splitLiveBody };
+export { et as LIVE_TITLE_PREFIX, mt as checkLivePayload, pt as checkLivePayloadAge, ft as decodeLivePayload, gt as known, ht as nextManifest, s as parseLiveManifest, lt as splitLiveBody };

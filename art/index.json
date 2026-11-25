@@ -426,6 +426,26 @@
       "width": 64,
       "height": 64
     },
+    "door-behind-north": {
+      "file": "door-behind-north.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-behind-east": {
+      "file": "door-behind-east.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-behind-south": {
+      "file": "door-behind-south.png",
+      "width": 64,
+      "height": 64
+    },
+    "door-behind-west": {
+      "file": "door-behind-west.png",
+      "width": 64,
+      "height": 64
+    },
     "house-stairs": {
       "file": "house-stairs.png",
       "width": 64,
@@ -519,7 +539,7 @@
     "tree-top": {
       "file": "tree-top.png",
       "width": 96,
-      "height": 32
+      "height": 64
     },
     "tree-trunk": {
       "file": "tree-trunk.png",
@@ -2009,7 +2029,7 @@
     "birch-top": {
       "file": "birch-top.png",
       "width": 96,
-      "height": 32
+      "height": 64
     },
     "birch-trunk": {
       "file": "birch-trunk.png",
@@ -2263,6 +2283,11 @@
     },
     "crate": {
       "file": "crate.png",
+      "width": 32,
+      "height": 32
+    },
+    "counter": {
+      "file": "counter.png",
       "width": 32,
       "height": 32
     },
@@ -3575,6 +3600,226 @@
       "file": "ore-vein.png",
       "width": 32,
       "height": 32
+    },
+    "mountain-wall-h": {
+      "file": "mountain-wall-h.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-wall-v": {
+      "file": "mountain-wall-v.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-wall-corner": {
+      "file": "mountain-wall-corner.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-wall-post": {
+      "file": "mountain-wall-post.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-stairs": {
+      "file": "mountain-stairs.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-stairs-east": {
+      "file": "mountain-stairs-east.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-stairs-south": {
+      "file": "mountain-stairs-south.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-stairs-west": {
+      "file": "mountain-stairs-west.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-floor": {
+      "file": "mountain-floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "mountain-floor-2": {
+      "file": "mountain-floor-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "mountain-path": {
+      "file": "mountain-path.png",
+      "width": 32,
+      "height": 32
+    },
+    "mountain-stones": {
+      "file": "mountain-stones.png",
+      "width": 32,
+      "height": 32
+    },
+    "mountain-stones-2": {
+      "file": "mountain-stones-2.png",
+      "width": 32,
+      "height": 32
+    },
+    "mountain-door-h-closed": {
+      "file": "mountain-door-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-door-h-open": {
+      "file": "mountain-door-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-door-v-closed": {
+      "file": "mountain-door-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-door-v-open": {
+      "file": "mountain-door-v-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-window-h-closed": {
+      "file": "mountain-window-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-window-h-open": {
+      "file": "mountain-window-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-window-v-closed": {
+      "file": "mountain-window-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "mountain-window-v-open": {
+      "file": "mountain-window-v-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-wall-h": {
+      "file": "cave-wall-h.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-wall-v": {
+      "file": "cave-wall-v.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-wall-corner": {
+      "file": "cave-wall-corner.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-wall-post": {
+      "file": "cave-wall-post.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-floor-earth": {
+      "file": "cave-floor-earth.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-floor-rock": {
+      "file": "cave-floor-rock.png",
+      "width": 32,
+      "height": 32
+    },
+    "dungeon-floor": {
+      "file": "dungeon-floor.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-stairs": {
+      "file": "cave-stairs.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-stairwell": {
+      "file": "cave-stairwell.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-stairs-east": {
+      "file": "cave-stairs-east.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-stairwell-east": {
+      "file": "cave-stairwell-east.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-stairs-south": {
+      "file": "cave-stairs-south.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-stairwell-south": {
+      "file": "cave-stairwell-south.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-stairs-west": {
+      "file": "cave-stairs-west.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-stairwell-west": {
+      "file": "cave-stairwell-west.png",
+      "width": 32,
+      "height": 32
+    },
+    "cave-door-h-closed": {
+      "file": "cave-door-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-door-h-open": {
+      "file": "cave-door-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-door-v-closed": {
+      "file": "cave-door-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-door-v-open": {
+      "file": "cave-door-v-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-window-h-closed": {
+      "file": "cave-window-h-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-window-h-open": {
+      "file": "cave-window-h-open.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-window-v-closed": {
+      "file": "cave-window-v-closed.png",
+      "width": 64,
+      "height": 64
+    },
+    "cave-window-v-open": {
+      "file": "cave-window-v-open.png",
+      "width": 64,
+      "height": 64
     },
     "table-top": {
       "file": "table-top.png",

@@ -1,11 +1,11 @@
 {
-  "format": 1,
-  "rev": 3,
-  "savedAt": "2026-11-24T10:40:26.715Z",
-  "by": "mapmaker",
+  "format": 2,
+  "rev": 5,
+  "savedAt": "2026-11-25T18:26:19.440Z",
+  "by": "script",
   "files": {
-    "maps/test.json": "eb821930ab3629f615d29f1c57bfec0dfb02b3b23f857f6255a4794ebec45bc5",
-    "tiles.json": "27c94479a725079308925810c02a0cde0d4d3c4bef422695b679d37961a8795e",
+    "maps/test.json": "b4f5faa578f4fc65678bd13b3ef5a40bf523c9bd110bdcb6b02be4da7311d009",
+    "tiles.json": "fc9774437a3ca39215e5ca16dbd30a6e8d38cfe02a163133817fc6f83c40460d",
     "monsters.json": "f6eaf357c47af5555c996b08c18e859e656ff7806d266c12299390960b33e99c"
   }
 }

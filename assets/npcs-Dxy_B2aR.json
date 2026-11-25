@@ -188,6 +188,25 @@
       "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5, "rent": { "gold": 1, "reminderDays": 3 } }
     },
     {
+      "id": "house-guide",
+      "name": "House guide",
+      "line": "Welcome, look around as you like, but please touch nothing. This house is for sale for {price} gold.",
+      "choices": [
+        { "id": "buy", "text": "I will buy it ({price} gold).", "effect": "house-buy", "next": "sold" },
+        { "id": "bye", "text": "Just looking.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "sold",
+          "line": "It is yours now. The house agent will look after it.",
+          "choices": [
+            { "id": "sold-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ],
+      "houseGuide": true
+    },
+    {
       "id": "boatman",
       "name": "Boatman",
       "line": "The boat leaves in {departure}.",
@@ -948,7 +967,7 @@
         },
         {
           "id": "house",
-          "line": "Find a house with a sign for sale, stand before it and use the sign. The price is taken from your backpack.",
+          "line": "A house nobody owns keeps its door open: step inside and talk to the house guide, from 8:00 to 20:00. The price is taken from your backpack.",
           "choices": [
             { "id": "inside", "text": "And inside?", "effect": "say", "next": "inside" },
             { "id": "house-back", "text": "Thank you.", "effect": "say" }
