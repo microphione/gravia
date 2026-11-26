@@ -4621,11 +4621,11 @@ function pe(e) {
 function me(e, t, n, r) {
 	for (let i of Object.keys(e)) t.includes(i) || r.push(`${n}: the key "${i}" is not part of the format.`);
 }
-function R(e, t, n, r, i, a) {
+function he(e, t, n, r, i, a) {
 	let o = e[t];
 	(!pe(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
 }
-function he(e, t, n) {
+function ge(e, t, n) {
 	if (!fe(e)) {
 		n.push(`${t}: must be an object.`);
 		return;
@@ -4634,7 +4634,7 @@ function he(e, t, n) {
 		"rangeTiles",
 		"recoveryMs",
 		"attacks"
-	], t, n), R(e, "rangeTiles", 1, 30, t, n), R(e, "recoveryMs", 0, 6e5, t, n);
+	], t, n), he(e, "rangeTiles", 1, 30, t, n), he(e, "recoveryMs", 0, 6e5, t, n);
 	let r = e.attacks;
 	if (!Array.isArray(r) || r.length !== 1) {
 		n.push(`${t}: "attacks" must be a list of exactly one attack.`);
@@ -4654,82 +4654,82 @@ function he(e, t, n) {
 		"damage"
 	], i, n);
 	let o = a.id;
-	typeof o == "string" && /^[a-z0-9-]+$/.test(o) || n.push(`${i}: the id must be a non-empty string of lower case letters, digits and hyphens.`), a.shape !== "line" && n.push(`${i}: "shape" must be "line".`), R(a, "length", 1, 30, i, n);
+	typeof o == "string" && /^[a-z0-9-]+$/.test(o) || n.push(`${i}: the id must be a non-empty string of lower case letters, digits and hyphens.`), a.shape !== "line" && n.push(`${i}: "shape" must be "line".`), he(a, "length", 1, 30, i, n);
 	let s = a.width;
-	(!pe(s) || s < 1 || s > 15 || s % 2 == 0) && n.push(`${i}: "width" must be an odd whole number from 1 to 15.`), R(a, "delayMs", 200, 6e4, i, n), R(a, "damage", 1, 1e5, i, n);
+	(!pe(s) || s < 1 || s > 15 || s % 2 == 0) && n.push(`${i}: "width" must be an odd whole number from 1 to 15.`), he(a, "delayMs", 200, 6e4, i, n), he(a, "damage", 1, 1e5, i, n);
 }
 // ../../packages/shared/src/step-time.ts
-var ge = 1e3;
+var _e = 1e3;
 // ../../packages/shared/src/monsters.ts
-function z(e) {
+function R(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function B(e) {
+function z(e) {
 	return typeof e == "number" && Number.isInteger(e);
 }
-function V(e, t, n, r) {
+function B(e, t, n, r) {
 	for (let i of Object.keys(e)) t.includes(i) || r.push(`${n}: the key "${i}" is not part of the format.`);
 }
-function H(e, t, n, r, i, a) {
+function V(e, t, n, r, i, a) {
 	let o = e[t];
-	(!B(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
+	(!z(o) || o < n || o > r) && a.push(`${i}: "${t}" must be a whole number from ${n} to ${r}.`);
 }
-function _e(e, t, n, r) {
+function ve(e, t, n, r) {
 	Array.isArray(e) ? e.forEach((e, i) => {
 		let a = `${n} loot line ${i}`;
-		if (!z(e)) {
+		if (!R(e)) {
 			r.push(`${a} is not an object.`);
 			return;
 		}
-		V(e, [
+		B(e, [
 			"item",
 			"chance",
 			"count",
 			"countMax"
 		], a, r);
 		let o = e.item;
-		if (typeof o != "string" || o === "" ? r.push(`${a}: "item" must be a non-empty string.`) : t !== void 0 && !t.items.some((e) => e.id === o) && r.push(`${a}: the item "${o}" is not in the items file.`), H(e, "chance", 1, 100, a, r), H(e, "count", 1, 999, a, r), e.countMax !== void 0) {
+		if (typeof o != "string" || o === "" ? r.push(`${a}: "item" must be a non-empty string.`) : t !== void 0 && !t.items.some((e) => e.id === o) && r.push(`${a}: the item "${o}" is not in the items file.`), V(e, "chance", 1, 100, a, r), V(e, "count", 1, 999, a, r), e.countMax !== void 0) {
 			let t = e.count;
-			H(e, "countMax", B(t) && t >= 1 ? t : 1, 999, a, r);
+			V(e, "countMax", z(t) && t >= 1 ? t : 1, 999, a, r);
 		}
 	}) : r.push(`${n}: "loot" must be a list.`);
 }
-function ve(e) {
+function ye(e) {
 	let t = e.loot, n = [];
-	if (Array.isArray(t)) for (let e of t) z(e) && typeof e.item == "string" && n.push(e.item);
+	if (Array.isArray(t)) for (let e of t) R(e) && typeof e.item == "string" && n.push(e.item);
 	return n;
 }
-function ye(e, t, n, r, i) {
+function be(e, t, n, r, i) {
 	let a = e.rare;
-	if (!z(a)) {
+	if (!R(a)) {
 		i.push(`${r}: "rare" must be an object with "item".`);
 		return;
 	}
 	let o = `${r} rare`;
-	V(a, ["item"], o, i);
+	B(a, ["item"], o, i);
 	let s = a.item;
 	if (typeof s != "string" || s === "") i.push(`${o}: "item" must be a non-empty string.`);
 	else {
-		n !== void 0 && !n.items.some((e) => e.id === s) && i.push(`${o}: the item "${s}" is not in the items file.`), ve(e).includes(s) || i.push(`${o}: the item "${s}" is not in its loot.`);
-		for (let n of t) z(n) && n !== e && ve(n).includes(s) && i.push(`${o}: the item "${s}" is also in the loot of monster "${String(n.id)}".`);
+		n !== void 0 && !n.items.some((e) => e.id === s) && i.push(`${o}: the item "${s}" is not in the items file.`), ye(e).includes(s) || i.push(`${o}: the item "${s}" is not in its loot.`);
+		for (let n of t) R(n) && n !== e && ye(n).includes(s) && i.push(`${o}: the item "${s}" is also in the loot of monster "${String(n.id)}".`);
 	}
 	let c = e.respawnMs, l = e.respawnMaxMs;
-	(!B(c) || !B(l) || l <= c) && i.push(`${r}: a rare monster needs "respawnMaxMs" above "respawnMs".`);
+	(!z(c) || !z(l) || l <= c) && i.push(`${r}: a rare monster needs "respawnMaxMs" above "respawnMs".`);
 }
-function be(e, t) {
+function xe(e, t) {
 	let n = [];
-	if (!z(e)) return ["The monsters file is not an object."];
-	V(e, ["format", "monsters"], "The monsters file", n), e.format !== 1 && n.push("The monsters file must have format 1.");
+	if (!R(e)) return ["The monsters file is not an object."];
+	B(e, ["format", "monsters"], "The monsters file", n), e.format !== 1 && n.push("The monsters file must have format 1.");
 	let r = e.monsters;
 	if (!Array.isArray(r)) return n.push("The monsters file must have a \"monsters\" list."), n;
 	let i = /* @__PURE__ */ new Set();
 	return r.forEach((e, a) => {
-		if (!z(e)) {
+		if (!R(e)) {
 			n.push(`Monster entry ${a} is not an object.`);
 			return;
 		}
 		let o = e.id, s = typeof o == "string" ? `monster "${o}"` : `monster entry ${a}`;
-		"speedTilesPerSecond" in e && n.push(`${s}: the key "speedTilesPerSecond" is not part of the format; use "speed" in points, 100 = a new player.`), V(Object.fromEntries(Object.entries(e).filter(([e]) => e !== "speedTilesPerSecond")), [
+		"speedTilesPerSecond" in e && n.push(`${s}: the key "speedTilesPerSecond" is not part of the format; use "speed" in points, 100 = a new player.`), B(Object.fromEntries(Object.entries(e).filter(([e]) => e !== "speedTilesPerSecond")), [
 			"id",
 			"name",
 			"health",
@@ -4750,29 +4750,29 @@ function be(e, t) {
 			"nameColour",
 			"critChance",
 			"noticeTiles"
-		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), H(e, "health", 1, 1e5, s, n), H(e, "speed", 1, ge, s, n);
+		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), V(e, "health", 1, 1e5, s, n), V(e, "speed", 1, _e, s, n);
 		let c = e.body;
-		(!B(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
+		(!z(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
 		let l = e.damage;
-		if (z(l) ? (V(l, ["min", "max"], `${s} damage`, n), H(l, "min", 0, 1e5, `${s} damage`, n), H(l, "max", 0, 1e5, `${s} damage`, n), B(l.min) && B(l.max) && l.min > l.max && n.push(`${s}: the damage "min" must not be above "max".`)) : n.push(`${s}: "damage" must be an object with "min" and "max".`), H(e, "attackIntervalMs", 50, 6e5, s, n), e.passive !== void 0 && e.passive !== !0 && n.push(`${s}: "passive" must be true when it is written.`), e.flees !== void 0 && e.flees !== "always" && e.flees !== "hurt" && n.push(`${s}: "flees" must be "always" or "hurt" when it is written.`), H(e, "leashTiles", 1, 100, s, n), H(e, "respawnMs", 0, 864e5, s, n), e.respawnMaxMs !== void 0) {
+		if (R(l) ? (B(l, ["min", "max"], `${s} damage`, n), V(l, "min", 0, 1e5, `${s} damage`, n), V(l, "max", 0, 1e5, `${s} damage`, n), z(l.min) && z(l.max) && l.min > l.max && n.push(`${s}: the damage "min" must not be above "max".`)) : n.push(`${s}: "damage" must be an object with "min" and "max".`), V(e, "attackIntervalMs", 50, 6e5, s, n), e.passive !== void 0 && e.passive !== !0 && n.push(`${s}: "passive" must be true when it is written.`), e.flees !== void 0 && e.flees !== "always" && e.flees !== "hurt" && n.push(`${s}: "flees" must be "always" or "hurt" when it is written.`), V(e, "leashTiles", 1, 100, s, n), V(e, "respawnMs", 0, 864e5, s, n), e.respawnMaxMs !== void 0) {
 			let t = e.respawnMs;
-			H(e, "respawnMaxMs", B(t) && t >= 0 ? t : 0, 864e5, s, n);
+			V(e, "respawnMaxMs", z(t) && t >= 0 ? t : 0, 864e5, s, n);
 		}
-		H(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && H(e, "critChance", 0, 100, s, n), e.noticeTiles !== void 0 && H(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && _e(e.loot, t, s, n), e.rare !== void 0 && ye(e, r, t, s, n), e.hide !== void 0 && xe(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && he(e.boss, `${s} boss`, n);
+		V(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && V(e, "critChance", 0, 100, s, n), e.noticeTiles !== void 0 && V(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && ve(e.loot, t, s, n), e.rare !== void 0 && be(e, r, t, s, n), e.hide !== void 0 && Se(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && ge(e.boss, `${s} boss`, n);
 	}), n;
 }
-function xe(e, t, n, r) {
-	if (!z(e)) {
+function Se(e, t, n, r) {
+	if (!R(e)) {
 		r.push(`${n} must be an object with "item" and "count".`);
 		return;
 	}
-	V(e, ["item", "count"], n, r);
+	B(e, ["item", "count"], n, r);
 	let i = e.item;
-	(typeof i != "string" || t !== void 0 && !t.items.some((e) => e.id === i)) && r.push(`${n}: "item" must be the id of an item in the items file.`), H(e, "count", 1, 3, n, r);
+	(typeof i != "string" || t !== void 0 && !t.items.some((e) => e.id === i)) && r.push(`${n}: "item" must be the id of an item in the items file.`), V(e, "count", 1, 3, n, r);
 }
 f(12e4, 20), l.indexOf("amulet"), l.indexOf("amulet");
 // ../../packages/shared/src/house-floors.ts
-var Se = {
+var Ce = {
 	north: {
 		dx: 0,
 		dy: -1
@@ -4790,9 +4790,9 @@ var Se = {
 		dy: 0
 	}
 };
-[...ee.map((e) => Se[e])];
+[...ee.map((e) => Ce[e])];
 // ../../packages/shared/src/stall.ts
-var Ce = 1e5, we = 2147483647, Te = 1048574, Ee = 1023, De = ["local", "global"], Oe = [
+var we = 1e5, Te = 2147483647, Ee = 1048574, De = 1023, Oe = ["local", "global"], ke = [
 	"too-large",
 	"not-json",
 	"too-deep",
@@ -4811,156 +4811,193 @@ var Ce = 1e5, we = 2147483647, Te = 1048574, Ee = 1023, De = ["local", "global"]
 	"stale-seq",
 	"rate-limited",
 	"no-hello"
-], ke = /^[A-Za-z0-9_-]+$/;
-function U(e, t) {
+], Ae = /^[A-Za-z0-9_-]+$/;
+function H(e, t) {
 	return {
 		ok: !1,
 		problem: e,
 		path: t
 	};
 }
-function W(e, t) {
+function U(e, t) {
 	return e === "" ? String(t) : `${e}.${t}`;
 }
-function Ae(e) {
+function je(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-var je = () => null;
-function G(e, t) {
-	return (n, r) => typeof n != "number" || !Number.isInteger(n) ? U("wrong-type", r) : n < e || n > t ? U("out-of-range", r) : null;
+var Me = () => null;
+function W(e, t) {
+	return (n, r) => typeof n != "number" || !Number.isInteger(n) ? H("wrong-type", r) : n < e || n > t ? H("out-of-range", r) : null;
 }
-function Me(e) {
+function Ne(e) {
 	for (let t = 0; t < e.length; t += 1) {
 		let n = e.charCodeAt(t);
 		if (n < 32 || n >= 127 && n <= 159) return !0;
 	}
 	return !1;
 }
-function Ne(e, t) {
-	return (n, r) => typeof n == "string" ? n.length > e ? U("too-long", r) : n.length === 0 || Me(n) || t !== void 0 && !t.test(n) ? U("bad-text", r) : null : U("wrong-type", r);
+function Pe(e, t) {
+	return (n, r) => typeof n == "string" ? n.length > e ? H("too-long", r) : n.length === 0 || Ne(n) || t !== void 0 && !t.test(n) ? H("bad-text", r) : null : H("wrong-type", r);
 }
-function K(e) {
-	return (t, n) => e.includes(t) ? null : e.some((e) => typeof e == typeof t) ? U("out-of-range", n) : U("wrong-type", n);
-}
-function Pe(e) {
-	return (t, n) => t === null ? null : e(t, n);
+function G(e) {
+	return (t, n) => e.includes(t) ? null : e.some((e) => typeof e == typeof t) ? H("out-of-range", n) : H("wrong-type", n);
 }
 function Fe(e) {
+	return (t, n) => t === null ? null : e(t, n);
+}
+function Ie(e) {
 	return (t, n) => {
-		if (!Array.isArray(t)) return U("wrong-type", n);
+		if (!Array.isArray(t)) return H("wrong-type", n);
 		for (let r = 0; r < t.length; r += 1) {
-			let i = e(t[r], W(n, r));
+			let i = e(t[r], U(n, r));
 			if (i !== null) return i;
 		}
 		return null;
 	};
 }
-var Ie = (e, t) => Ae(e) ? null : U("wrong-type", t), Le = (e, t) => typeof e == "string" ? null : U("wrong-type", t), Re = (e, t) => typeof e == "boolean" ? null : U("wrong-type", t);
-function ze(e, t) {
+var Le = (e, t) => je(e) ? null : H("wrong-type", t), Re = (e, t) => typeof e == "string" ? null : H("wrong-type", t), ze = (e, t) => typeof e == "boolean" ? null : H("wrong-type", t);
+function Be(e, t) {
 	return (n, r) => {
-		if (!Ae(n)) return U(r === "" ? "not-object" : "wrong-type", r);
-		for (let i of Object.keys(n)) if (!Object.hasOwn(e, i) && !Object.hasOwn(t, i)) return U("extra-field", W(r, i));
+		if (!je(n)) return H(r === "" ? "not-object" : "wrong-type", r);
+		for (let i of Object.keys(n)) if (!Object.hasOwn(e, i) && !Object.hasOwn(t, i)) return H("extra-field", U(r, i));
 		for (let [t, i] of Object.entries(e)) {
-			if (!Object.hasOwn(n, t)) return U("missing-field", W(r, t));
-			let e = i(n[t], W(r, t));
+			if (!Object.hasOwn(n, t)) return H("missing-field", U(r, t));
+			let e = i(n[t], U(r, t));
 			if (e !== null) return e;
 		}
 		for (let [e, i] of Object.entries(t)) {
-			let t = Object.hasOwn(n, e) ? i(n[e], W(r, e)) : null;
+			let t = Object.hasOwn(n, e) ? i(n[e], U(r, e)) : null;
 			if (t !== null) return t;
 		}
 		return null;
 	};
 }
-function Be(e, t) {
-	return ze(e, t);
+function Ve(e) {
+	return Object.assign((t, n) => e(t, n), { optional: !0 });
 }
-function q(e, t) {
+function He(e, t) {
+	return Be(e, t);
+}
+function K(e, t) {
 	let n = /* @__PURE__ */ new Map();
-	for (let [r, i] of Object.entries(t)) n.set(r, ze({
-		[e]: je,
-		...i
-	}, {}));
+	for (let [r, i] of Object.entries(t)) {
+		let t = Object.entries(i), a = ([, e]) => "optional" in e;
+		n.set(r, Be({
+			[e]: Me,
+			...Object.fromEntries(t.filter((e) => !a(e)))
+		}, Object.fromEntries(t.filter(a))));
+	}
 	return (t, r) => {
-		if (!Ae(t)) return U(r === "" ? "not-object" : "wrong-type", r);
+		if (!je(t)) return H(r === "" ? "not-object" : "wrong-type", r);
 		let i = t[e], a = typeof i == "string" ? n.get(i) : void 0;
-		return a === void 0 ? U("unknown-type", W(r, e)) : a(t, r);
+		return a === void 0 ? H("unknown-type", U(r, e)) : a(t, r);
 	};
 }
-var J = G(1, Te), Ve = G(0, Ee), Y = G(0, 24), He = G(0, 24), X = Ne(64), Z = ze({
-	x: Ve,
-	y: Ve
-}, {}), Ue = G(1, 100), We = q("side", {
-	backpack: { slot: Y },
-	container: { slot: He },
-	worn: { slot: G(0, l.length - 1) },
-	ground: {
-		x: Ve,
-		y: Ve
+var q = W(1, Ee), J = W(0, De), Y = W(0, 24), Ue = W(0, 24), X = Pe(64), Z = Be({
+	x: J,
+	y: J
+}, {}), We = W(1, 100), Ge = W(0, 16), Q = Ve(K("type", {
+	corpse: {
+		kind: X,
+		x: J,
+		y: J,
+		level: Ge,
+		born: W(0, Te)
+	},
+	chest: {
+		x: J,
+		y: J,
+		level: Ge
+	},
+	quest: {
+		x: J,
+		y: J,
+		level: Ge
+	},
+	depot: {
+		x: J,
+		y: J,
+		level: Ge,
+		page: W(0, p / 25 - 1)
 	}
-}), Ge = q("type", {
+})), Ke = K("side", {
+	backpack: { slot: Y },
+	container: { slot: Ue },
+	worn: { slot: W(0, l.length - 1) },
+	ground: {
+		x: J,
+		y: J
+	}
+}), qe = K("type", {
 	move: {
 		from: Y,
 		to: Y
 	},
-	active: { slot: G(0, 4) },
+	active: { slot: W(0, 4) },
 	withdraw: {
-		from: He,
-		to: Y
+		from: Ue,
+		to: Y,
+		ref: Q
 	},
 	deposit: {
 		from: Y,
-		to: He
+		to: Ue,
+		ref: Q
 	},
 	arrange: {
-		from: He,
-		to: He
+		from: Ue,
+		to: Ue,
+		ref: Q
 	},
-	quickLoot: {},
-	close: {},
-	page: { page: G(0, p / 25 - 1) },
+	quickLoot: { ref: Q },
+	close: { ref: Q },
+	page: {
+		page: W(0, p / 25 - 1),
+		ref: Q
+	},
 	put: {
-		from: We,
-		to: We
+		from: Ke,
+		to: Ke,
+		ref: Q
 	},
-	enter: { place: We },
+	enter: { place: Ke },
 	leave: {}
-}), Ke = q("type", {
+}), Je = K("type", {
 	buy: {
-		npc: J,
+		npc: q,
 		item: X,
-		count: Ue
+		count: We
 	},
 	sell: {
-		npc: J,
+		npc: q,
 		item: X,
-		count: Ue
+		count: We
 	}
-}), qe = q("op", {
+}), Ye = K("op", {
 	put: {
 		slot: Y,
-		count: Ue,
-		price: G(1, Ce)
+		count: We,
+		price: W(1, we)
 	},
 	price: {
-		line: G(0, 7),
-		price: G(1, Ce)
+		line: W(0, 7),
+		price: W(1, we)
 	},
-	take: { line: G(0, 7) },
+	take: { line: W(0, 7) },
 	close: {},
 	buy: {
-		line: G(0, 7),
+		line: W(0, 7),
 		kind: X,
-		price: G(1, Ce),
-		count: Ue
+		price: W(1, we),
+		count: We
 	}
-}), Je = q("kind", {
+}), Xe = K("kind", {
 	item: {
 		from: Z,
 		to: Z
 	},
 	npc: {
-		npc: J,
+		npc: q,
 		to: Z
 	},
 	thing: {
@@ -4971,94 +5008,94 @@ var J = G(1, Te), Ve = G(0, Ee), Y = G(0, 24), He = G(0, 24), X = Ne(64), Z = ze
 		from: Z,
 		to: Z
 	}
-}), Ye = Be({
-	seq: G(1, we),
-	dir: G(0, 16)
+}), Ze = He({
+	seq: W(1, Te),
+	dir: W(0, 16)
 }, {
-	face: G(0, 3),
+	face: W(0, 3),
 	action: X,
 	choice: X,
-	target: Pe(J),
-	stance: K(["sword", "shield"]),
-	inventory: Ge,
+	target: Fe(q),
+	stance: G(["sword", "shield"]),
+	inventory: qe,
 	profession: X,
-	talk: Be({
-		npc: J,
+	talk: He({
+		npc: q,
 		choice: X
 	}, {}),
-	trade: Ke,
-	merge: Be({
-		npc: J,
+	trade: Je,
+	merge: He({
+		npc: q,
 		kind: X
 	}, {}),
-	houseList: Be({
-		op: K(["add", "remove"]),
-		list: K(u),
+	houseList: He({
+		op: G(["add", "remove"]),
+		list: G(u),
 		name: X
 	}, {}),
-	houseEdit: Be({ kind: K([
+	houseEdit: He({ kind: G([
 		"wall",
 		"door",
 		"window",
 		"remove",
 		"stairs"
-	]) }, { joint: G(0, 5) }),
-	stall: qe,
-	shove: Je,
-	respawn: K([!0])
-}), Xe = q("type", {
+	]) }, { joint: W(0, 5) }),
+	stall: Ye,
+	shove: Xe,
+	respawn: G([!0])
+}), Qe = K("type", {
 	outfit: { id: X },
 	companion: { kind: X },
 	claimDaily: {},
 	pickRest: {
-		activity: K(Object.keys({
+		activity: G(Object.keys({
 			training: !0,
 			hunting: !0,
 			gathering: !0
 		})),
-		hours: G(1, 72)
+		hours: W(1, 72)
 	}
 });
-q("type", {
+K("type", {
 	hello: {
-		token: Ne(128, ke),
-		protocol: G(1, we)
+		token: Pe(128, Ae),
+		protocol: W(1, Te)
 	},
-	input: { input: Ye },
+	input: { input: Ze },
 	say: {
-		channel: K(De),
-		text: Ne(200)
+		channel: G(Oe),
+		text: Pe(200)
 	},
 	ping: {},
-	command: { command: Xe }
+	command: { command: Qe }
 });
-var Q = G(0, 2 ** 53 - 1);
-q("type", {
+var $e = W(0, 2 ** 53 - 1);
+K("type", {
 	welcome: {
-		protocol: Q,
-		content: Le,
-		playerId: Q,
-		tick: Q,
-		tickHz: Q
+		protocol: $e,
+		content: Re,
+		playerId: $e,
+		tick: $e,
+		tickHz: $e
 	},
 	snapshot: {
-		ack: Q,
-		state: Ie,
-		whole: Re,
-		creatures: Fe(Ie),
-		gone: Fe(Q)
+		ack: $e,
+		state: Le,
+		whole: ze,
+		creatures: Ie(Le),
+		gone: Ie($e)
 	},
 	chat: {
-		from: Le,
-		channel: K(De),
-		text: Le
+		from: Re,
+		channel: G(Oe),
+		text: Re
 	},
 	pong: {},
-	refused: { problem: K(Oe) }
+	refused: { problem: G(ke) }
 });
 // src/live/live-read.ts
-var Ze = 3;
-function Qe(e, t) {
+var et = 3;
+function tt(e, t) {
 	try {
 		return {
 			ok: !0,
@@ -5071,25 +5108,25 @@ function Qe(e, t) {
 		};
 	}
 }
-function $e(e, t) {
-	return `${e} cannot be used: ${t.slice(0, Ze).join(" ")}`;
+function nt(e, t) {
+	return `${e} cannot be used: ${t.slice(0, et).join(" ")}`;
 }
-function et(e, t) {
+function rt(e, t) {
 	let r = {};
 	for (let t of n) {
-		let n = Qe(t, e[t]);
+		let n = tt(t, e[t]);
 		if (!n.ok) return n;
 		r[t] = n.value;
 	}
-	let i = be(r["monsters.json"], t.items);
+	let i = xe(r["monsters.json"], t.items);
 	if (i.length > 0) return {
 		ok: !1,
-		reason: $e("monsters.json", i)
+		reason: nt("monsters.json", i)
 	};
 	let a = r["monsters.json"], o = se(r["maps/test.json"], r["tiles.json"], a.monsters.map((e) => e.id), t.npcs.npcs.map((e) => e.id), t.items.items);
 	return o.length > 0 ? {
 		ok: !1,
-		reason: $e("The live map", o)
+		reason: nt("The live map", o)
 	} : {
 		ok: !0,
 		files: {
@@ -5100,7 +5137,7 @@ function et(e, t) {
 	};
 }
 // src/live/live-payload.ts
-var tt = "test", nt = "Live map save ", rt = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, it = /^[A-Za-z0-9+/]+={0,2}$/, at = /^[0-9a-f]{16}$/, ot = /^[0-9A-Za-z._-]{1,64}$/, st = /[\p{C}\p{Zl}\p{Zp}]/u, ct = [
+var it = "test", at = "Live map save ", ot = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, st = /^[A-Za-z0-9+/]+={0,2}$/, ct = /^[0-9a-f]{16}$/, lt = /^[0-9A-Za-z._-]{1,64}$/, ut = /[\p{C}\p{Zl}\p{Zp}]/u, dt = [
 	"format",
 	"expectedRev",
 	"build",
@@ -5108,8 +5145,8 @@ var tt = "test", nt = "Live map save ", rt = /^gravia-live-save 1 sha256=([0-9a-
 	"nonce",
 	"note",
 	"files"
-], lt = "the save is too big for one GitHub issue";
-function ut(e) {
+], ft = "the save is too big for one GitHub issue";
+function pt(e) {
 	return Uint8Array.from(atob(e), (e) => e.charCodeAt(0));
 }
 function $(e) {
@@ -5119,44 +5156,44 @@ function $(e) {
 		reason: e
 	};
 }
-function dt(e) {
-	if (e.length > 60200) return $(lt);
+function mt(e) {
+	if (e.length > 60200) return $(ft);
 	let t = e.split("\n");
 	if (t.length !== 2) return $("the body must be a header line and one data line");
-	let n = rt.exec(t[0]);
+	let n = ot.exec(t[0]);
 	if (n === null) return $("the header line is not \"gravia-live-save 1 sha256=<hex>\"");
 	let r = t[1];
-	return !it.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
+	return !st.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
 		ok: !0,
 		sha256: n[1],
 		base64: r
 	};
 }
-function ft(e) {
+function ht(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function pt(e) {
+function gt(e) {
 	let t;
 	try {
 		t = JSON.parse(e);
 	} catch {
 		return $("the payload is not valid JSON");
 	}
-	if (!ft(t)) return $("the payload is not a JSON object");
-	for (let e of Object.keys(t)) if (!ct.includes(e)) return $(`unknown key "${e}"`);
+	if (!ht(t)) return $("the payload is not a JSON object");
+	for (let e of Object.keys(t)) if (!dt.includes(e)) return $(`unknown key "${e}"`);
 	if (t.format !== 1) return $("format must be 1");
 	let { expectedRev: r, build: i, savedAt: o, nonce: s, files: c } = t;
 	if (typeof r != "number" || !Number.isInteger(r) || r < 1) return $("expectedRev must be a positive whole number");
-	if (typeof i != "string" || !ot.test(i)) return $("build is not a build id");
+	if (typeof i != "string" || !lt.test(i)) return $("build is not a build id");
 	if (typeof o != "string" || !a.test(o) || Number.isNaN(Date.parse(o))) return $("savedAt must be an ISO 8601 UTC time");
-	if (typeof s != "string" || !at.test(s)) return $("nonce must be 16 hex characters");
+	if (typeof s != "string" || !ct.test(s)) return $("nonce must be 16 hex characters");
 	if (Object.hasOwn(t, "note")) {
 		let e = t.note;
 		if (typeof e != "string") return $("note must be a string");
 		if (Array.from(e).length > 200) return $("note is over 200 characters");
-		if (st.test(e)) return $("note has a character that cannot be shown");
+		if (ut.test(e)) return $("note has a character that cannot be shown");
 	}
-	if (!ft(c)) return $("files must be an object");
+	if (!ht(c)) return $("files must be an object");
 	for (let e of Object.keys(c)) if (!n.includes(e)) return $(`unknown file "${e}"`);
 	let l = {};
 	for (let e of n) {
@@ -5177,12 +5214,12 @@ function pt(e) {
 		payload: u
 	};
 }
-async function mt(e, t, n = c) {
-	let r = dt(e);
+async function _t(e, t, n = c) {
+	let r = mt(e);
 	if (!r.ok) return r;
 	let i;
 	try {
-		let e = await t(ut(r.base64));
+		let e = await t(pt(r.base64));
 		i = new TextDecoder("utf-8", {
 			fatal: !0,
 			ignoreBOM: !0
@@ -5190,9 +5227,9 @@ async function mt(e, t, n = c) {
 	} catch {
 		return $("the data is not valid compressed text");
 	}
-	return await n(i) === r.sha256 ? pt(i) : $("the sha-256 of the payload differs from the header");
+	return await n(i) === r.sha256 ? gt(i) : $("the sha-256 of the payload differs from the header");
 }
-function ht(e, t) {
+function vt(e, t) {
 	let n = t.getTime() - Date.parse(e);
 	return Number.isNaN(n) || n > 18e5 ? {
 		ok: !1,
@@ -5200,22 +5237,22 @@ function ht(e, t) {
 		reason: "the save waited too long for the checker and is not applied"
 	} : { ok: !0 };
 }
-function gt(e, t) {
-	let n = et(e.files, t);
+function yt(e, t) {
+	let n = rt(e.files, t);
 	return n.ok ? n.files.map.name === "test" ? {
 		ok: !0,
 		...n.files
 	} : {
 		ok: !1,
 		verdict: "invalid",
-		reason: `The live map is named "${tt}" and cannot be renamed.`
+		reason: `The live map is named "${it}" and cannot be renamed.`
 	} : {
 		ok: !1,
 		verdict: "invalid",
 		reason: n.reason
 	};
 }
-async function _t(e, t, r, i = c) {
+async function bt(e, t, r, i = c) {
 	let a = {};
 	for (let t of n) a[t] = await i(e.files[t]);
 	if (n.every((e) => a[e] === t.files[e])) return {
@@ -5243,8 +5280,8 @@ async function _t(e, t, r, i = c) {
 	};
 }
 // src/live/live-check-entry.ts
-var vt = {
+var xt = {
 	items: e,
 	npcs: t
 };
-export { nt as LIVE_TITLE_PREFIX, gt as checkLivePayload, ht as checkLivePayloadAge, mt as decodeLivePayload, vt as known, _t as nextManifest, s as parseLiveManifest, dt as splitLiveBody };
+export { at as LIVE_TITLE_PREFIX, yt as checkLivePayload, vt as checkLivePayloadAge, _t as decodeLivePayload, xt as known, bt as nextManifest, s as parseLiveManifest, mt as splitLiveBody };

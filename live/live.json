@@ -1,11 +1,11 @@
 {
   "format": 2,
-  "rev": 6,
-  "savedAt": "2026-11-26T00:37:17.650Z",
+  "rev": 7,
+  "savedAt": "2026-11-26T15:43:05.260Z",
   "by": "script",
   "files": {
-    "maps/test.json": "ad7fb00fd6c2983ab589fc08b82c626bef1564e7dec60a002c46f229bd4349e5",
-    "tiles.json": "e365a6fab94a6192a4b3379317c87eb5f60578941356bbe50a6a8bdf1b9808c3",
+    "maps/test.json": "50fd2da1b4763d5066d4de2fade8752e0aedf510067434009896de267780f752",
+    "tiles.json": "6bf19f8c72d8a863a13a892998bbc994360001aeb67f52f3af6c1fac30e2dfe5",
     "monsters.json": "f6eaf357c47af5555c996b08c18e859e656ff7806d266c12299390960b33e99c"
   }
 }
