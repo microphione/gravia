@@ -2164,12 +2164,12 @@
     "well-left": {
       "file": "well-left.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "well-right": {
       "file": "well-right.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "stall-top": {
       "file": "stall-top.png",
@@ -2179,12 +2179,12 @@
     "stall-left": {
       "file": "stall-left.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "stall-right": {
       "file": "stall-right.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "notice-board-top": {
       "file": "notice-board-top.png",
@@ -2194,12 +2194,12 @@
     "notice-board-left": {
       "file": "notice-board-left.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "notice-board-right": {
       "file": "notice-board-right.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "bench-top": {
       "file": "bench-top.png",
@@ -2209,22 +2209,22 @@
     "bench-left": {
       "file": "bench-left.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "bench-right": {
       "file": "bench-right.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "table-left": {
       "file": "table-left.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "table-right": {
       "file": "table-right.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "lamp-post-top": {
       "file": "lamp-post-top.png",
@@ -2234,7 +2234,7 @@
     "lamp-post-base": {
       "file": "lamp-post-base.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "signpost-top": {
       "file": "signpost-top.png",
@@ -2244,7 +2244,7 @@
     "signpost-base": {
       "file": "signpost-base.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "shop-sign-anvil": {
       "file": "shop-sign-anvil.png",
@@ -2274,7 +2274,7 @@
     "shrine-base": {
       "file": "shrine-base.png",
       "width": 32,
-      "height": 32
+      "height": 64
     },
     "barrel": {
       "file": "barrel.png",
