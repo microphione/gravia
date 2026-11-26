@@ -2291,6 +2291,11 @@
       "width": 32,
       "height": 32
     },
+    "stall-stand": {
+      "file": "stall-stand.png",
+      "width": 32,
+      "height": 32
+    },
     "sack": {
       "file": "sack.png",
       "width": 32,

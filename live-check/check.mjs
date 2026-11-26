@@ -3572,6 +3572,30 @@ var e = {
 					}]
 				}
 			]
+		},
+		{
+			id: "greta",
+			name: "Greta",
+			line: "Welcome in. Sit where you like; there is bread and cheese for anyone who is hungry.",
+			choices: [{
+				id: "trade",
+				text: "Let's trade.",
+				effect: "trade"
+			}, {
+				id: "bye",
+				text: "Goodbye.",
+				effect: "end"
+			}],
+			shop: {
+				sells: [{
+					item: "bread",
+					price: 6
+				}, {
+					item: "cheese",
+					price: 5
+				}],
+				buys: []
+			}
 		}
 	]
 }, n = [
@@ -3883,6 +3907,7 @@ function ae(e, t) {
 			"node",
 			"depot",
 			"gate",
+			"stall",
 			"walkCost",
 			"movable",
 			"item",
@@ -3923,45 +3948,56 @@ function ae(e, t) {
 			e.workplace,
 			e.depot
 		].some((e) => e !== void 0) && (t.push(`${o}: a gate tile type cannot be a door, window, container, bed, herb, node, workplace or depot.`), s = !1) : (t.push(`${o}: a gate tile type must block.`), s = !1) : (t.push(`${o}: a gate tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "gate" must be true when present.`), s = !1));
-		let _ = e.walkCost;
-		_ !== void 0 && (!j(_) || _ < 50 || _ > 250 ? (t.push(`${o}: "walkCost" must be a whole number from 50 to 250.`), s = !1) : c === 0 ? l !== !1 && (t.push(`${o}: a tile type with "walkCost" must not block.`), s = !1) : (t.push(`${o}: a tile type with "walkCost" must be on layer 0.`), s = !1));
-		let v = e.herb, y = e.workplace, b = e.node;
-		b !== void 0 && (A(b) ? (F(b, [
-			"trade",
-			"item",
-			"regrowMs"
-		], `${o} node`, t), h.some((e) => e === b.trade) || (t.push(`${o}: the node "trade" must be one of ${h.join(", ")}.`), s = !1), M(b.item) || (t.push(`${o}: the node "item" must be the id of an item, a non-empty string.`), s = !1), (!j(b.regrowMs) || b.regrowMs < 1) && (t.push(`${o}: the node "regrowMs" must be a whole number of milliseconds, 1 or more.`), s = !1)) : (t.push(`${o}: "node" must be an object with "trade", "item" and "regrowMs".`), s = !1)), b !== void 0 && !M(e.pickedImage) && (t.push(`${o}: a node tile type needs a "pickedImage" that is a non-empty string.`), s = !1), v === void 0 ? e.pickedImage !== void 0 && b === void 0 && (t.push(`${o}: "pickedImage" is only allowed with "herb" or "node".`), s = !1) : (M(v) || (t.push(`${o}: "herb" must be the id of an item, a non-empty string.`), s = !1), M(e.pickedImage) || (t.push(`${o}: a herb tile type needs a "pickedImage" that is a non-empty string.`), s = !1)), y !== void 0 && y !== !0 && !E.some((e) => e === y) && (t.push(`${o}: "workplace" must be true when present, or "forge" or "loom".`), s = !1), (v !== void 0 || y !== void 0 || b !== void 0) && (c === 1 ? l !== !0 && (t.push(`${o}: a herb or workplace tile type must block.`), s = !1) : (t.push(`${o}: a herb or workplace tile type must be on layer 1.`), s = !1), [
+		let _ = e.stall;
+		_ !== void 0 && (_ === !0 ? c === 1 ? l === !0 ? [
 			u,
 			f,
 			p,
-			v,
-			b,
-			y
+			e.herb,
+			e.node,
+			e.workplace,
+			e.depot,
+			g
+		].some((e) => e !== void 0) && (t.push(`${o}: a stall tile type cannot be a door, window, container, bed, herb, node, workplace, depot or gate.`), s = !1) : (t.push(`${o}: a stall tile type must block.`), s = !1) : (t.push(`${o}: a stall tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "stall" must be true when present.`), s = !1));
+		let v = e.walkCost;
+		v !== void 0 && (!j(v) || v < 50 || v > 250 ? (t.push(`${o}: "walkCost" must be a whole number from 50 to 250.`), s = !1) : c === 0 ? l !== !1 && (t.push(`${o}: a tile type with "walkCost" must not block.`), s = !1) : (t.push(`${o}: a tile type with "walkCost" must be on layer 0.`), s = !1));
+		let y = e.herb, b = e.workplace, x = e.node;
+		x !== void 0 && (A(x) ? (F(x, [
+			"trade",
+			"item",
+			"regrowMs"
+		], `${o} node`, t), h.some((e) => e === x.trade) || (t.push(`${o}: the node "trade" must be one of ${h.join(", ")}.`), s = !1), M(x.item) || (t.push(`${o}: the node "item" must be the id of an item, a non-empty string.`), s = !1), (!j(x.regrowMs) || x.regrowMs < 1) && (t.push(`${o}: the node "regrowMs" must be a whole number of milliseconds, 1 or more.`), s = !1)) : (t.push(`${o}: "node" must be an object with "trade", "item" and "regrowMs".`), s = !1)), x !== void 0 && !M(e.pickedImage) && (t.push(`${o}: a node tile type needs a "pickedImage" that is a non-empty string.`), s = !1), y === void 0 ? e.pickedImage !== void 0 && x === void 0 && (t.push(`${o}: "pickedImage" is only allowed with "herb" or "node".`), s = !1) : (M(y) || (t.push(`${o}: "herb" must be the id of an item, a non-empty string.`), s = !1), M(e.pickedImage) || (t.push(`${o}: a herb tile type needs a "pickedImage" that is a non-empty string.`), s = !1)), b !== void 0 && b !== !0 && !E.some((e) => e === b) && (t.push(`${o}: "workplace" must be true when present, or "forge" or "loom".`), s = !1), (y !== void 0 || b !== void 0 || x !== void 0) && (c === 1 ? l !== !0 && (t.push(`${o}: a herb or workplace tile type must block.`), s = !1) : (t.push(`${o}: a herb or workplace tile type must be on layer 1.`), s = !1), [
+			u,
+			f,
+			p,
+			y,
+			x,
+			b
 		].filter((e) => e !== void 0).length > 1 && (t.push(`${o}: a tile type can be only one of a door or window, container, bed, herb, node and workplace.`), s = !1));
-		let x = e.quest;
-		x !== void 0 && (x === !0 ? f !== !0 && (t.push(`${o}: "quest" is only for a container tile type.`), s = !1) : (t.push(`${o}: "quest" must be true when present.`), s = !1));
-		let S = e.movable;
-		S !== void 0 && (S === !0 ? c === 1 ? [
+		let S = e.quest;
+		S !== void 0 && (S === !0 ? f !== !0 && (t.push(`${o}: "quest" is only for a container tile type.`), s = !1) : (t.push(`${o}: "quest" must be true when present.`), s = !1));
+		let C = e.movable;
+		C !== void 0 && (C === !0 ? c === 1 ? [
 			u,
 			g,
 			m,
-			v,
-			b,
-			x
-		].some((e) => e !== void 0) && (t.push(`${o}: a door, window, gate, depot, herb, node or quest chest cannot be movable.`), s = !1) : (t.push(`${o}: a movable tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "movable" must be true when present.`), s = !1));
-		let C = e.joined;
-		C !== void 0 && (D.some((e) => e === C) ? c !== 1 && (t.push(`${o}: a joined tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "joined" must be "north", "south", "west" or "east".`), s = !1));
-		let w = e.item;
-		w !== void 0 && (M(w) ? S === !0 ? C !== void 0 && (t.push(`${o}: a joined tile type is never lifted, so it has no "item".`), s = !1) : (t.push(`${o}: "item" is only for a movable tile type.`), s = !1) : (t.push(`${o}: "item" must be the id of an item, a non-empty string.`), s = !1));
-		let T = e.shutImage;
-		T !== void 0 && (M(T) ? u !== "window" && (t.push(`${o}: "shutImage" is only allowed on a window (a type with "opens": "window").`), s = !1) : (t.push(`${o}: "shutImage" must be a non-empty string.`), s = !1)), s && j(a) && n.set(a, e);
+			y,
+			x,
+			S
+		].some((e) => e !== void 0) ? (t.push(`${o}: a door, window, gate, depot, herb, node or quest chest cannot be movable.`), s = !1) : _ !== void 0 && (t.push(`${o}: a stall stand cannot be movable.`), s = !1) : (t.push(`${o}: a movable tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "movable" must be true when present.`), s = !1));
+		let w = e.joined;
+		w !== void 0 && (D.some((e) => e === w) ? c !== 1 && (t.push(`${o}: a joined tile type must be on layer 1.`), s = !1) : (t.push(`${o}: "joined" must be "north", "south", "west" or "east".`), s = !1));
+		let T = e.item;
+		T !== void 0 && (M(T) ? C === !0 ? w !== void 0 && (t.push(`${o}: a joined tile type is never lifted, so it has no "item".`), s = !1) : (t.push(`${o}: "item" is only for a movable tile type.`), s = !1) : (t.push(`${o}: "item" must be the id of an item, a non-empty string.`), s = !1));
+		let ee = e.shutImage;
+		ee !== void 0 && (M(ee) ? u !== "window" && (t.push(`${o}: "shutImage" is only allowed on a window (a type with "opens": "window").`), s = !1) : (t.push(`${o}: "shutImage" must be a non-empty string.`), s = !1)), s && j(a) && n.set(a, e);
 	}), n;
 }
-function oe(e, t, n, r) {
-	for (let i = 0; i < r; i += 1) for (let r = n.y0; r <= n.y1; r += 1) for (let a = n.x0; a <= n.x1; a += 1) if (t.get(k(e, i, 1, a, r))?.depot === !0) return {
-		x: a,
+function oe(e, t, n, r, i) {
+	for (let a = 0; a < r; a += 1) for (let r = n.y0; r <= n.y1; r += 1) for (let o = n.x0; o <= n.x1; o += 1) if (t.get(k(e, a, 1, o, r))?.[i] === !0) return {
+		x: o,
 		y: r,
-		level: i
+		level: a
 	};
 }
 function I(e, t, n, r = []) {
@@ -4196,8 +4232,10 @@ function ce(e, t, n, r, i, a) {
 					});
 				}
 				if (f !== void 0 && l && m) {
-					let t = oe(e, o, f, _);
+					let t = oe(e, o, f, _, "depot");
 					t !== void 0 && n.push(`${c} area holds a depot chest at (${t.x}, ${t.y}) on level ${t.level}.`);
+					let r = oe(e, o, f, _, "stall");
+					r !== void 0 && n.push(`${c} area holds a stall stand at (${r.x}, ${r.y}) on level ${r.level}.`);
 				}
 				if (l && L(p, `${c} sign`, h, g, _, n) && m) {
 					let t = k(e, p.level, 1, p.x, p.y), r = o.get(t);
@@ -4528,7 +4566,7 @@ function ue(e, t, n) {
 			type: g
 		});
 		let v = g.movable === !0;
-		if (d === !0 && (g.opens !== void 0 || g.gate === !0 || g.depot === !0 || g.herb !== void 0 || g.node !== void 0 || g.quest === !0) ? n.push(`${h} cannot be movable: a door, window, gate, depot, herb, node or quest chest never moves.`) : d === !0 && t.jumps.has(_) ? n.push(`${h} is on a stairs or portal tile and cannot be movable.`) : typeof d == "boolean" && d === v && n.push(`${h}: "movable" is the tile type's own value and changes nothing.`), f === !1 && g.opens === void 0 && n.push(`${h}: "openable" is only for a window or a door.`), p === !1 && (g.opens !== "window" || g.shutImage === void 0) && n.push(`${h}: "shutterable" is only for a window whose tile type has a "shutImage".`), m !== void 0) {
+		if (d === !0 && (g.opens !== void 0 || g.gate === !0 || g.depot === !0 || g.herb !== void 0 || g.node !== void 0 || g.quest === !0) ? n.push(`${h} cannot be movable: a door, window, gate, depot, herb, node or quest chest never moves.`) : d === !0 && g.stall === !0 ? n.push(`${h} cannot be movable: a stall stand never moves.`) : d === !0 && t.jumps.has(_) ? n.push(`${h} is on a stairs or portal tile and cannot be movable.`) : typeof d == "boolean" && d === v && n.push(`${h}: "movable" is the tile type's own value and changes nothing.`), f === !1 && g.opens === void 0 && n.push(`${h}: "openable" is only for a window or a door.`), p === !1 && (g.opens !== "window" || g.shutImage === void 0) && n.push(`${h}: "shutterable" is only for a window whose tile type has a "shutImage".`), m !== void 0) {
 			if (g.container !== !0) n.push(`${h}: "loot" is only for a container.`);
 			else {
 				(typeof d == "boolean" ? d : v) && n.push(`${h}: a container with "loot" is never movable.`);
@@ -4753,8 +4791,8 @@ var Se = {
 	}
 };
 [...ee.map((e) => Se[e])];
-// ../../packages/shared/src/protocol.ts
-var Ce = 2147483647, we = 1048574, Te = 1023, Ee = ["local", "global"], De = [
+// ../../packages/shared/src/stall.ts
+var Ce = 1e5, we = 2147483647, Te = 1048574, Ee = 1023, De = ["local", "global"], Oe = [
 	"too-large",
 	"not-json",
 	"too-deep",
@@ -4773,7 +4811,7 @@ var Ce = 2147483647, we = 1048574, Te = 1023, Ee = ["local", "global"], De = [
 	"stale-seq",
 	"rate-limited",
 	"no-hello"
-], Oe = /^[A-Za-z0-9_-]+$/;
+], ke = /^[A-Za-z0-9_-]+$/;
 function U(e, t) {
 	return {
 		ok: !1,
@@ -4784,30 +4822,30 @@ function U(e, t) {
 function W(e, t) {
 	return e === "" ? String(t) : `${e}.${t}`;
 }
-function ke(e) {
+function Ae(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-var Ae = () => null;
+var je = () => null;
 function G(e, t) {
 	return (n, r) => typeof n != "number" || !Number.isInteger(n) ? U("wrong-type", r) : n < e || n > t ? U("out-of-range", r) : null;
 }
-function je(e) {
+function Me(e) {
 	for (let t = 0; t < e.length; t += 1) {
 		let n = e.charCodeAt(t);
 		if (n < 32 || n >= 127 && n <= 159) return !0;
 	}
 	return !1;
 }
-function Me(e, t) {
-	return (n, r) => typeof n == "string" ? n.length > e ? U("too-long", r) : n.length === 0 || je(n) || t !== void 0 && !t.test(n) ? U("bad-text", r) : null : U("wrong-type", r);
+function Ne(e, t) {
+	return (n, r) => typeof n == "string" ? n.length > e ? U("too-long", r) : n.length === 0 || Me(n) || t !== void 0 && !t.test(n) ? U("bad-text", r) : null : U("wrong-type", r);
 }
 function K(e) {
 	return (t, n) => e.includes(t) ? null : e.some((e) => typeof e == typeof t) ? U("out-of-range", n) : U("wrong-type", n);
 }
-function Ne(e) {
+function Pe(e) {
 	return (t, n) => t === null ? null : e(t, n);
 }
-function Pe(e) {
+function Fe(e) {
 	return (t, n) => {
 		if (!Array.isArray(t)) return U("wrong-type", n);
 		for (let r = 0; r < t.length; r += 1) {
@@ -4817,10 +4855,10 @@ function Pe(e) {
 		return null;
 	};
 }
-var Fe = (e, t) => ke(e) ? null : U("wrong-type", t), Ie = (e, t) => typeof e == "string" ? null : U("wrong-type", t), Le = (e, t) => typeof e == "boolean" ? null : U("wrong-type", t);
-function Re(e, t) {
+var Ie = (e, t) => Ae(e) ? null : U("wrong-type", t), Le = (e, t) => typeof e == "string" ? null : U("wrong-type", t), Re = (e, t) => typeof e == "boolean" ? null : U("wrong-type", t);
+function ze(e, t) {
 	return (n, r) => {
-		if (!ke(n)) return U(r === "" ? "not-object" : "wrong-type", r);
+		if (!Ae(n)) return U(r === "" ? "not-object" : "wrong-type", r);
 		for (let i of Object.keys(n)) if (!Object.hasOwn(e, i) && !Object.hasOwn(t, i)) return U("extra-field", W(r, i));
 		for (let [t, i] of Object.entries(e)) {
 			if (!Object.hasOwn(n, t)) return U("missing-field", W(r, t));
@@ -4834,77 +4872,95 @@ function Re(e, t) {
 		return null;
 	};
 }
-function q(e, t) {
-	return Re(e, t);
+function Be(e, t) {
+	return ze(e, t);
 }
-function J(e, t) {
+function q(e, t) {
 	let n = /* @__PURE__ */ new Map();
-	for (let [r, i] of Object.entries(t)) n.set(r, Re({
-		[e]: Ae,
+	for (let [r, i] of Object.entries(t)) n.set(r, ze({
+		[e]: je,
 		...i
 	}, {}));
 	return (t, r) => {
-		if (!ke(t)) return U(r === "" ? "not-object" : "wrong-type", r);
+		if (!Ae(t)) return U(r === "" ? "not-object" : "wrong-type", r);
 		let i = t[e], a = typeof i == "string" ? n.get(i) : void 0;
 		return a === void 0 ? U("unknown-type", W(r, e)) : a(t, r);
 	};
 }
-var Y = G(1, we), ze = G(0, Te), Be = G(0, 24), Ve = G(0, 24), X = Me(64), Z = Re({
-	x: ze,
-	y: ze
-}, {}), He = G(1, 100), Ue = J("side", {
-	backpack: { slot: Be },
-	container: { slot: Ve },
+var J = G(1, Te), Ve = G(0, Ee), Y = G(0, 24), He = G(0, 24), X = Ne(64), Z = ze({
+	x: Ve,
+	y: Ve
+}, {}), Ue = G(1, 100), We = q("side", {
+	backpack: { slot: Y },
+	container: { slot: He },
 	worn: { slot: G(0, l.length - 1) },
 	ground: {
-		x: ze,
-		y: ze
+		x: Ve,
+		y: Ve
 	}
-}), We = J("type", {
+}), Ge = q("type", {
 	move: {
-		from: Be,
-		to: Be
+		from: Y,
+		to: Y
 	},
 	active: { slot: G(0, 4) },
 	withdraw: {
-		from: Ve,
-		to: Be
+		from: He,
+		to: Y
 	},
 	deposit: {
-		from: Be,
-		to: Ve
+		from: Y,
+		to: He
 	},
 	arrange: {
-		from: Ve,
-		to: Ve
+		from: He,
+		to: He
 	},
 	quickLoot: {},
 	close: {},
 	page: { page: G(0, p / 25 - 1) },
 	put: {
-		from: Ue,
-		to: Ue
+		from: We,
+		to: We
 	},
-	enter: { place: Ue },
+	enter: { place: We },
 	leave: {}
-}), Ge = J("type", {
+}), Ke = q("type", {
 	buy: {
-		npc: Y,
+		npc: J,
 		item: X,
-		count: He
+		count: Ue
 	},
 	sell: {
-		npc: Y,
+		npc: J,
 		item: X,
-		count: He
+		count: Ue
 	}
-}), Ke = J("kind", {
+}), qe = q("op", {
+	put: {
+		slot: Y,
+		count: Ue,
+		price: G(1, Ce)
+	},
+	price: {
+		line: G(0, 7),
+		price: G(1, Ce)
+	},
+	take: { line: G(0, 7) },
+	close: {},
+	buy: {
+		line: G(0, 7),
+		kind: X,
+		price: G(1, Ce),
+		count: Ue
+	}
+}), Je = q("kind", {
 	item: {
 		from: Z,
 		to: Z
 	},
 	npc: {
-		npc: Y,
+		npc: J,
 		to: Z
 	},
 	thing: {
@@ -4915,41 +4971,42 @@ var Y = G(1, we), ze = G(0, Te), Be = G(0, 24), Ve = G(0, 24), X = Me(64), Z = R
 		from: Z,
 		to: Z
 	}
-}), qe = q({
-	seq: G(1, Ce),
+}), Ye = Be({
+	seq: G(1, we),
 	dir: G(0, 16)
 }, {
 	face: G(0, 3),
 	action: X,
 	choice: X,
-	target: Ne(Y),
+	target: Pe(J),
 	stance: K(["sword", "shield"]),
-	inventory: We,
+	inventory: Ge,
 	profession: X,
-	talk: q({
-		npc: Y,
+	talk: Be({
+		npc: J,
 		choice: X
 	}, {}),
-	trade: Ge,
-	merge: q({
-		npc: Y,
+	trade: Ke,
+	merge: Be({
+		npc: J,
 		kind: X
 	}, {}),
-	houseList: q({
+	houseList: Be({
 		op: K(["add", "remove"]),
 		list: K(u),
 		name: X
 	}, {}),
-	houseEdit: q({ kind: K([
+	houseEdit: Be({ kind: K([
 		"wall",
 		"door",
 		"window",
 		"remove",
 		"stairs"
 	]) }, { joint: G(0, 5) }),
-	shove: Ke,
+	stall: qe,
+	shove: Je,
 	respawn: K([!0])
-}), Je = J("type", {
+}), Xe = q("type", {
 	outfit: { id: X },
 	companion: { kind: X },
 	claimDaily: {},
@@ -4962,46 +5019,46 @@ var Y = G(1, we), ze = G(0, Te), Be = G(0, 24), Ve = G(0, 24), X = Me(64), Z = R
 		hours: G(1, 72)
 	}
 });
-J("type", {
+q("type", {
 	hello: {
-		token: Me(128, Oe),
-		protocol: G(1, Ce)
+		token: Ne(128, ke),
+		protocol: G(1, we)
 	},
-	input: { input: qe },
+	input: { input: Ye },
 	say: {
-		channel: K(Ee),
-		text: Me(200)
+		channel: K(De),
+		text: Ne(200)
 	},
 	ping: {},
-	command: { command: Je }
+	command: { command: Xe }
 });
 var Q = G(0, 2 ** 53 - 1);
-J("type", {
+q("type", {
 	welcome: {
 		protocol: Q,
-		content: Ie,
+		content: Le,
 		playerId: Q,
 		tick: Q,
 		tickHz: Q
 	},
 	snapshot: {
 		ack: Q,
-		state: Fe,
-		whole: Le,
-		creatures: Pe(Fe),
-		gone: Pe(Q)
+		state: Ie,
+		whole: Re,
+		creatures: Fe(Ie),
+		gone: Fe(Q)
 	},
 	chat: {
-		from: Ie,
-		channel: K(Ee),
-		text: Ie
+		from: Le,
+		channel: K(De),
+		text: Le
 	},
 	pong: {},
-	refused: { problem: K(De) }
+	refused: { problem: K(Oe) }
 });
 // src/live/live-read.ts
-var Ye = 3;
-function Xe(e, t) {
+var Ze = 3;
+function Qe(e, t) {
 	try {
 		return {
 			ok: !0,
@@ -5014,25 +5071,25 @@ function Xe(e, t) {
 		};
 	}
 }
-function Ze(e, t) {
-	return `${e} cannot be used: ${t.slice(0, Ye).join(" ")}`;
+function $e(e, t) {
+	return `${e} cannot be used: ${t.slice(0, Ze).join(" ")}`;
 }
-function Qe(e, t) {
+function et(e, t) {
 	let r = {};
 	for (let t of n) {
-		let n = Xe(t, e[t]);
+		let n = Qe(t, e[t]);
 		if (!n.ok) return n;
 		r[t] = n.value;
 	}
 	let i = be(r["monsters.json"], t.items);
 	if (i.length > 0) return {
 		ok: !1,
-		reason: Ze("monsters.json", i)
+		reason: $e("monsters.json", i)
 	};
 	let a = r["monsters.json"], o = se(r["maps/test.json"], r["tiles.json"], a.monsters.map((e) => e.id), t.npcs.npcs.map((e) => e.id), t.items.items);
 	return o.length > 0 ? {
 		ok: !1,
-		reason: Ze("The live map", o)
+		reason: $e("The live map", o)
 	} : {
 		ok: !0,
 		files: {
@@ -5043,7 +5100,7 @@ function Qe(e, t) {
 	};
 }
 // src/live/live-payload.ts
-var $e = "test", et = "Live map save ", tt = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, nt = /^[A-Za-z0-9+/]+={0,2}$/, rt = /^[0-9a-f]{16}$/, it = /^[0-9A-Za-z._-]{1,64}$/, at = /[\p{C}\p{Zl}\p{Zp}]/u, ot = [
+var tt = "test", nt = "Live map save ", rt = /^gravia-live-save 1 sha256=([0-9a-f]{64})$/, it = /^[A-Za-z0-9+/]+={0,2}$/, at = /^[0-9a-f]{16}$/, ot = /^[0-9A-Za-z._-]{1,64}$/, st = /[\p{C}\p{Zl}\p{Zp}]/u, ct = [
 	"format",
 	"expectedRev",
 	"build",
@@ -5051,8 +5108,8 @@ var $e = "test", et = "Live map save ", tt = /^gravia-live-save 1 sha256=([0-9a-
 	"nonce",
 	"note",
 	"files"
-], st = "the save is too big for one GitHub issue";
-function ct(e) {
+], lt = "the save is too big for one GitHub issue";
+function ut(e) {
 	return Uint8Array.from(atob(e), (e) => e.charCodeAt(0));
 }
 function $(e) {
@@ -5062,44 +5119,44 @@ function $(e) {
 		reason: e
 	};
 }
-function lt(e) {
-	if (e.length > 60200) return $(st);
+function dt(e) {
+	if (e.length > 60200) return $(lt);
 	let t = e.split("\n");
 	if (t.length !== 2) return $("the body must be a header line and one data line");
-	let n = tt.exec(t[0]);
+	let n = rt.exec(t[0]);
 	if (n === null) return $("the header line is not \"gravia-live-save 1 sha256=<hex>\"");
 	let r = t[1];
-	return !nt.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
+	return !it.test(r) || r.length % 4 != 0 ? $("the data line is not base64") : {
 		ok: !0,
 		sha256: n[1],
 		base64: r
 	};
 }
-function ut(e) {
+function ft(e) {
 	return typeof e == "object" && !!e && !Array.isArray(e);
 }
-function dt(e) {
+function pt(e) {
 	let t;
 	try {
 		t = JSON.parse(e);
 	} catch {
 		return $("the payload is not valid JSON");
 	}
-	if (!ut(t)) return $("the payload is not a JSON object");
-	for (let e of Object.keys(t)) if (!ot.includes(e)) return $(`unknown key "${e}"`);
+	if (!ft(t)) return $("the payload is not a JSON object");
+	for (let e of Object.keys(t)) if (!ct.includes(e)) return $(`unknown key "${e}"`);
 	if (t.format !== 1) return $("format must be 1");
 	let { expectedRev: r, build: i, savedAt: o, nonce: s, files: c } = t;
 	if (typeof r != "number" || !Number.isInteger(r) || r < 1) return $("expectedRev must be a positive whole number");
-	if (typeof i != "string" || !it.test(i)) return $("build is not a build id");
+	if (typeof i != "string" || !ot.test(i)) return $("build is not a build id");
 	if (typeof o != "string" || !a.test(o) || Number.isNaN(Date.parse(o))) return $("savedAt must be an ISO 8601 UTC time");
-	if (typeof s != "string" || !rt.test(s)) return $("nonce must be 16 hex characters");
+	if (typeof s != "string" || !at.test(s)) return $("nonce must be 16 hex characters");
 	if (Object.hasOwn(t, "note")) {
 		let e = t.note;
 		if (typeof e != "string") return $("note must be a string");
 		if (Array.from(e).length > 200) return $("note is over 200 characters");
-		if (at.test(e)) return $("note has a character that cannot be shown");
+		if (st.test(e)) return $("note has a character that cannot be shown");
 	}
-	if (!ut(c)) return $("files must be an object");
+	if (!ft(c)) return $("files must be an object");
 	for (let e of Object.keys(c)) if (!n.includes(e)) return $(`unknown file "${e}"`);
 	let l = {};
 	for (let e of n) {
@@ -5120,12 +5177,12 @@ function dt(e) {
 		payload: u
 	};
 }
-async function ft(e, t, n = c) {
-	let r = lt(e);
+async function mt(e, t, n = c) {
+	let r = dt(e);
 	if (!r.ok) return r;
 	let i;
 	try {
-		let e = await t(ct(r.base64));
+		let e = await t(ut(r.base64));
 		i = new TextDecoder("utf-8", {
 			fatal: !0,
 			ignoreBOM: !0
@@ -5133,9 +5190,9 @@ async function ft(e, t, n = c) {
 	} catch {
 		return $("the data is not valid compressed text");
 	}
-	return await n(i) === r.sha256 ? dt(i) : $("the sha-256 of the payload differs from the header");
+	return await n(i) === r.sha256 ? pt(i) : $("the sha-256 of the payload differs from the header");
 }
-function pt(e, t) {
+function ht(e, t) {
 	let n = t.getTime() - Date.parse(e);
 	return Number.isNaN(n) || n > 18e5 ? {
 		ok: !1,
@@ -5143,22 +5200,22 @@ function pt(e, t) {
 		reason: "the save waited too long for the checker and is not applied"
 	} : { ok: !0 };
 }
-function mt(e, t) {
-	let n = Qe(e.files, t);
+function gt(e, t) {
+	let n = et(e.files, t);
 	return n.ok ? n.files.map.name === "test" ? {
 		ok: !0,
 		...n.files
 	} : {
 		ok: !1,
 		verdict: "invalid",
-		reason: `The live map is named "${$e}" and cannot be renamed.`
+		reason: `The live map is named "${tt}" and cannot be renamed.`
 	} : {
 		ok: !1,
 		verdict: "invalid",
 		reason: n.reason
 	};
 }
-async function ht(e, t, r, i = c) {
+async function _t(e, t, r, i = c) {
 	let a = {};
 	for (let t of n) a[t] = await i(e.files[t]);
 	if (n.every((e) => a[e] === t.files[e])) return {
@@ -5186,8 +5243,8 @@ async function ht(e, t, r, i = c) {
 	};
 }
 // src/live/live-check-entry.ts
-var gt = {
+var vt = {
 	items: e,
 	npcs: t
 };
-export { et as LIVE_TITLE_PREFIX, mt as checkLivePayload, pt as checkLivePayloadAge, ft as decodeLivePayload, gt as known, ht as nextManifest, s as parseLiveManifest, lt as splitLiveBody };
+export { nt as LIVE_TITLE_PREFIX, gt as checkLivePayload, ht as checkLivePayloadAge, mt as decodeLivePayload, vt as known, _t as nextManifest, s as parseLiveManifest, dt as splitLiveBody };

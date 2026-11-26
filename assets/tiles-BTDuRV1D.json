@@ -210,6 +210,7 @@
     { "id": 208, "name": "cave-door-v-east", "image": "cave-door-v-closed", "layer": 1, "blocks": true, "opens": "door", "openImage": "cave-door-v-open", "swing": "east" },
     { "id": 209, "name": "cave-window-h", "image": "cave-window-h-closed", "layer": 1, "blocks": true, "opens": "window", "openImage": "cave-window-h-open" },
     { "id": 210, "name": "cave-window-v", "image": "cave-window-v-closed", "layer": 1, "blocks": true, "opens": "window", "openImage": "cave-window-v-open" },
-    { "id": 211, "name": "counter", "image": "counter", "layer": 1, "blocks": true }
+    { "id": 211, "name": "counter", "image": "counter", "layer": 1, "blocks": true },
+    { "id": 221, "name": "stall-stand", "image": "stall-stand", "layer": 1, "blocks": true, "stall": true }
   ]
 }

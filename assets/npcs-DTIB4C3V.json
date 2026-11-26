@@ -1176,6 +1176,22 @@
           ]
         }
       ]
+    },
+    {
+      "id": "greta",
+      "name": "Greta",
+      "line": "Welcome in. Sit where you like; there is bread and cheese for anyone who is hungry.",
+      "choices": [
+        { "id": "trade", "text": "Let's trade.", "effect": "trade" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "shop": {
+        "sells": [
+          { "item": "bread", "price": 6 },
+          { "item": "cheese", "price": 5 }
+        ],
+        "buys": []
+      }
     }
   ]
 }
