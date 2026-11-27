@@ -4790,7 +4790,12 @@ var Ce = {
 		dy: 0
 	}
 };
-[...ee.map((e) => Ce[e])];
+[...ee.map((e) => Ce[e])], [...Object.values({
+	helmet: "straw-hat",
+	armour: "plain-shirt",
+	legs: "plain-trousers",
+	boots: "plain-boots"
+})];
 // ../../packages/shared/src/stall.ts
 var we = 1e5, Te = 2147483647, Ee = 1048574, De = 1023, Oe = ["local", "global"], ke = [
 	"too-large",

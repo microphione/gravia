@@ -1026,6 +1026,1146 @@
       "width": 64,
       "height": 64
     },
+    "bare-man-down": {
+      "file": "bare-man-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-down-step1": {
+      "file": "bare-man-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-down-step2": {
+      "file": "bare-man-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-up": {
+      "file": "bare-man-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-up-step1": {
+      "file": "bare-man-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-up-step2": {
+      "file": "bare-man-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-left": {
+      "file": "bare-man-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-left-step1": {
+      "file": "bare-man-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-left-step2": {
+      "file": "bare-man-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-right": {
+      "file": "bare-man-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-right-step1": {
+      "file": "bare-man-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-man-right-step2": {
+      "file": "bare-man-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-down": {
+      "file": "bare-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-down-step1": {
+      "file": "bare-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-down-step2": {
+      "file": "bare-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-up": {
+      "file": "bare-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-up-step1": {
+      "file": "bare-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-up-step2": {
+      "file": "bare-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-left": {
+      "file": "bare-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-left-step1": {
+      "file": "bare-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-left-step2": {
+      "file": "bare-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-right": {
+      "file": "bare-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-right-step1": {
+      "file": "bare-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "bare-woman-right-step2": {
+      "file": "bare-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-down": {
+      "file": "look-plain-shirt-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-down-step1": {
+      "file": "look-plain-shirt-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-down-step2": {
+      "file": "look-plain-shirt-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-up": {
+      "file": "look-plain-shirt-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-up-step1": {
+      "file": "look-plain-shirt-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-up-step2": {
+      "file": "look-plain-shirt-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-left": {
+      "file": "look-plain-shirt-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-left-step1": {
+      "file": "look-plain-shirt-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-left-step2": {
+      "file": "look-plain-shirt-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-right": {
+      "file": "look-plain-shirt-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-right-step1": {
+      "file": "look-plain-shirt-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-right-step2": {
+      "file": "look-plain-shirt-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-down": {
+      "file": "look-plain-shirt-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-down-step1": {
+      "file": "look-plain-shirt-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-down-step2": {
+      "file": "look-plain-shirt-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-up": {
+      "file": "look-plain-shirt-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-up-step1": {
+      "file": "look-plain-shirt-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-up-step2": {
+      "file": "look-plain-shirt-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-left": {
+      "file": "look-plain-shirt-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-left-step1": {
+      "file": "look-plain-shirt-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-left-step2": {
+      "file": "look-plain-shirt-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-right": {
+      "file": "look-plain-shirt-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-right-step1": {
+      "file": "look-plain-shirt-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-shirt-woman-right-step2": {
+      "file": "look-plain-shirt-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-down": {
+      "file": "look-plain-trousers-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-down-step1": {
+      "file": "look-plain-trousers-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-down-step2": {
+      "file": "look-plain-trousers-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-up": {
+      "file": "look-plain-trousers-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-up-step1": {
+      "file": "look-plain-trousers-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-up-step2": {
+      "file": "look-plain-trousers-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-left": {
+      "file": "look-plain-trousers-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-left-step1": {
+      "file": "look-plain-trousers-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-left-step2": {
+      "file": "look-plain-trousers-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-right": {
+      "file": "look-plain-trousers-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-right-step1": {
+      "file": "look-plain-trousers-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-right-step2": {
+      "file": "look-plain-trousers-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-down": {
+      "file": "look-plain-trousers-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-down-step1": {
+      "file": "look-plain-trousers-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-down-step2": {
+      "file": "look-plain-trousers-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-up": {
+      "file": "look-plain-trousers-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-up-step1": {
+      "file": "look-plain-trousers-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-up-step2": {
+      "file": "look-plain-trousers-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-left": {
+      "file": "look-plain-trousers-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-left-step1": {
+      "file": "look-plain-trousers-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-left-step2": {
+      "file": "look-plain-trousers-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-right": {
+      "file": "look-plain-trousers-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-right-step1": {
+      "file": "look-plain-trousers-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-trousers-woman-right-step2": {
+      "file": "look-plain-trousers-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-down": {
+      "file": "look-plain-boots-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-down-step1": {
+      "file": "look-plain-boots-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-down-step2": {
+      "file": "look-plain-boots-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-up": {
+      "file": "look-plain-boots-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-up-step1": {
+      "file": "look-plain-boots-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-up-step2": {
+      "file": "look-plain-boots-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-left": {
+      "file": "look-plain-boots-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-left-step1": {
+      "file": "look-plain-boots-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-left-step2": {
+      "file": "look-plain-boots-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-right": {
+      "file": "look-plain-boots-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-right-step1": {
+      "file": "look-plain-boots-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-right-step2": {
+      "file": "look-plain-boots-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-down": {
+      "file": "look-plain-boots-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-down-step1": {
+      "file": "look-plain-boots-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-down-step2": {
+      "file": "look-plain-boots-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-up": {
+      "file": "look-plain-boots-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-up-step1": {
+      "file": "look-plain-boots-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-up-step2": {
+      "file": "look-plain-boots-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-left": {
+      "file": "look-plain-boots-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-left-step1": {
+      "file": "look-plain-boots-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-left-step2": {
+      "file": "look-plain-boots-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-right": {
+      "file": "look-plain-boots-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-right-step1": {
+      "file": "look-plain-boots-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plain-boots-woman-right-step2": {
+      "file": "look-plain-boots-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-down": {
+      "file": "look-straw-hat-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-down-step1": {
+      "file": "look-straw-hat-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-down-step2": {
+      "file": "look-straw-hat-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-up": {
+      "file": "look-straw-hat-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-up-step1": {
+      "file": "look-straw-hat-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-up-step2": {
+      "file": "look-straw-hat-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-left": {
+      "file": "look-straw-hat-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-left-step1": {
+      "file": "look-straw-hat-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-left-step2": {
+      "file": "look-straw-hat-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-right": {
+      "file": "look-straw-hat-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-right-step1": {
+      "file": "look-straw-hat-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-right-step2": {
+      "file": "look-straw-hat-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-down": {
+      "file": "look-straw-hat-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-down-step1": {
+      "file": "look-straw-hat-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-down-step2": {
+      "file": "look-straw-hat-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-up": {
+      "file": "look-straw-hat-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-up-step1": {
+      "file": "look-straw-hat-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-up-step2": {
+      "file": "look-straw-hat-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-left": {
+      "file": "look-straw-hat-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-left-step1": {
+      "file": "look-straw-hat-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-left-step2": {
+      "file": "look-straw-hat-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-right": {
+      "file": "look-straw-hat-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-right-step1": {
+      "file": "look-straw-hat-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-straw-hat-woman-right-step2": {
+      "file": "look-straw-hat-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-down": {
+      "file": "look-hood-woman-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-down-step1": {
+      "file": "look-hood-woman-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-down-step2": {
+      "file": "look-hood-woman-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-up": {
+      "file": "look-hood-woman-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-up-step1": {
+      "file": "look-hood-woman-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-up-step2": {
+      "file": "look-hood-woman-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-left": {
+      "file": "look-hood-woman-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-left-step1": {
+      "file": "look-hood-woman-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-left-step2": {
+      "file": "look-hood-woman-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-right": {
+      "file": "look-hood-woman-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-right-step1": {
+      "file": "look-hood-woman-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hood-woman-right-step2": {
+      "file": "look-hood-woman-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-down": {
+      "file": "look-leather-cap-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-down-step1": {
+      "file": "look-leather-cap-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-down-step2": {
+      "file": "look-leather-cap-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-up": {
+      "file": "look-leather-cap-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-up-step1": {
+      "file": "look-leather-cap-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-up-step2": {
+      "file": "look-leather-cap-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-left": {
+      "file": "look-leather-cap-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-left-step1": {
+      "file": "look-leather-cap-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-left-step2": {
+      "file": "look-leather-cap-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-right": {
+      "file": "look-leather-cap-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-right-step1": {
+      "file": "look-leather-cap-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-cap-right-step2": {
+      "file": "look-leather-cap-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-down": {
+      "file": "look-padded-vest-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-down-step1": {
+      "file": "look-padded-vest-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-down-step2": {
+      "file": "look-padded-vest-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-up": {
+      "file": "look-padded-vest-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-up-step1": {
+      "file": "look-padded-vest-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-up-step2": {
+      "file": "look-padded-vest-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-left": {
+      "file": "look-padded-vest-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-left-step1": {
+      "file": "look-padded-vest-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-left-step2": {
+      "file": "look-padded-vest-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-right": {
+      "file": "look-padded-vest-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-right-step1": {
+      "file": "look-padded-vest-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-padded-vest-right-step2": {
+      "file": "look-padded-vest-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-down": {
+      "file": "look-hide-jerkin-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-down-step1": {
+      "file": "look-hide-jerkin-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-down-step2": {
+      "file": "look-hide-jerkin-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-up": {
+      "file": "look-hide-jerkin-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-up-step1": {
+      "file": "look-hide-jerkin-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-up-step2": {
+      "file": "look-hide-jerkin-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-left": {
+      "file": "look-hide-jerkin-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-left-step1": {
+      "file": "look-hide-jerkin-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-left-step2": {
+      "file": "look-hide-jerkin-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-right": {
+      "file": "look-hide-jerkin-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-right-step1": {
+      "file": "look-hide-jerkin-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-hide-jerkin-right-step2": {
+      "file": "look-hide-jerkin-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-down": {
+      "file": "look-linen-trousers-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-down-step1": {
+      "file": "look-linen-trousers-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-down-step2": {
+      "file": "look-linen-trousers-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-up": {
+      "file": "look-linen-trousers-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-up-step1": {
+      "file": "look-linen-trousers-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-up-step2": {
+      "file": "look-linen-trousers-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-left": {
+      "file": "look-linen-trousers-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-left-step1": {
+      "file": "look-linen-trousers-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-left-step2": {
+      "file": "look-linen-trousers-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-right": {
+      "file": "look-linen-trousers-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-right-step1": {
+      "file": "look-linen-trousers-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-linen-trousers-right-step2": {
+      "file": "look-linen-trousers-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-down": {
+      "file": "look-leather-boots-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-down-step1": {
+      "file": "look-leather-boots-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-down-step2": {
+      "file": "look-leather-boots-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-up": {
+      "file": "look-leather-boots-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-up-step1": {
+      "file": "look-leather-boots-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-up-step2": {
+      "file": "look-leather-boots-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-left": {
+      "file": "look-leather-boots-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-left-step1": {
+      "file": "look-leather-boots-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-left-step2": {
+      "file": "look-leather-boots-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-right": {
+      "file": "look-leather-boots-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-right-step1": {
+      "file": "look-leather-boots-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-leather-boots-right-step2": {
+      "file": "look-leather-boots-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-down": {
+      "file": "look-plank-shield-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-down-step1": {
+      "file": "look-plank-shield-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-down-step2": {
+      "file": "look-plank-shield-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-up": {
+      "file": "look-plank-shield-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-up-step1": {
+      "file": "look-plank-shield-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-up-step2": {
+      "file": "look-plank-shield-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-left": {
+      "file": "look-plank-shield-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-left-step1": {
+      "file": "look-plank-shield-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-left-step2": {
+      "file": "look-plank-shield-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-right": {
+      "file": "look-plank-shield-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-right-step1": {
+      "file": "look-plank-shield-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-plank-shield-right-step2": {
+      "file": "look-plank-shield-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-down": {
+      "file": "look-iron-shield-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-down-step1": {
+      "file": "look-iron-shield-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-down-step2": {
+      "file": "look-iron-shield-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-up": {
+      "file": "look-iron-shield-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-up-step1": {
+      "file": "look-iron-shield-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-up-step2": {
+      "file": "look-iron-shield-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-left": {
+      "file": "look-iron-shield-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-left-step1": {
+      "file": "look-iron-shield-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-left-step2": {
+      "file": "look-iron-shield-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-right": {
+      "file": "look-iron-shield-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-right-step1": {
+      "file": "look-iron-shield-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-iron-shield-right-step2": {
+      "file": "look-iron-shield-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-down": {
+      "file": "look-torch-down.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-down-step1": {
+      "file": "look-torch-down-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-down-step2": {
+      "file": "look-torch-down-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-up": {
+      "file": "look-torch-up.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-up-step1": {
+      "file": "look-torch-up-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-up-step2": {
+      "file": "look-torch-up-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-left": {
+      "file": "look-torch-left.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-left-step1": {
+      "file": "look-torch-left-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-left-step2": {
+      "file": "look-torch-left-step2.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-right": {
+      "file": "look-torch-right.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-right-step1": {
+      "file": "look-torch-right-step1.png",
+      "width": 64,
+      "height": 64
+    },
+    "look-torch-right-step2": {
+      "file": "look-torch-right-step2.png",
+      "width": 64,
+      "height": 64
+    },
     "item-apple": {
       "file": "item-apple.png",
       "width": 32,
@@ -1813,6 +2953,16 @@
     },
     "ui-star-off": {
       "file": "ui-star-off.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-look": {
+      "file": "ui-look.png",
+      "width": 32,
+      "height": 32
+    },
+    "ui-look-off": {
+      "file": "ui-look-off.png",
       "width": 32,
       "height": 32
     },
