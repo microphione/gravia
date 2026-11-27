@@ -314,6 +314,7 @@
       "damage": { "min": 12, "max": 26 },
       "attackIntervalMs": 2000,
       "critChance": 10,
+      "single": true,
       "leashTiles": 8,
       "respawnMs": 1800000,
       "experience": 2500,

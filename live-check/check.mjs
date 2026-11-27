@@ -3596,6 +3596,167 @@ var e = {
 				}],
 				buys: []
 			}
+		},
+		{
+			id: "osric",
+			name: "Osric",
+			line: "Quiet, friend. A deer hears a boot from a long way off.",
+			choices: [
+				{
+					id: "stalk",
+					text: "How do I stalk game?",
+					effect: "say",
+					next: "stalk"
+				},
+				{
+					id: "work",
+					text: "Can I help you?",
+					effect: "say",
+					next: "work"
+				},
+				{
+					id: "bye",
+					text: "Goodbye.",
+					effect: "end"
+				}
+			],
+			nodes: [
+				{
+					id: "stalk",
+					line: "Go low and slow, and wear nothing bright. A creature that does not see you cannot run from you.",
+					choices: [{
+						id: "teach-sneaking",
+						text: "Teach me to stalk. ({price} zloty)",
+						effect: "teach",
+						lesson: "sneaking",
+						price: 40,
+						next: "taught-sneaking",
+						requires: [
+							{
+								type: "level",
+								min: 6
+							},
+							{
+								type: "quest",
+								quest: "iron-for-the-gate",
+								state: "done"
+							},
+							{
+								type: "quest",
+								quest: "venison-for-the-larder",
+								state: "none"
+							}
+						]
+					}, {
+						id: "stalk-back",
+						text: "Thank you.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "taught-sneaking",
+					line: "Slow and low. Dark things on your back, and the deer will never lift a head.",
+					choices: [{
+						id: "taught-sneaking-back",
+						text: "Thank you.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "work",
+					line: "My larder is bare, and the deer keep out of reach.",
+					choices: [
+						{
+							id: "ask",
+							text: "Can I fill it for you?",
+							effect: "quest-start",
+							quest: "venison-for-the-larder",
+							next: "ask-yes",
+							requires: [
+								{
+									type: "level",
+									min: 6
+								},
+								{
+									type: "quest",
+									quest: "iron-for-the-gate",
+									state: "done"
+								},
+								{
+									type: "quest",
+									quest: "venison-for-the-larder",
+									state: "none"
+								}
+							]
+						},
+						{
+							id: "hand-in",
+							text: "I have venison for you.",
+							effect: "quest-done",
+							quest: "venison-for-the-larder",
+							next: "hand-in-thanks",
+							stageNext: ["venison-seen"],
+							requires: [{
+								type: "quest",
+								quest: "venison-for-the-larder",
+								state: "active"
+							}]
+						},
+						{
+							id: "after",
+							text: "About the larder...",
+							effect: "say",
+							next: "after",
+							requires: [{
+								type: "quest",
+								quest: "venison-for-the-larder",
+								state: "done"
+							}]
+						},
+						{
+							id: "work-back",
+							text: "Never mind.",
+							effect: "say"
+						}
+					]
+				},
+				{
+					id: "ask-yes",
+					line: "Creep up on a deer and show me its venison. Then bring me three in all, and the larder is full.",
+					choices: [{
+						id: "ask-yes-back",
+						text: "I will hunt them.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "venison-seen",
+					line: "Clean meat. Now bring me three venison in all.",
+					choices: [{
+						id: "venison-seen-back",
+						text: "I will bring them.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "hand-in-thanks",
+					line: "Three fine haunches. Take these coins and this jerkin: dark and soft, a hunter's friend.",
+					choices: [{
+						id: "thanks-back",
+						text: "Glad to help.",
+						effect: "say"
+					}]
+				},
+				{
+					id: "after",
+					line: "The larder is full. Stay low and the wood will hold few surprises for you.",
+					choices: [{
+						id: "after-back",
+						text: "I see.",
+						effect: "say"
+					}]
+				}
+			]
 		}
 	]
 }, n = [
@@ -4749,7 +4910,8 @@ function xe(e, t) {
 			"hide",
 			"nameColour",
 			"critChance",
-			"noticeTiles"
+			"noticeTiles",
+			"single"
 		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), V(e, "health", 1, 1e5, s, n), V(e, "speed", 1, _e, s, n);
 		let c = e.body;
 		(!z(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
@@ -4758,7 +4920,7 @@ function xe(e, t) {
 			let t = e.respawnMs;
 			V(e, "respawnMaxMs", z(t) && t >= 0 ? t : 0, 864e5, s, n);
 		}
-		V(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && V(e, "critChance", 0, 100, s, n), e.noticeTiles !== void 0 && V(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && ve(e.loot, t, s, n), e.rare !== void 0 && be(e, r, t, s, n), e.hide !== void 0 && Se(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && ge(e.boss, `${s} boss`, n);
+		V(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && V(e, "critChance", 0, 100, s, n), e.single !== void 0 && e.single !== !0 && n.push(`${s}: "single" must be true when it is written.`), e.noticeTiles !== void 0 && V(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && ve(e.loot, t, s, n), e.rare !== void 0 && be(e, r, t, s, n), e.hide !== void 0 && Se(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && ge(e.boss, `${s} boss`, n);
 	}), n;
 }
 function Se(e, t, n, r) {
@@ -5022,6 +5184,7 @@ var q = W(1, Ee), J = W(0, De), Y = W(0, 24), Ue = W(0, 24), X = Pe(64), Z = Be(
 	choice: X,
 	target: Fe(q),
 	stance: G(["sword", "shield"]),
+	sneak: G([!0, !1]),
 	inventory: qe,
 	profession: X,
 	talk: He({

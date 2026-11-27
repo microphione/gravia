@@ -1,0 +1,1289 @@
+{
+  "format": 1,
+  "npcs": [
+    {
+      "id": "ferryman",
+      "name": "Ferryman",
+      "line": "The crossing is short. Shall I take you over to the other island?",
+      "choices": [
+        { "id": "travel", "text": "Yes, take me across.", "effect": "travel" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ]
+    },
+    {
+      "id": "farmer",
+      "name": "Farmer",
+      "line": "Good day. Mind the mud, it clings to boots.",
+      "choices": [
+        { "id": "chat", "text": "What's new with you?", "effect": "say", "next": "news" },
+        { "id": "work", "text": "Do you need help?", "effect": "say", "next": "work" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "work",
+          "line": "There is always work on a farm.",
+          "choices": [
+            { "id": "ask", "text": "What can I do?", "effect": "quest-start", "quest": "rat-tails", "next": "ask-yes", "requires": [{ "type": "level", "min": 1 }, { "type": "quest", "quest": "rat-tails", "state": "none" }] },
+            { "id": "hand-in", "text": "I have your rat tails.", "effect": "quest-done", "quest": "rat-tails", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "rat-tails", "state": "active" }] },
+            { "id": "more-work", "text": "Any more work for me?", "effect": "say", "next": "more", "requires": [{ "type": "quest", "quest": "rat-tails", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "more",
+          "line": "Now that you mention it, aye.",
+          "choices": [
+            { "id": "ask-herbs", "text": "What do you need?", "effect": "quest-start", "quest": "herb-bundle", "next": "ask-herbs-yes", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "herb-bundle", "state": "none" }] },
+            { "id": "hand-in-herbs", "text": "I have the healing herbs.", "effect": "quest-done", "quest": "herb-bundle", "next": "hand-in-herbs-thanks", "requires": [{ "type": "quest", "quest": "herb-bundle", "state": "active" }] },
+            { "id": "further-work", "text": "And after that?", "effect": "say", "next": "further", "requires": [{ "type": "quest", "quest": "herb-bundle", "state": "done" }] },
+            { "id": "more-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "further",
+          "line": "You are a fine hand, I will say that.",
+          "choices": [
+            { "id": "ask-potions", "text": "What is it this time?", "effect": "quest-start", "quest": "farmer-potions", "next": "ask-potions-yes", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "farmer-potions", "state": "none" }] },
+            { "id": "hand-in-potions", "text": "I have the health potions.", "effect": "quest-done", "quest": "farmer-potions", "next": "hand-in-potions-thanks", "requires": [{ "type": "quest", "quest": "farmer-potions", "state": "active" }] },
+            { "id": "further-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-herbs-yes",
+          "line": "Aye. The little ones are down with fever. Bring me six healing herbs.",
+          "choices": [
+            { "id": "ask-herbs-back", "text": "I will fetch them.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-herbs-thanks",
+          "line": "Good green herbs. The village will sleep easier tonight.",
+          "choices": [
+            { "id": "thanks-herbs-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-potions-yes",
+          "line": "Winter is coming. Bring me two health potions, and the barn is yours to call friend.",
+          "choices": [
+            { "id": "ask-potions-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-potions-thanks",
+          "line": "Fine brewing! You have my thanks again.",
+          "choices": [
+            { "id": "thanks-potions-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "Aye, the rats are eating me out of house and home.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Fine tails! You have my thanks, and the village's.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "news",
+          "line": "The barley is up, but the rats are fat this year.",
+          "choices": [
+            { "id": "rats", "text": "Fat rats?", "effect": "say", "next": "rats" },
+            { "id": "weather", "text": "How is the weather?", "effect": "say", "next": "weather" },
+            { "id": "news-back", "text": "Let me ask something else.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "rats",
+          "line": "They eat my grain and leave their tails behind.",
+          "choices": [
+            { "id": "rats-back", "text": "Ugly business.", "effect": "say" },
+            { "id": "rats-news", "text": "Tell me more news.", "effect": "say", "next": "news" }
+          ]
+        },
+        {
+          "id": "weather",
+          "line": "Dry for now. My knee says rain by the weekend.",
+          "choices": [
+            { "id": "weather-back", "text": "Take care of that knee.", "effect": "say" },
+            { "id": "weather-news", "text": "Tell me more news.", "effect": "say", "next": "news" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trader",
+      "name": "Trader",
+      "line": "Welcome, friend. Bread, cheese, and fair prices.",
+      "choices": [
+        { "id": "chat", "text": "What's new with you?", "effect": "say", "next": "news" },
+        { "id": "trade", "text": "Let's trade.", "effect": "trade" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "news",
+          "line": "Slow days. The road is quiet and my cart is full.",
+          "choices": [
+            { "id": "road", "text": "Why is the road quiet?", "effect": "say", "next": "road" },
+            { "id": "news-back", "text": "Let me ask something else.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "road",
+          "line": "Folk stay home when the wolves howl at night.",
+          "choices": [
+            { "id": "road-back", "text": "I will be careful.", "effect": "say" }
+          ]
+        }
+      ],
+      "shop": {
+        "sells": [
+          { "item": "bread", "price": 6 },
+          { "item": "cheese", "price": 5 },
+          { "item": "small-health-potion", "price": 15 },
+          { "item": "small-mana-potion", "price": 15 },
+          { "item": "taming-bell", "price": 30 }
+        ],
+        "buys": [
+          { "item": "rat-tail", "price": 1 },
+          { "item": "rat-corpse", "price": 5, "freshOnly": true }
+        ],
+        "purse": { "cap": 100, "refillGold": 1, "refillEveryMs": 10000 }
+      }
+    },
+    {
+      "id": "house-agent",
+      "name": "House agent",
+      "line": "Welcome home. Rent is taken from the gold in your depot each month; after a few days of reminders an unpaid house is lost. What shall I see to?",
+      "choices": [
+        { "id": "floor-up", "text": "Build a floor above ({price} gold).", "effect": "house-floor-up", "next": "built" },
+        { "id": "floor-down", "text": "Dig a floor below ({price} gold).", "effect": "house-floor-down", "next": "built" },
+        { "id": "give-up", "text": "I give this house up.", "effect": "house-give-up", "next": "gave-up" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "built",
+          "line": "It is done. Take a look.",
+          "choices": [
+            { "id": "built-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "gave-up",
+          "line": "The house is no longer yours. Farewell.",
+          "choices": [
+            { "id": "gave-up-back", "text": "Farewell.", "effect": "say" }
+          ]
+        }
+      ],
+      "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5, "rent": { "gold": 1, "reminderDays": 3 } }
+    },
+    {
+      "id": "house-guide",
+      "name": "House guide",
+      "line": "Welcome, look around as you like, but please touch nothing. This house is for sale for {price} gold.",
+      "choices": [
+        { "id": "buy", "text": "I will buy it ({price} gold).", "effect": "house-buy", "next": "sold" },
+        { "id": "bye", "text": "Just looking.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "sold",
+          "line": "It is yours now. The house agent will look after it.",
+          "choices": [
+            { "id": "sold-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ],
+      "houseGuide": true
+    },
+    {
+      "id": "boatman",
+      "name": "Boatman",
+      "line": "The boat leaves in {departure}.",
+      "choices": [
+        { "id": "board", "text": "I want to sail.", "effect": "board", "next": "board-ok" },
+        { "id": "when", "text": "When does it leave?", "effect": "say", "next": "when" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "board-ok",
+          "line": "Take a seat when you are by the boat. It leaves in {departure}.",
+          "choices": [
+            { "id": "board-ok-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "when",
+          "line": "Next departure in {departure}. Do not be late.",
+          "choices": [
+            { "id": "when-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smith",
+      "name": "Smith",
+      "line": "Bring me two of a kind and some coins, and I will make one better piece of them.",
+      "choices": [
+        { "id": "merge", "text": "Let's merge two pieces.", "effect": "merge" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "smith": { "feePercent": 50 }
+    },
+    {
+      "id": "thomas",
+      "name": "Thomas",
+      "line": "Good to see you, my child. Mind the mud, it clings to boots.",
+      "choices": [
+        { "id": "fight", "text": "How do I fight a beast?", "effect": "say", "next": "fight" },
+        { "id": "work", "text": "Is there work to do?", "effect": "say", "next": "work" },
+        { "id": "cellar", "text": "What of the old root cellar?", "effect": "say", "next": "cellar", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "cellar",
+          "line": "The old root cellar in the south-west is overrun with burrow rats, and it is dark down there. Someone must thin them.",
+          "choices": [
+            { "id": "ask-cellar", "text": "I will go down.", "effect": "quest-start", "quest": "cellar-rats", "next": "cellar-yes", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "cellar-rats", "state": "none" }] },
+            { "id": "hand-in-cellar", "text": "I have the six burrow tails.", "effect": "quest-done", "quest": "cellar-rats", "next": "cellar-thanks", "requires": [{ "type": "quest", "quest": "cellar-rats", "state": "active" }] },
+            { "id": "after-cellar", "text": "About the cellar...", "effect": "say", "next": "cellar-after", "requires": [{ "type": "quest", "quest": "cellar-rats", "state": "done" }] },
+            { "id": "cellar-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cellar-yes",
+          "line": "Take the stairs in the lane south-west of our house and mind the dark; a torch may lie in a chest near the foot. Bring me six burrow tails.",
+          "choices": [
+            { "id": "cellar-yes-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cellar-thanks",
+          "line": "Six tails, and the cellar is quiet again. Keep these torches, you will need them below.",
+          "choices": [
+            { "id": "cellar-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cellar-after",
+          "line": "The cellar is quiet. There are deeper holes on this island, though.",
+          "choices": [
+            { "id": "cellar-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "fight",
+          "line": "Walk up to the beast and strike until it falls. Back away and eat or drink when it bites hard.",
+          "choices": [
+            { "id": "loot", "text": "And what it leaves behind?", "effect": "say", "next": "loot" },
+            { "id": "fight-back", "text": "I understand.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "loot",
+          "line": "Open the corpse and take what it carried into your backpack. Agnes the weaver will teach you to skin one.",
+          "choices": [
+            { "id": "loot-back", "text": "Thank you, father.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "Work? There is always some on a farm.",
+          "choices": [
+            { "id": "ask", "text": "What can I do?", "effect": "quest-start", "quest": "granary-rats", "next": "ask-yes", "requires": [{ "type": "level", "min": 1 }, { "type": "quest", "quest": "granary-rats", "state": "none" }] },
+            { "id": "hand-in", "text": "I have the five rat tails.", "effect": "quest-done", "quest": "granary-rats", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "granary-rats", "state": "active" }] },
+            { "id": "after", "text": "About the rats in the granary...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "granary-rats", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "There are rats in the granary, more than ever, and they come down from the north. Bring me five rat tails and I will count them.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "That is a fair count. The beasts are fleeing something in the north, I fear.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "They keep coming down from the north. Something is wrong up there.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "martha",
+      "name": "Martha",
+      "line": "Come in, my dear, the kettle is on.",
+      "choices": [
+        { "id": "herbs", "text": "Where do I find herbs?", "effect": "say", "next": "herbs" },
+        { "id": "work", "text": "Do you need anything?", "effect": "say", "next": "work" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "herbs",
+          "line": "Healing herbs grow in the meadow to the east, and they grow back. Pick only what you need.",
+          "choices": [
+            { "id": "brew", "text": "And how do I brew them?", "effect": "say", "next": "brew" },
+            { "id": "teach-herbs", "text": "Teach me, please. ({price} zloty)", "effect": "teach", "lesson": "herbalism", "price": 10, "next": "taught-herbs", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "mothers-remedy", "state": "none" }] },
+            { "id": "herbs-back", "text": "Thank you, mother.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-herbs",
+          "line": "Pick the leaf, leave the root. Three at my table, and a potion comes of them.",
+          "choices": [
+            { "id": "taught-herbs-back", "text": "Thank you, mother.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "brew",
+          "line": "Use my table with three healing herbs in your backpack, and a health potion comes of them. Keep one in your quick slot for a bad moment.",
+          "choices": [
+            { "id": "teach-brewing", "text": "Teach me to brew. ({price} zloty)", "effect": "teach", "lesson": "brewing", "price": 10, "next": "taught-brewing", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "mothers-remedy", "state": "none" }, { "type": "lesson", "lesson": "herbalism" }] },
+            { "id": "brew-back", "text": "I will remember.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-brewing",
+          "line": "Three leaves in the pot, and the fire kept low. Patience does the rest.",
+          "choices": [
+            { "id": "taught-brewing-back", "text": "Thank you, mother.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "I may need a hand when the time is right.",
+          "choices": [
+            { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "mothers-remedy", "next": "ask-yes", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "mothers-remedy", "state": "none" }] },
+            { "id": "hand-in", "text": "I have something for the remedy.", "effect": "quest-done", "quest": "mothers-remedy", "next": "hand-in-thanks", "stageNext": ["herbs-seen"], "requires": [{ "type": "quest", "quest": "mothers-remedy", "state": "active" }] },
+            { "id": "after", "text": "About the remedy...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "mothers-remedy", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "The animals flee the north, and frightened folk fall ill. Pick three herbs in the meadow and show them to me.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will brew it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "herbs-seen",
+          "line": "Good leaves, and the roots left whole. Now brew them at my table and bring me the potion.",
+          "choices": [
+            { "id": "herbs-seen-back", "text": "I will brew it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Well brewed, my dear. Take these for the road.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "They say something on Watch Hill has stirred. I do not like it.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hanna",
+      "name": "Hanna",
+      "line": "Hello! I know where everybody is.",
+      "choices": [
+        { "id": "where", "text": "Where is everyone?", "effect": "say", "next": "places" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "places",
+          "line": "Do you mean home, the town, or the places outside it?",
+          "choices": [
+            { "id": "home", "text": "At home.", "effect": "say", "next": "home" },
+            { "id": "town", "text": "In the town.", "effect": "say", "next": "town" },
+            { "id": "outside", "text": "Outside the town.", "effect": "say", "next": "outside" },
+            { "id": "places-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "home",
+          "line": "Mother is in the kitchen, and father is in the barn or the fields. Grandfather is at the pier by day.",
+          "choices": [
+            { "id": "home-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "town",
+          "line": "Brother Anselm lives in the chapel, north of the green. The reeve is across the High Street from the green, east of the chapel. The storehouse is west of the green.",
+          "choices": [
+            { "id": "market", "text": "And the shops?", "effect": "say", "next": "market" },
+            { "id": "town-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "market",
+          "line": "Helen sells at her stall on the green and lives by Pier Street. Agnes weaves in her house across the square; Jacob works at the smithy and lives beside it.",
+          "choices": [
+            { "id": "market-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "outside",
+          "line": "Simon has a hut by Fir Wood in the north-west. The quarry is in the north-east, and the herb meadow to the east.",
+          "choices": [
+            { "id": "outside-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "victor",
+      "name": "Old Victor",
+      "line": "There you are, child. The old boat still floats, and so do I.",
+      "choices": [
+        { "id": "sea", "text": "Can I sail with you?", "effect": "say", "next": "sea" },
+        { "id": "ready", "text": "I am ready to leave the island.", "effect": "say", "next": "mend", "requires": [{ "type": "level", "min": 8 }] },
+        { "id": "tale", "text": "Tell me a tale.", "effect": "say", "next": "tale" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "sea",
+          "line": "The sea is wide and I row it only once. My boat needs mending first; come back when you are level 8 and we shall see.",
+          "choices": [
+            { "id": "sea-back", "text": "I will wait.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "tale",
+          "line": "I rowed the north shore when I was young. The hill was quiet then.",
+          "choices": [
+            { "id": "tale-back", "text": "Thank you, grandfather.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "mend",
+          "line": "The keel of my boat is rotten, and I must mend it before I can sail on. Come back to me later.",
+          "choices": [
+            { "id": "voyage", "text": "The boat is mended, take me across.", "effect": "say", "next": "warning", "requires": [{ "type": "level", "min": 100 }] },
+            { "id": "mend-back", "text": "I will wait.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "warning",
+          "line": "I am too old to row back, mind. Whoever crosses cannot return, for the island is closed behind you.",
+          "choices": [
+            { "id": "depart", "text": "Take me across.", "effect": "depart", "arrival": "mainland", "requires": [{ "type": "level", "min": 100 }] },
+            { "id": "stay", "text": "I will stay a while longer.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agnes",
+      "name": "Agnes",
+      "line": "Welcome, child. Mind the loom, the thread tangles.",
+      "choices": [
+        { "id": "skin", "text": "How do I skin a corpse?", "effect": "say", "next": "skin" },
+        { "id": "work", "text": "Can I help?", "effect": "say", "next": "work" },
+        { "id": "silk", "text": "Do you need silk?", "effect": "say", "next": "silk", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "silk",
+          "line": "My loom is hungry for silk. The cave spiders in the Old Mine spin the finest there is.",
+          "choices": [
+            { "id": "ask-silk", "text": "I will fetch some.", "effect": "quest-start", "quest": "silk-for-the-loom", "next": "silk-yes", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "silk-for-the-loom", "state": "none" }] },
+            { "id": "hand-in-silk", "text": "I have the spider silk.", "effect": "quest-done", "quest": "silk-for-the-loom", "next": "silk-thanks", "requires": [{ "type": "quest", "quest": "silk-for-the-loom", "state": "active" }] },
+            { "id": "after-silk", "text": "About the silk...", "effect": "say", "next": "silk-after", "requires": [{ "type": "quest", "quest": "silk-for-the-loom", "state": "done" }] },
+            { "id": "silk-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "silk-yes",
+          "line": "Bring me four skeins of spider silk from the Old Mine under the quarry. Go with a light, for they bite from the dark.",
+          "choices": [
+            { "id": "silk-yes-back", "text": "I will be careful.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "silk-thanks",
+          "line": "Soft and strong, just as I hoped. Here is a cap for your trouble.",
+          "choices": [
+            { "id": "silk-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "silk-after",
+          "line": "The new cloth is already on the loom.",
+          "choices": [
+            { "id": "silk-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "skin",
+          "line": "Use a fresh corpse and you take its hide, but only while it is fresh. A rat hide is small, yet four make a jerkin.",
+          "choices": [
+            { "id": "loom", "text": "And the loom?", "effect": "say", "next": "loom" },
+            { "id": "skin-sell", "text": "Will you buy hides and pelts?", "effect": "trade" },
+            { "id": "teach-skin", "text": "Teach me to skin. ({price} zloty)", "effect": "teach", "lesson": "skinning", "price": 15, "next": "taught-skin", "requires": [{ "type": "level", "min": 2 }, { "type": "quest", "quest": "granary-rats", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
+            { "id": "skin-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-skin",
+          "line": "Fresh only. A clean cut, the way I taught my own hands.",
+          "choices": [
+            { "id": "taught-skin-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "loom",
+          "line": "Use my loom with four rat hides in your backpack and a hide jerkin comes of them. Wear it, and bites hurt less.",
+          "choices": [
+            { "id": "teach-loom", "text": "Teach me to sew. ({price} zloty)", "effect": "teach", "lesson": "tailoring", "price": 20, "next": "taught-loom", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "mothers-remedy", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
+            { "id": "loom-back", "text": "I will try it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-loom",
+          "line": "Small stitches, even stitches. The loom does the rest.",
+          "choices": [
+            { "id": "taught-loom-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "There is always cloth to mend.",
+          "choices": [
+            { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "winter-jerkin", "next": "ask-yes", "requires": [{ "type": "level", "min": 3 }, { "type": "quest", "quest": "mothers-remedy", "state": "done" }, { "type": "quest", "quest": "winter-jerkin", "state": "none" }] },
+            { "id": "hand-in", "text": "I have something for the jerkin.", "effect": "quest-done", "quest": "winter-jerkin", "next": "hand-in-thanks", "stageNext": ["hides-seen"], "requires": [{ "type": "quest", "quest": "winter-jerkin", "state": "active" }] },
+            { "id": "after", "text": "About the jerkin...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "The wind off the hill came early and cold. Skin four rats and show me the hides.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will make it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hides-seen",
+          "line": "Four good hides. Now sew them into a jerkin at my loom: small stitches, even stitches.",
+          "choices": [
+            { "id": "hides-seen-back", "text": "I will sew it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "A warm, sound jerkin. Simon says the boars are tearing up Fir Wood; they flee the hill, too.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "The wind off Watch Hill is cold and strange.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ],
+      "shop": {
+        "sells": [],
+        "buys": [
+          { "item": "bear-hide", "price": 7 },
+          { "item": "hare-pelt", "price": 2 }
+        ],
+        "purse": { "cap": 100, "refillGold": 1, "refillEveryMs": 10000 }
+      }
+    },
+    {
+      "id": "helen",
+      "name": "Helen",
+      "line": "Welcome, child. Bread, cheese, and fair prices.",
+      "choices": [
+        { "id": "buying", "text": "What do you buy?", "effect": "say", "next": "buying" },
+        { "id": "trade", "text": "Let's trade.", "effect": "trade" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "buying",
+          "line": "Tails, tusks, hides and pelts, spider silk and goblin ears, and fresh rat corpses. My purse is thin, so come back when it has filled.",
+          "choices": [
+            { "id": "buying-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ],
+      "shop": {
+        "sells": [
+          { "item": "bread", "price": 6 },
+          { "item": "cheese", "price": 5 },
+          { "item": "small-health-potion", "price": 15 },
+          { "item": "small-mana-potion", "price": 15 },
+          { "item": "torch", "price": 12 }
+        ],
+        "buys": [
+          { "item": "rat-tail", "price": 1 },
+          { "item": "rat-corpse", "price": 5, "freshOnly": true },
+          { "item": "boar-tusk", "price": 3 },
+          { "item": "boar-hide", "price": 4 },
+          { "item": "wolf-pelt", "price": 8 },
+          { "item": "burrow-tail", "price": 2 },
+          { "item": "spider-silk", "price": 5 },
+          { "item": "goblin-ear", "price": 6 }
+        ],
+        "purse": { "cap": 100, "refillGold": 1, "refillEveryMs": 10000 }
+      }
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "line": "Hail, child. Fir Wood is quiet today, mostly.",
+      "choices": [
+        { "id": "firs", "text": "How do I cut firs?", "effect": "say", "next": "firs" },
+        { "id": "work", "text": "Do you need help?", "effect": "say", "next": "work" },
+        { "id": "claws", "text": "What of the bears?", "effect": "say", "next": "claws", "requires": [{ "type": "level", "min": 12 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "claws",
+          "line": "Bears have denned in a hollow under the north-west edge of the wood, and they grow bold. I split my logs with wedges made of their claws.",
+          "choices": [
+            { "id": "ask-claws", "text": "I will hunt them.", "effect": "quest-start", "quest": "claws-for-simon", "next": "claws-yes", "requires": [{ "type": "level", "min": 12 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "claws-for-simon", "state": "none" }] },
+            { "id": "hand-in-claws", "text": "I have the bear claws.", "effect": "quest-done", "quest": "claws-for-simon", "next": "claws-thanks", "requires": [{ "type": "quest", "quest": "claws-for-simon", "state": "active" }] },
+            { "id": "after-claws", "text": "About the bears...", "effect": "say", "next": "claws-after", "requires": [{ "type": "quest", "quest": "claws-for-simon", "state": "done" }] },
+            { "id": "claws-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "claws-yes",
+          "line": "Go down by the hut path into the hollow, and bring me three bear claws. A bear bites hard, so go well fed.",
+          "choices": [
+            { "id": "claws-yes-back", "text": "I will go.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "claws-thanks",
+          "line": "Three fine claws. Take these trousers; thorns will not tear them.",
+          "choices": [
+            { "id": "claws-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "claws-after",
+          "line": "The wood is quieter now. The bears will be back, as bears are.",
+          "choices": [
+            { "id": "claws-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "firs",
+          "line": "Use a fir tree and you take a log; the tree grows back in time. The more you cut, the better you cut.",
+          "choices": [
+            { "id": "logs", "text": "What are logs for?", "effect": "say", "next": "logs" },
+            { "id": "hearths-ask", "text": "Can I cut some for you?", "effect": "say", "next": "hearths", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }] },
+            { "id": "teach-cutting", "text": "Teach me to cut. ({price} zloty)", "effect": "teach", "lesson": "woodcutting", "price": 25, "next": "taught-cutting", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "logs-for-the-hearths", "state": "none" }] },
+            { "id": "firs-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths",
+          "line": "The hearths of the town are always hungry.",
+          "choices": [
+            { "id": "ask-hearths", "text": "I will cut them.", "effect": "quest-start", "quest": "logs-for-the-hearths", "next": "hearths-yes", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "logs-for-the-hearths", "state": "none" }] },
+            { "id": "hand-in-hearths", "text": "I have the three logs.", "effect": "quest-done", "quest": "logs-for-the-hearths", "next": "hearths-thanks", "requires": [{ "type": "quest", "quest": "logs-for-the-hearths", "state": "active" }] },
+            { "id": "after-hearths", "text": "About the hearths...", "effect": "say", "next": "hearths-after", "requires": [{ "type": "quest", "quest": "logs-for-the-hearths", "state": "done" }] },
+            { "id": "hearths-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-yes",
+          "line": "The hearths of the town eat logs all winter. Cut three firs and bring me the logs.",
+          "choices": [
+            { "id": "hearths-yes-back", "text": "I will begin.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-thanks",
+          "line": "Three good logs. Low, then across: that is how the axe goes.",
+          "choices": [
+            { "id": "hearths-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hearths-after",
+          "line": "The hearths are warm. The firs grow back in time.",
+          "choices": [
+            { "id": "hearths-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-cutting",
+          "line": "Low, then across. Let the axe do the work.",
+          "choices": [
+            { "id": "taught-cutting-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "logs",
+          "line": "The smith needs them at his forge, and the joiner for his planks. Fire eats them, too.",
+          "choices": [
+            { "id": "logs-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "The wood is never done.",
+          "choices": [
+            { "id": "ask", "text": "What is the trouble?", "effect": "quest-start", "quest": "boars-in-the-wood", "next": "ask-yes", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "boars-in-the-wood", "state": "none" }] },
+            { "id": "hand-in", "text": "I have the four boar tusks.", "effect": "quest-done", "quest": "boars-in-the-wood", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "boars-in-the-wood", "state": "active" }] },
+            { "id": "after", "text": "About the boars...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "boars-in-the-wood", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "Boars from the hill are tearing up my firs. Bring me four of their tusks.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will hunt them.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Four good tusks; something drove them down from the hill.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "Jacob is worried about the old gate. Go and see him.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jacob",
+      "name": "Jacob",
+      "line": "Come in, child. Bring me two of a kind and some coins, and I will make one better piece of them.",
+      "choices": [
+        { "id": "ore", "text": "How do I mine ore?", "effect": "say", "next": "ore" },
+        { "id": "work", "text": "Do you need iron?", "effect": "say", "next": "work" },
+        { "id": "merge", "text": "Let's merge two pieces.", "effect": "merge", "requires": [{ "type": "lesson", "lesson": "merging" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "ore",
+          "line": "Use an iron ore rock in the quarry and you take ore; the rock grows back in time. Wolves roam there, so go ready.",
+          "choices": [
+            { "id": "forge", "text": "And the forge?", "effect": "say", "next": "forge" },
+            { "id": "teach-mining", "text": "Teach me to mine. ({price} zloty)", "effect": "teach", "lesson": "mining", "price": 30, "next": "taught-mining", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "winter-jerkin", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
+            { "id": "ore-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-mining",
+          "line": "Hold the pick so, and strike where the rock glints.",
+          "choices": [
+            { "id": "taught-mining-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "forge",
+          "line": "Use my forge with three iron ore and two logs in your backpack and an iron shield comes of them. Two equal pieces and coins, and I merge them into one better.",
+          "choices": [
+            { "id": "forge-sell", "text": "Do you buy anything from the hunt?", "effect": "trade" },
+            { "id": "teach-smithing", "text": "Teach me to forge. ({price} zloty)", "effect": "teach", "lesson": "smithing", "price": 40, "next": "taught-smithing", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
+            { "id": "teach-merging", "text": "Show me how two become one. ({price} zloty)", "effect": "teach", "lesson": "merging", "price": 50, "next": "taught-merging", "requires": [{ "type": "level", "min": 6 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
+            { "id": "forge-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-merging",
+          "line": "Two of a kind, a few coins, and the fire does the rest.",
+          "choices": [
+            { "id": "taught-merging-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-smithing",
+          "line": "Heat it, hammer it, and watch the colour.",
+          "choices": [
+            { "id": "taught-smithing-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "The forge is never idle.",
+          "choices": [
+            { "id": "ask", "text": "What do you need?", "effect": "quest-start", "quest": "iron-for-the-gate", "next": "ask-yes", "requires": [{ "type": "level", "min": 5 }, { "type": "quest", "quest": "boars-in-the-wood", "state": "done" }, { "type": "quest", "quest": "iron-for-the-gate", "state": "none" }] },
+            { "id": "hand-in", "text": "I have something for the gate.", "effect": "quest-done", "quest": "iron-for-the-gate", "next": "hand-in-thanks", "stageNext": ["ore-seen"], "requires": [{ "type": "quest", "quest": "iron-for-the-gate", "state": "active" }] },
+            { "id": "after", "text": "About the gate...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "iron-for-the-gate", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "The hill road needs a gate that holds. Mine three ore at the quarry and show it to me; mind the wolves.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will forge it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ore-seen",
+          "line": "Good ore; it rings true. Now forge it with two logs at my forge into an iron shield.",
+          "choices": [
+            { "id": "ore-seen-back", "text": "I will forge it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Heavy and true. Take this plank shield for it; I have made it a little better. Come, I will show you how two pieces become one.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "The gate will hold, I think. Brother Anselm is worried about the ruin.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ],
+      "smith": { "feePercent": 50 },
+      "shop": {
+        "sells": [],
+        "buys": [
+          { "item": "bear-claw", "price": 8 },
+          { "item": "warg-fang", "price": 12 },
+          { "item": "troll-tooth", "price": 20 },
+          { "item": "horn-fragment", "price": 30 }
+        ],
+        "purse": { "cap": 150, "refillGold": 1, "refillEveryMs": 10000 }
+      }
+    },
+    {
+      "id": "nicholas",
+      "name": "Nicholas",
+      "line": "Good day, child. I keep the book of the houses and the rent.",
+      "choices": [
+        { "id": "house", "text": "How do I buy a house?", "effect": "say", "next": "house" },
+        { "id": "store", "text": "What of the storehouse?", "effect": "say", "next": "store" },
+        { "id": "ledger", "text": "Does the reeve need help?", "effect": "say", "next": "ledger", "requires": [{ "type": "level", "min": 4 }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "ledger",
+          "line": "My old rent ledger was lost in the Old Mine under the quarry, and the roll cannot be mended without it. It lies in a chest at the far end, they say.",
+          "choices": [
+            { "id": "ask-ledger", "text": "I will look for it.", "effect": "quest-start", "quest": "reeve-ledger", "next": "ledger-yes", "requires": [{ "type": "level", "min": 4 }, { "type": "quest", "quest": "reeve-ledger", "state": "none" }] },
+            { "id": "hand-in-ledger", "text": "I have the ledger.", "effect": "quest-done", "quest": "reeve-ledger", "next": "ledger-thanks", "requires": [{ "type": "quest", "quest": "reeve-ledger", "state": "active" }] },
+            { "id": "more-ledger", "text": "Any more work for me?", "effect": "say", "next": "bounty", "requires": [{ "type": "quest", "quest": "reeve-ledger", "state": "done" }] },
+            { "id": "ledger-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ledger-yes",
+          "line": "Take a light into the mine and search its far end. Bring me the ledger, and I will pay you well.",
+          "choices": [
+            { "id": "ledger-yes-back", "text": "I will find it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ledger-thanks",
+          "line": "My ledger, a little damp but whole. Take this vest, and my thanks.",
+          "choices": [
+            { "id": "ledger-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bounty",
+          "line": "Goblins have dug in beyond the mine, and they rob the carts. The reeve pays for their ears.",
+          "choices": [
+            { "id": "ask-bounty", "text": "I will take the bounty.", "effect": "quest-start", "quest": "goblin-bounty", "next": "bounty-yes", "requires": [{ "type": "level", "min": 8 }, { "type": "quest", "quest": "reeve-ledger", "state": "done" }, { "type": "quest", "quest": "goblin-bounty", "state": "none" }] },
+            { "id": "hand-in-bounty", "text": "I have the goblin ears.", "effect": "quest-done", "quest": "goblin-bounty", "next": "bounty-thanks", "requires": [{ "type": "quest", "quest": "goblin-bounty", "state": "active" }] },
+            { "id": "after-bounty", "text": "About the goblins...", "effect": "say", "next": "bounty-after", "requires": [{ "type": "quest", "quest": "goblin-bounty", "state": "done" }] },
+            { "id": "bounty-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bounty-yes",
+          "line": "The warren lies below the mine; follow the stairs at its far end. Bring me six goblin ears.",
+          "choices": [
+            { "id": "bounty-yes-back", "text": "I will see to it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bounty-thanks",
+          "line": "Six ears, counted twice. Take this shield and your pay.",
+          "choices": [
+            { "id": "bounty-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bounty-after",
+          "line": "The carts roll safer now. The reeve does not forget.",
+          "choices": [
+            { "id": "bounty-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "house",
+          "line": "A house nobody owns keeps its door open: step inside and talk to the house guide, from 8:00 to 20:00. The price is taken from your backpack.",
+          "choices": [
+            { "id": "inside", "text": "And inside?", "effect": "say", "next": "inside" },
+            { "id": "house-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "inside",
+          "line": "A house has a chest to keep things in and a bed to rest in. The rent falls due each month, and a house left unpaid is lost.",
+          "choices": [
+            { "id": "inside-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "store",
+          "line": "The storehouse has six chests, and each one opens your own depot, whichever you choose. What you leave there is yours in any town.",
+          "choices": [
+            { "id": "store-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anselm",
+      "name": "Brother Anselm",
+      "line": "Peace, child. The chapel is open to all.",
+      "choices": [
+        { "id": "chapel", "text": "What is the chapel for?", "effect": "say", "next": "chapel" },
+        { "id": "work", "text": "Can I be of service?", "effect": "say", "next": "work" },
+        { "id": "bones", "text": "What of the barrow?", "effect": "say", "next": "bones", "requires": [{ "type": "level", "min": 10 }, { "type": "quest", "quest": "the-hill-wakes", "state": "done" }] },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "bones",
+          "line": "Beneath the ruin lies an old barrow, and its dead walk again. I would lay them to rest, but I need what they leave behind.",
+          "choices": [
+            { "id": "ask-bones", "text": "I will go down.", "effect": "quest-start", "quest": "bones-under-the-hill", "next": "bones-yes", "requires": [{ "type": "level", "min": 10 }, { "type": "quest", "quest": "the-hill-wakes", "state": "done" }, { "type": "quest", "quest": "bones-under-the-hill", "state": "none" }] },
+            { "id": "hand-in-bones", "text": "I have the bone dust.", "effect": "quest-done", "quest": "bones-under-the-hill", "next": "bones-thanks", "requires": [{ "type": "quest", "quest": "bones-under-the-hill", "state": "active" }] },
+            { "id": "after-bones", "text": "About the barrow...", "effect": "say", "next": "bones-after", "requires": [{ "type": "quest", "quest": "bones-under-the-hill", "state": "done" }] },
+            { "id": "bones-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bones-yes",
+          "line": "The stairs are inside the ruin on Watch Hill. Bring me five handfuls of bone dust, and I will lay it in the chapel ground.",
+          "choices": [
+            { "id": "bones-yes-back", "text": "I will bring it.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bones-thanks",
+          "line": "The dust will rest in hallowed ground. Take this cap, child, and my blessing.",
+          "choices": [
+            { "id": "bones-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "bones-after",
+          "line": "The barrow is quieter, and the dead rest easier.",
+          "choices": [
+            { "id": "bones-after-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "chapel",
+          "line": "Here you rest, and here you wake if you fall in the wild. A fall costs you, so be careful.",
+          "choices": [
+            { "id": "chapel-sell", "text": "Do you take what the dead leave?", "effect": "trade" },
+            { "id": "chapel-back", "text": "Thank you, brother.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "There may be a task for the ready.",
+          "choices": [
+            { "id": "ask", "text": "What troubles you?", "effect": "quest-start", "quest": "the-hill-wakes", "next": "ask-yes", "requires": [{ "type": "level", "min": 7 }, { "type": "quest", "quest": "iron-for-the-gate", "state": "done" }, { "type": "quest", "quest": "the-hill-wakes", "state": "none" }] },
+            { "id": "hand-in", "text": "I have a shard of the warden.", "effect": "quest-done", "quest": "the-hill-wakes", "next": "hand-in-thanks", "requires": [{ "type": "quest", "quest": "the-hill-wakes", "state": "active" }] },
+            { "id": "after", "text": "About the hill...", "effect": "say", "next": "after", "requires": [{ "type": "quest", "quest": "the-hill-wakes", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "Something in the ruin on Watch Hill has stirred, and a stone warden guards it. Bring me a shard of it, that I may learn what wakes.",
+          "choices": [
+            { "id": "ask-yes-back", "text": "I will bring one.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "A cold shard of old stone. The hill only kept its watch; take this charm.",
+          "choices": [
+            { "id": "thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "after",
+          "line": "Old Victor waits at the pier, when you are ready to leave.",
+          "choices": [
+            { "id": "after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ],
+      "shop": {
+        "sells": [],
+        "buys": [
+          { "item": "bone-dust", "price": 5 }
+        ],
+        "purse": { "cap": 100, "refillGold": 1, "refillEveryMs": 10000 }
+      }
+    },
+    {
+      "id": "edda",
+      "name": "Edda",
+      "line": "Few climb this far. The mountain keeps its own counsel, and so do I.",
+      "choices": [
+        { "id": "mountain", "text": "What is this mountain?", "effect": "say", "next": "mountain" },
+        { "id": "work", "text": "Do you need help?", "effect": "say", "next": "work" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "mountain",
+          "line": "Crown Crag, the old watch of the isle. Beasts and worse live on it and beneath it.",
+          "choices": [
+            { "id": "mountain-back", "text": "I see.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "work",
+          "line": "I have little use for visitors, but I can use a strong arm.",
+          "choices": [
+            { "id": "ask-warg", "text": "What do you need?", "effect": "quest-start", "quest": "warg-trail", "next": "warg-yes", "requires": [{ "type": "level", "min": 14 }, { "type": "quest", "quest": "warg-trail", "state": "none" }] },
+            { "id": "hand-in-warg", "text": "I have the warg fangs.", "effect": "quest-done", "quest": "warg-trail", "next": "warg-thanks", "requires": [{ "type": "quest", "quest": "warg-trail", "state": "active" }] },
+            { "id": "more-work", "text": "Is there more?", "effect": "say", "next": "more", "requires": [{ "type": "quest", "quest": "warg-trail", "state": "done" }] },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "warg-yes",
+          "line": "Wargs hunt on the slopes above, and they thin my herd of goats. Bring me four of their fangs.",
+          "choices": [
+            { "id": "warg-yes-back", "text": "I will hunt them.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "warg-thanks",
+          "line": "Sharp and clean. Take this cap, and a little coin.",
+          "choices": [
+            { "id": "warg-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "more",
+          "line": "The wargs were only the start. A stone maze lies beneath the isle, and horned guards walk it.",
+          "choices": [
+            { "id": "ask-maze", "text": "What would you have me do?", "effect": "quest-start", "quest": "the-maze", "next": "maze-yes", "requires": [{ "type": "level", "min": 17 }, { "type": "quest", "quest": "warg-trail", "state": "done" }, { "type": "quest", "quest": "the-maze", "state": "none" }] },
+            { "id": "hand-in-maze", "text": "I have the horn fragments.", "effect": "quest-done", "quest": "the-maze", "next": "maze-thanks", "requires": [{ "type": "quest", "quest": "the-maze", "state": "active" }] },
+            { "id": "further-work", "text": "And after that?", "effect": "say", "next": "further", "requires": [{ "type": "quest", "quest": "the-maze", "state": "done" }] },
+            { "id": "more-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "maze-yes",
+          "line": "The maze lies under the mine and the warren, at the end of the deep stairs. Bring me three fragments of the guards' horned helms.",
+          "choices": [
+            { "id": "maze-yes-back", "text": "I will find my way.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "maze-thanks",
+          "line": "So they are real. These trousers should serve you better than they served me.",
+          "choices": [
+            { "id": "maze-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "further",
+          "line": "The guards serve something that sits at the top of the crag. It wears a cairn of stones for a crown.",
+          "choices": [
+            { "id": "ask-cairn", "text": "I will face it.", "effect": "quest-start", "quest": "cairn-lord", "next": "cairn-yes", "requires": [{ "type": "level", "min": 19 }, { "type": "quest", "quest": "the-maze", "state": "done" }, { "type": "quest", "quest": "cairn-lord", "state": "none" }] },
+            { "id": "hand-in-cairn", "text": "I have the cairn seal.", "effect": "quest-done", "quest": "cairn-lord", "next": "cairn-thanks", "requires": [{ "type": "quest", "quest": "cairn-lord", "state": "active" }] },
+            { "id": "after-cairn", "text": "About the cairn lord...", "effect": "say", "next": "cairn-after", "requires": [{ "type": "quest", "quest": "cairn-lord", "state": "done" }] },
+            { "id": "further-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cairn-yes",
+          "line": "Climb the stairs at the foot of the crag, past the wargs, to the summit. Bring me the seal it carries, and be ready to fall back.",
+          "choices": [
+            { "id": "cairn-yes-back", "text": "I will be ready.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cairn-thanks",
+          "line": "The seal, and you walk back down on your own feet. Keep this vest and the coin; you have earned both.",
+          "choices": [
+            { "id": "cairn-thanks-back", "text": "Glad to help.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "cairn-after",
+          "line": "The crag is quiet for now. Such things grow back, in time.",
+          "choices": [
+            { "id": "cairn-after-back", "text": "I see.", "effect": "say" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "greta",
+      "name": "Greta",
+      "line": "Welcome in. Sit where you like; there is bread and cheese for anyone who is hungry.",
+      "choices": [
+        { "id": "trade", "text": "Let's trade.", "effect": "trade" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "shop": {
+        "sells": [
+          { "item": "bread", "price": 6 },
+          { "item": "cheese", "price": 5 }
+        ],
+        "buys": []
+      }
+    },
+    {
+      "id": "osric",
+      "name": "Osric",
+      "line": "Quiet, friend. A deer hears a boot from a long way off.",
+      "choices": [
+        { "id": "stalk", "text": "How do I stalk game?", "effect": "say", "next": "stalk" },
+        { "id": "work", "text": "Can I help you?", "effect": "say", "next": "work" },
+        { "id": "bye", "text": "Goodbye.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "stalk",
+          "line": "Go low and slow, and wear nothing bright. A creature that does not see you cannot run from you.",
+          "choices": [
+            {
+              "id": "teach-sneaking",
+              "text": "Teach me to stalk. ({price} zloty)",
+              "effect": "teach",
+              "lesson": "sneaking",
+              "price": 40,
+              "next": "taught-sneaking",
+              "requires": [
+                { "type": "level", "min": 6 },
+                { "type": "quest", "quest": "iron-for-the-gate", "state": "done" },
+                { "type": "quest", "quest": "venison-for-the-larder", "state": "none" }
+              ]
+            },
+            { "id": "stalk-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "taught-sneaking",
+          "line": "Slow and low. Dark things on your back, and the deer will never lift a head.",
+          "choices": [{ "id": "taught-sneaking-back", "text": "Thank you.", "effect": "say" }]
+        },
+        {
+          "id": "work",
+          "line": "My larder is bare, and the deer keep out of reach.",
+          "choices": [
+            {
+              "id": "ask",
+              "text": "Can I fill it for you?",
+              "effect": "quest-start",
+              "quest": "venison-for-the-larder",
+              "next": "ask-yes",
+              "requires": [
+                { "type": "level", "min": 6 },
+                { "type": "quest", "quest": "iron-for-the-gate", "state": "done" },
+                { "type": "quest", "quest": "venison-for-the-larder", "state": "none" }
+              ]
+            },
+            {
+              "id": "hand-in",
+              "text": "I have venison for you.",
+              "effect": "quest-done",
+              "quest": "venison-for-the-larder",
+              "next": "hand-in-thanks",
+              "stageNext": ["venison-seen"],
+              "requires": [{ "type": "quest", "quest": "venison-for-the-larder", "state": "active" }]
+            },
+            {
+              "id": "after",
+              "text": "About the larder...",
+              "effect": "say",
+              "next": "after",
+              "requires": [{ "type": "quest", "quest": "venison-for-the-larder", "state": "done" }]
+            },
+            { "id": "work-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "ask-yes",
+          "line": "Creep up on a deer and show me its venison. Then bring me three in all, and the larder is full.",
+          "choices": [{ "id": "ask-yes-back", "text": "I will hunt them.", "effect": "say" }]
+        },
+        {
+          "id": "venison-seen",
+          "line": "Clean meat. Now bring me three venison in all.",
+          "choices": [{ "id": "venison-seen-back", "text": "I will bring them.", "effect": "say" }]
+        },
+        {
+          "id": "hand-in-thanks",
+          "line": "Three fine haunches. Take these coins and this jerkin: dark and soft, a hunter's friend.",
+          "choices": [{ "id": "thanks-back", "text": "Glad to help.", "effect": "say" }]
+        },
+        {
+          "id": "after",
+          "line": "The larder is full. Stay low and the wood will hold few surprises for you.",
+          "choices": [{ "id": "after-back", "text": "I see.", "effect": "say" }]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "format": 1,
+  "monsters": [
+    {
+      "id": "rat",
+      "name": "Rat",
+      "health": 20,
+      "speed": 86,
+      "body": 128,
+      "damage": { "min": 0, "max": 3 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "flees": "hurt",
+      "leashTiles": 6,
+      "noticeTiles": 4,
+      "respawnMs": 30000,
+      "experience": 4,
+      "hide": { "item": "rat-hide", "count": 1 },
+      "loot": [
+        { "item": "rat-tail", "chance": 70, "count": 1 },
+        { "item": "cheese", "chance": 30, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 1, "countMax": 2 },
+        { "item": "leather-cap-1", "chance": 1, "count": 1 },
+        { "item": "taming-bell", "chance": 6, "count": 1 }
+      ]
+    },
+    {
+      "id": "villager",
+      "name": "Villager",
+      "health": 40,
+      "speed": 71,
+      "body": 192,
+      "damage": { "min": 1, "max": 4 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "passive": true,
+      "leashTiles": 4,
+      "respawnMs": 60000,
+      "experience": 6,
+      "loot": [
+        { "item": "bread", "chance": 50, "count": 1 },
+        { "item": "linen-trousers-1", "chance": 1, "count": 1 }
+      ]
+    },
+    {
+      "id": "straw-dummy",
+      "name": "Straw dummy",
+      "health": 5,
+      "speed": 14,
+      "body": 128,
+      "damage": { "min": 0, "max": 0 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "passive": true,
+      "leashTiles": 3,
+      "respawnMs": 20000,
+      "experience": 5390
+    },
+    {
+      "id": "grey-rat",
+      "name": "Grey rat",
+      "health": 30,
+      "speed": 86,
+      "body": 128,
+      "damage": { "min": 0, "max": 5 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "flees": "hurt",
+      "leashTiles": 6,
+      "noticeTiles": 4,
+      "respawnMs": 7200000,
+      "respawnMaxMs": 21600000,
+      "experience": 6,
+      "hide": { "item": "rat-hide", "count": 2 },
+      "rare": { "item": "grey-fang" },
+      "loot": [
+        { "item": "rat-tail", "chance": 100, "count": 1 },
+        { "item": "cheese", "chance": 45, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 2, "countMax": 3 },
+        { "item": "grey-fang", "chance": 50, "count": 1 }
+      ]
+    },
+    {
+      "id": "stone-warden",
+      "name": "Stone warden",
+      "health": 60,
+      "speed": 57,
+      "body": 256,
+      "damage": { "min": 0, "max": 0 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 8,
+      "respawnMs": 120000,
+      "experience": 150,
+      "loot": [
+        { "item": "gold-coin", "chance": 100, "count": 10, "countMax": 30 },
+        { "item": "plank-shield", "chance": 25, "count": 1 },
+        { "item": "plank-shield-1", "chance": 10, "count": 1 },
+        { "item": "warden-shard", "chance": 100, "count": 1 }
+      ],
+      "boss": {
+        "rangeTiles": 3,
+        "recoveryMs": 3000,
+        "attacks": [{ "id": "slam-line", "shape": "line", "length": 4, "width": 3, "delayMs": 2000, "damage": 30 }]
+      }
+    },
+    {
+      "id": "arena-rat",
+      "name": "Arena rat",
+      "health": 60,
+      "speed": 86,
+      "body": 128,
+      "damage": { "min": 0, "max": 9 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 10,
+      "respawnMs": 120000,
+      "experience": 12,
+      "nameColour": "red",
+      "loot": [
+        { "item": "rat-tail", "chance": 100, "count": 1 },
+        { "item": "cheese", "chance": 60, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 2, "countMax": 4 },
+        { "item": "leather-cap-1", "chance": 2, "count": 1 },
+        { "item": "taming-bell", "chance": 12, "count": 1 }
+      ]
+    },
+    {
+      "id": "boar",
+      "name": "Boar",
+      "health": 40,
+      "speed": 86,
+      "body": 160,
+      "damage": { "min": 2, "max": 5 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "flees": "hurt",
+      "leashTiles": 6,
+      "noticeTiles": 4,
+      "respawnMs": 60000,
+      "experience": 30,
+      "hide": { "item": "boar-hide", "count": 1 },
+      "loot": [
+        { "item": "boar-tusk", "chance": 60, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 1, "countMax": 3 }
+      ]
+    },
+    {
+      "id": "wolf",
+      "name": "Wolf",
+      "health": 70,
+      "speed": 109,
+      "body": 144,
+      "damage": { "min": 3, "max": 7 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 8,
+      "noticeTiles": 6,
+      "respawnMs": 90000,
+      "experience": 80,
+      "hide": { "item": "wolf-pelt", "count": 1 },
+      "loot": [
+        { "item": "gold-coin", "chance": 100, "count": 2, "countMax": 5 },
+        { "item": "leather-cap-1", "chance": 2, "count": 1 }
+      ]
+    },
+    {
+      "id": "burrow-rat",
+      "name": "Burrow rat",
+      "health": 26,
+      "speed": 86,
+      "body": 128,
+      "damage": { "min": 1, "max": 4 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "flees": "hurt",
+      "leashTiles": 6,
+      "noticeTiles": 4,
+      "respawnMs": 60000,
+      "experience": 7,
+      "hide": { "item": "rat-hide", "count": 1 },
+      "loot": [
+        { "item": "burrow-tail", "chance": 70, "count": 1 },
+        { "item": "cheese", "chance": 25, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 1, "countMax": 3 }
+      ]
+    },
+    {
+      "id": "cave-spider",
+      "name": "Cave spider",
+      "health": 50,
+      "speed": 100,
+      "body": 128,
+      "damage": { "min": 2, "max": 6 },
+      "attackIntervalMs": 1800,
+      "critChance": 10,
+      "leashTiles": 6,
+      "noticeTiles": 5,
+      "respawnMs": 60000,
+      "experience": 50,
+      "loot": [
+        { "item": "spider-silk", "chance": 60, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 2, "countMax": 6 }
+      ]
+    },
+    {
+      "id": "gully-goblin",
+      "name": "Gully goblin",
+      "health": 70,
+      "speed": 71,
+      "body": 192,
+      "damage": { "min": 3, "max": 8 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 7,
+      "respawnMs": 75000,
+      "experience": 105,
+      "loot": [
+        { "item": "goblin-ear", "chance": 80, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 4, "countMax": 12 },
+        { "item": "leather-cap-1", "chance": 3, "count": 1 }
+      ]
+    },
+    {
+      "id": "barrow-skeleton",
+      "name": "Barrow skeleton",
+      "health": 90,
+      "speed": 71,
+      "body": 192,
+      "damage": { "min": 4, "max": 10 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 7,
+      "noticeTiles": 3,
+      "respawnMs": 90000,
+      "experience": 190,
+      "loot": [
+        { "item": "bone-dust", "chance": 70, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 6, "countMax": 18 },
+        { "item": "linen-trousers-2", "chance": 2, "count": 1 }
+      ]
+    },
+    {
+      "id": "den-bear",
+      "name": "Den bear",
+      "health": 110,
+      "speed": 79,
+      "body": 192,
+      "damage": { "min": 5, "max": 11 },
+      "attackIntervalMs": 2200,
+      "critChance": 10,
+      "leashTiles": 7,
+      "noticeTiles": 4,
+      "respawnMs": 100000,
+      "experience": 260,
+      "hide": { "item": "bear-hide", "count": 1 },
+      "loot": [
+        { "item": "bear-claw", "chance": 60, "count": 1 },
+        { "item": "bread", "chance": 40, "count": 1 }
+      ]
+    },
+    {
+      "id": "crag-warg",
+      "name": "Crag warg",
+      "health": 100,
+      "speed": 121,
+      "body": 144,
+      "damage": { "min": 6, "max": 12 },
+      "attackIntervalMs": 1600,
+      "critChance": 10,
+      "leashTiles": 8,
+      "noticeTiles": 7,
+      "respawnMs": 100000,
+      "experience": 330,
+      "hide": { "item": "wolf-pelt", "count": 1 },
+      "loot": [
+        { "item": "gold-coin", "chance": 100, "count": 8, "countMax": 20 },
+        { "item": "warg-fang", "chance": 60, "count": 1 }
+      ]
+    },
+    {
+      "id": "stone-troll",
+      "name": "Stone troll",
+      "health": 140,
+      "speed": 64,
+      "body": 224,
+      "damage": { "min": 6, "max": 14 },
+      "attackIntervalMs": 2400,
+      "critChance": 10,
+      "leashTiles": 7,
+      "noticeTiles": 3,
+      "respawnMs": 110000,
+      "experience": 480,
+      "loot": [
+        { "item": "troll-tooth", "chance": 40, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 15, "countMax": 40 },
+        { "item": "plank-shield-2", "chance": 3, "count": 1 }
+      ]
+    },
+    {
+      "id": "horn-guard",
+      "name": "Horn guard",
+      "health": 150,
+      "speed": 71,
+      "body": 224,
+      "damage": { "min": 8, "max": 16 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "leashTiles": 8,
+      "noticeTiles": 6,
+      "respawnMs": 120000,
+      "experience": 650,
+      "loot": [
+        { "item": "horn-fragment", "chance": 80, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 20, "countMax": 50 },
+        { "item": "leather-cap-2", "chance": 4, "count": 1 }
+      ]
+    },
+    {
+      "id": "cairn-lord",
+      "name": "Cairn lord",
+      "health": 320,
+      "speed": 64,
+      "body": 256,
+      "damage": { "min": 12, "max": 26 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "single": true,
+      "leashTiles": 8,
+      "respawnMs": 1800000,
+      "experience": 2500,
+      "loot": [
+        { "item": "cairn-seal", "chance": 100, "count": 1 },
+        { "item": "gold-coin", "chance": 100, "count": 100, "countMax": 250 },
+        { "item": "health-potion", "chance": 100, "count": 2 }
+      ]
+    },
+    {
+      "id": "hare",
+      "name": "Hare",
+      "health": 8,
+      "speed": 109,
+      "body": 128,
+      "damage": { "min": 0, "max": 0 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "passive": true,
+      "flees": "always",
+      "leashTiles": 4,
+      "noticeTiles": 6,
+      "respawnMs": 60000,
+      "experience": 2,
+      "hide": { "item": "hare-pelt", "count": 1 },
+      "loot": [{ "item": "cheese", "chance": 30, "count": 1 }]
+    },
+    {
+      "id": "deer",
+      "name": "Deer",
+      "health": 30,
+      "speed": 100,
+      "body": 160,
+      "damage": { "min": 0, "max": 0 },
+      "attackIntervalMs": 2000,
+      "critChance": 10,
+      "passive": true,
+      "flees": "always",
+      "leashTiles": 4,
+      "noticeTiles": 7,
+      "respawnMs": 90000,
+      "experience": 6,
+      "loot": [{ "item": "venison", "chance": 60, "count": 1 }]
+    }
+  ]
+}
