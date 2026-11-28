@@ -16,6 +16,7 @@ var e = {
 			kind: "food",
 			weight: 300,
 			heal: 10,
+			fedMs: 3e5,
 			value: 5
 		},
 		{
@@ -25,6 +26,7 @@ var e = {
 			kind: "food",
 			weight: 300,
 			heal: 20,
+			fedMs: 6e5,
 			value: 6
 		},
 		{
@@ -571,6 +573,8 @@ var e = {
 			kind: "food",
 			weight: 400,
 			heal: 30,
+			fedMs: 72e4,
+			poisonMs: 2e4,
 			value: 12
 		},
 		{
@@ -608,6 +612,7 @@ var e = {
 			kind: "food",
 			weight: 150,
 			heal: 5,
+			fedMs: 12e4,
 			value: 3
 		},
 		{
@@ -5457,7 +5462,8 @@ function Se(e, t) {
 			"nameColour",
 			"critChance",
 			"noticeTiles",
-			"single"
+			"single",
+			"poison"
 		], s, n), typeof o != "string" || !/^[a-z0-9-]+$/.test(o) ? n.push(`${s}: the id must be a non-empty string of lower case letters, digits and hyphens.`) : i.has(o) ? n.push(`${s}: the id is used more than once.`) : i.add(o), (typeof e.name != "string" || e.name === "") && n.push(`${s}: the name must be a non-empty string.`), B(e, "health", 1, 1e5, s, n), B(e, "speed", 1, ve, s, n);
 		let c = e.body;
 		(!R(c) || c < 2 || c > 256 || c % 2 != 0) && n.push(`${s}: "body" must be an even whole number from 2 to 256.`);
@@ -5466,7 +5472,16 @@ function Se(e, t) {
 			let t = e.respawnMs;
 			B(e, "respawnMaxMs", R(t) && t >= 0 ? t : 0, 864e5, s, n);
 		}
-		B(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && B(e, "critChance", 0, 100, s, n), e.single !== void 0 && e.single !== !0 && n.push(`${s}: "single" must be true when it is written.`), e.noticeTiles !== void 0 && B(e, "noticeTiles", 1, 7, s, n), e.loot !== void 0 && ye(e.loot, t, s, n), e.rare !== void 0 && xe(e, r, t, s, n), e.hide !== void 0 && Ce(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && _e(e.boss, `${s} boss`, n);
+		if (B(e, "experience", 0, 1e6, s, n), e.critChance !== void 0 && B(e, "critChance", 0, 100, s, n), e.single !== void 0 && e.single !== !0 && n.push(`${s}: "single" must be true when it is written.`), e.noticeTiles !== void 0 && B(e, "noticeTiles", 1, 7, s, n), e.poison !== void 0) {
+			let t = e.poison;
+			if (!L(t)) n.push(`${s}: "poison" must be an object with "chance" and "ms".`);
+			else {
+				z(t, ["chance", "ms"], `${s} poison`, n), B(t, "chance", 1, 100, `${s} poison`, n);
+				let e = t.ms;
+				(!R(e) || e < 1e3 || e > 6e5 || e % 1e3 != 0) && n.push(`${s} poison: "ms" must be a whole number of seconds in milliseconds, from 1000 to 600000.`);
+			}
+		}
+		e.loot !== void 0 && ye(e.loot, t, s, n), e.rare !== void 0 && xe(e, r, t, s, n), e.hide !== void 0 && Ce(e.hide, t, `${s} hide`, n), e.nameColour !== void 0 && e.nameColour !== "red" && e.nameColour !== "gold" && n.push(`${s}: "nameColour" must be "red" or "gold" when it is written.`), e.boss !== void 0 && _e(e.boss, `${s} boss`, n);
 	}), n;
 }
 function Ce(e, t, n, r) {

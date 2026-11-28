@@ -194,6 +194,7 @@
       "damage": { "min": 2, "max": 6 },
       "attackIntervalMs": 1800,
       "critChance": 10,
+      "poison": { "chance": 30, "ms": 10000 },
       "leashTiles": 6,
       "noticeTiles": 5,
       "respawnMs": 60000,
