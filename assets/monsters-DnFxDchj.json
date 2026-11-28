@@ -319,7 +319,7 @@
     {
       "id": "cairn-lord",
       "name": "Cairn lord",
-      "health": 320,
+      "health": 235,
       "speed": 64,
       "body": 256,
       "damage": { "min": 12, "max": 26 },
