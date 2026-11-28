@@ -63,8 +63,8 @@
     { "id": "torch", "name": "Torch", "stackLimit": 1, "kind": "other", "weight": 500, "value": 5, "slot": "shield", "armour": 0, "visibility": 100, "light": true },
     { "id": "apple", "name": "Apple", "stackLimit": 10, "kind": "food", "weight": 150, "heal": 5, "value": 3 },
     { "id": "chest", "name": "Chest", "stackLimit": 1, "kind": "other", "weight": 12000, "value": 0, "thing": 46 },
-    { "id": "bed", "name": "Bed", "stackLimit": 1, "kind": "other", "weight": 20000, "value": 0, "thing": 58 },
-    { "id": "stash", "name": "Stash", "stackLimit": 1, "kind": "other", "weight": 12000, "value": 0, "thing": 59 },
+    { "id": "bed", "name": "Bed", "stackLimit": 1, "kind": "other", "weight": 20000, "value": 0 },
+    { "id": "stash", "name": "Stash", "stackLimit": 1, "kind": "other", "weight": 12000, "value": 0 },
     { "id": "barrel", "name": "Barrel", "stackLimit": 1, "kind": "other", "weight": 10000, "value": 0, "thing": 119 },
     { "id": "crate", "name": "Crate", "stackLimit": 1, "kind": "other", "weight": 8000, "value": 0, "thing": 120 },
     { "id": "stool", "name": "Stool", "stackLimit": 1, "kind": "other", "weight": 3000, "value": 0, "thing": 122 }

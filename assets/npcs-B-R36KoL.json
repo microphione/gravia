@@ -168,19 +168,10 @@
       "look": { "body": "man", "colours": { "shirt": ["N","A","D","m"], "sleeve": ["X","i","N","A"], "hair": ["w","W","x","k"] } },
       "line": "Welcome home. Rent is taken from the gold in your depot each month; after a few days of reminders an unpaid house is lost. What shall I see to?",
       "choices": [
-        { "id": "floor-up", "text": "Build a floor above ({price} gold).", "effect": "house-floor-up", "next": "built" },
-        { "id": "floor-down", "text": "Dig a floor below ({price} gold).", "effect": "house-floor-down", "next": "built" },
         { "id": "give-up", "text": "I give this house up.", "effect": "house-give-up", "next": "gave-up" },
         { "id": "bye", "text": "Not now.", "effect": "end" }
       ],
       "nodes": [
-        {
-          "id": "built",
-          "line": "It is done. Take a look.",
-          "choices": [
-            { "id": "built-back", "text": "Thank you.", "effect": "say" }
-          ]
-        },
         {
           "id": "gave-up",
           "line": "The house is no longer yours. Farewell.",
@@ -189,7 +180,7 @@
           ]
         }
       ],
-      "houseAgent": { "floorUpPrice": 5, "floorDownPrice": 5, "rent": { "gold": 1, "reminderDays": 3 } }
+      "houseAgent": { "rent": { "gold": 1, "reminderDays": 3 } }
     },
     {
       "id": "house-guide",
@@ -210,6 +201,80 @@
         }
       ],
       "houseGuide": true
+    },
+    {
+      "id": "home-maker",
+      "name": "Home maker",
+      "look": { "body": "man", "colours": { "shirt": ["h","g","G","F"], "belt": ["z","y","Y","H"] } },
+      "line": "I make homes better: moves, floors above and below. Shall I come to yours?",
+      "choices": [
+        { "id": "visit", "text": "Come to my house.", "effect": "say", "next": "where" },
+        { "id": "move", "text": "Move something.", "effect": "say", "next": "move" },
+        { "id": "floors", "text": "About the floors.", "effect": "say", "next": "floors" },
+        { "id": "bye", "text": "Not now.", "effect": "end" }
+      ],
+      "nodes": [
+        {
+          "id": "where",
+          "line": "Gladly. Which house?",
+          "choices": [
+            { "id": "visit-home", "text": "To my house.", "effect": "house-maker-visit", "next": "coming" },
+            { "id": "where-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "coming",
+          "line": "I will be at your house directly. Mind the floors I have to work on.",
+          "choices": [
+            { "id": "coming-back", "text": "Thank you.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "move",
+          "line": "I move things inside your house, once I am there. What shall it be?",
+          "choices": [
+            { "id": "move-stairs", "text": "The stairs ({price} gold).", "effect": "house-move", "service": "stairs" },
+            { "id": "move-bed", "text": "The bed ({price} gold).", "effect": "house-move", "service": "bed" },
+            { "id": "move-chest", "text": "The chest ({price} gold).", "effect": "house-move", "service": "chest" },
+            { "id": "move-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "floors",
+          "line": "Floors I can add, and take away when they stand empty.",
+          "choices": [
+            { "id": "floors-add", "text": "Add a floor.", "effect": "say", "next": "add" },
+            { "id": "floors-remove", "text": "Remove a floor.", "effect": "say", "next": "remove" },
+            { "id": "floors-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "add",
+          "line": "Above or below?",
+          "choices": [
+            { "id": "floor-up", "text": "Build one above ({price} gold).", "effect": "house-floor-up", "next": "built" },
+            { "id": "floor-down", "text": "Dig one below ({price} gold).", "effect": "house-floor-down", "next": "built" },
+            { "id": "add-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "remove",
+          "line": "The outermost one of its side. It must stand empty.",
+          "choices": [
+            { "id": "drop-up", "text": "The top one ({price} gold).", "effect": "house-floor-drop-up", "next": "built" },
+            { "id": "drop-down", "text": "The lowest one ({price} gold).", "effect": "house-floor-drop-down", "next": "built" },
+            { "id": "remove-back", "text": "Never mind.", "effect": "say" }
+          ]
+        },
+        {
+          "id": "built",
+          "line": "It is done. Take a look.",
+          "choices": [
+            { "id": "built-back", "text": "Thank you.", "effect": "say" }
+          ]
+        }
+      ],
+      "houseMaker": { "prices": { "floorUp": 40, "floorDown": 40, "stairs": 12, "bed": 8, "chest": 8, "dropUp": 15, "dropDown": 15 } }
     },
     {
       "id": "boatman",
