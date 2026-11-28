@@ -671,6 +671,23 @@ var e = {
 		{
 			id: "ferryman",
 			name: "Ferryman",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"c",
+						"b",
+						"B",
+						"C"
+					],
+					hair: [
+						"t",
+						"s",
+						"S",
+						"m"
+					]
+				}
+			},
 			line: "The crossing is short. Shall I take you over to the other island?",
 			choices: [{
 				id: "travel",
@@ -685,6 +702,23 @@ var e = {
 		{
 			id: "farmer",
 			name: "Farmer",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					],
+					legs: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "Good day. Mind the mud, it clings to boots.",
 			choices: [
 				{
@@ -952,6 +986,23 @@ var e = {
 		{
 			id: "trader",
 			name: "Trader",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"h",
+						"g",
+						"G",
+						"F"
+					],
+					belt: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					]
+				}
+			},
 			line: "Welcome, friend. Bread, cheese, and fair prices.",
 			choices: [
 				{
@@ -1034,6 +1085,29 @@ var e = {
 		{
 			id: "house-agent",
 			name: "House agent",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"N",
+						"A",
+						"D",
+						"m"
+					],
+					sleeve: [
+						"X",
+						"i",
+						"N",
+						"A"
+					],
+					hair: [
+						"w",
+						"W",
+						"x",
+						"k"
+					]
+				}
+			},
 			line: "Welcome home. Rent is taken from the gold in your depot each month; after a few days of reminders an unpaid house is lost. What shall I see to?",
 			choices: [
 				{
@@ -1089,6 +1163,23 @@ var e = {
 		{
 			id: "house-guide",
 			name: "House guide",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"E",
+						"r",
+						"R",
+						"I"
+					],
+					belt: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					]
+				}
+			},
 			line: "Welcome, look around as you like, but please touch nothing. This house is for sale for {price} gold.",
 			choices: [{
 				id: "buy",
@@ -1114,6 +1205,29 @@ var e = {
 		{
 			id: "boatman",
 			name: "Boatman",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"X",
+						"i",
+						"N",
+						"A"
+					],
+					sleeve: [
+						"c",
+						"b",
+						"B",
+						"C"
+					],
+					hair: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "The boat leaves in {departure}.",
 			choices: [
 				{
@@ -1155,6 +1269,35 @@ var e = {
 		{
 			id: "smith",
 			name: "Smith",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"S",
+						"m",
+						"M",
+						"k"
+					],
+					legs: [
+						"S",
+						"m",
+						"M",
+						"k"
+					],
+					belt: [
+						"w",
+						"W",
+						"x",
+						"k"
+					],
+					hair: [
+						"w",
+						"W",
+						"x",
+						"k"
+					]
+				}
+			},
 			line: "Bring me two of a kind and some coins, and I will make one better piece of them.",
 			choices: [{
 				id: "merge",
@@ -1170,6 +1313,23 @@ var e = {
 		{
 			id: "thomas",
 			name: "Thomas",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"v",
+						"w",
+						"W",
+						"x"
+					],
+					hair: [
+						"t",
+						"s",
+						"S",
+						"m"
+					]
+				}
+			},
 			line: "Good to see you, my child. Mind the mud, it clings to boots.",
 			choices: [
 				{
@@ -1190,9 +1350,6 @@ var e = {
 					effect: "say",
 					next: "cellar",
 					requires: [{
-						type: "level",
-						min: 2
-					}, {
 						type: "quest",
 						quest: "granary-rats",
 						state: "done"
@@ -1393,6 +1550,23 @@ var e = {
 		{
 			id: "martha",
 			name: "Martha",
+			look: {
+				body: "woman",
+				colours: {
+					shirt: [
+						"K",
+						"J",
+						"r",
+						"R"
+					],
+					hair: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "Come in, my dear, the kettle is on.",
 			choices: [
 				{
@@ -1608,6 +1782,23 @@ var e = {
 		{
 			id: "hanna",
 			name: "Hanna",
+			look: {
+				body: "woman",
+				colours: {
+					shirt: [
+						"h",
+						"g",
+						"G",
+						"F"
+					],
+					hair: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					]
+				}
+			},
 			line: "Hello! I know where everybody is.",
 			choices: [{
 				id: "where",
@@ -1695,6 +1886,23 @@ var e = {
 		{
 			id: "victor",
 			name: "Old Victor",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"N",
+						"A",
+						"D",
+						"m"
+					],
+					hair: [
+						"t",
+						"s",
+						"S",
+						"m"
+					]
+				}
+			},
 			line: "There you are, child. The old boat still floats, and so do I.",
 			choices: [
 				{
@@ -1785,6 +1993,23 @@ var e = {
 		{
 			id: "agnes",
 			name: "Agnes",
+			look: {
+				body: "woman",
+				colours: {
+					shirt: [
+						"c",
+						"b",
+						"B",
+						"C"
+					],
+					sleeve: [
+						"X",
+						"i",
+						"N",
+						"A"
+					]
+				}
+			},
 			line: "Welcome, child. Mind the loom, the thread tangles.",
 			choices: [
 				{
@@ -1805,9 +2030,6 @@ var e = {
 					effect: "say",
 					next: "silk",
 					requires: [{
-						type: "level",
-						min: 5
-					}, {
 						type: "quest",
 						quest: "winter-jerkin",
 						state: "done"
@@ -1929,7 +2151,7 @@ var e = {
 							requires: [
 								{
 									type: "level",
-									min: 2
+									min: 3
 								},
 								{
 									type: "quest",
@@ -2114,6 +2336,23 @@ var e = {
 		{
 			id: "helen",
 			name: "Helen",
+			look: {
+				body: "woman",
+				colours: {
+					shirt: [
+						"E",
+						"r",
+						"R",
+						"I"
+					],
+					hair: [
+						"w",
+						"W",
+						"x",
+						"k"
+					]
+				}
+			},
 			line: "Welcome, child. Bread, cheese, and fair prices.",
 			choices: [
 				{
@@ -2210,6 +2449,23 @@ var e = {
 		{
 			id: "simon",
 			name: "Simon",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"h",
+						"g",
+						"G",
+						"F"
+					],
+					sleeve: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "Hail, child. Fir Wood is quiet today, mostly.",
 			choices: [
 				{
@@ -2230,9 +2486,6 @@ var e = {
 					effect: "say",
 					next: "claws",
 					requires: [{
-						type: "level",
-						min: 12
-					}, {
 						type: "quest",
 						quest: "boars-in-the-wood",
 						state: "done"
@@ -2345,9 +2598,6 @@ var e = {
 							effect: "say",
 							next: "hearths",
 							requires: [{
-								type: "level",
-								min: 4
-							}, {
 								type: "quest",
 								quest: "winter-jerkin",
 								state: "done"
@@ -2575,6 +2825,29 @@ var e = {
 		{
 			id: "jacob",
 			name: "Jacob",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"v",
+						"w",
+						"W",
+						"x"
+					],
+					belt: [
+						"S",
+						"m",
+						"M",
+						"k"
+					],
+					hair: [
+						"w",
+						"W",
+						"x",
+						"k"
+					]
+				}
+			},
 			line: "Come in, child. Bring me two of a kind and some coins, and I will make one better piece of them.",
 			choices: [
 				{
@@ -2625,7 +2898,7 @@ var e = {
 							requires: [
 								{
 									type: "level",
-									min: 4
+									min: 5
 								},
 								{
 									type: "quest",
@@ -2698,7 +2971,7 @@ var e = {
 							requires: [
 								{
 									type: "level",
-									min: 6
+									min: 5
 								},
 								{
 									type: "quest",
@@ -2863,6 +3136,23 @@ var e = {
 		{
 			id: "nicholas",
 			name: "Nicholas",
+			look: {
+				body: "man",
+				colours: {
+					shirt: [
+						"c",
+						"b",
+						"B",
+						"C"
+					],
+					belt: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					]
+				}
+			},
 			line: "Good day, child. I keep the book of the houses and the rent.",
 			choices: [
 				{
@@ -2881,11 +3171,7 @@ var e = {
 					id: "ledger",
 					text: "Does the reeve need help?",
 					effect: "say",
-					next: "ledger",
-					requires: [{
-						type: "level",
-						min: 4
-					}]
+					next: "ledger"
 				},
 				{
 					id: "bye",
@@ -3082,6 +3368,35 @@ var e = {
 		{
 			id: "anselm",
 			name: "Brother Anselm",
+			look: {
+				body: "man",
+				parts: [
+					"hood",
+					"plain-shirt",
+					"plain-trousers",
+					"plain-boots"
+				],
+				colours: {
+					shirt: [
+						"v",
+						"w",
+						"W",
+						"x"
+					],
+					sleeve: [
+						"v",
+						"w",
+						"W",
+						"x"
+					],
+					hair: [
+						"t",
+						"s",
+						"S",
+						"m"
+					]
+				}
+			},
 			line: "Peace, child. The chapel is open to all.",
 			choices: [
 				{
@@ -3102,9 +3417,6 @@ var e = {
 					effect: "say",
 					next: "bones",
 					requires: [{
-						type: "level",
-						min: 10
-					}, {
 						type: "quest",
 						quest: "the-hill-wakes",
 						state: "done"
@@ -3315,6 +3627,35 @@ var e = {
 		{
 			id: "edda",
 			name: "Edda",
+			look: {
+				body: "woman",
+				parts: [
+					"hood",
+					"plain-shirt",
+					"plain-trousers",
+					"plain-boots"
+				],
+				colours: {
+					shirt: [
+						"N",
+						"A",
+						"D",
+						"m"
+					],
+					sleeve: [
+						"N",
+						"A",
+						"D",
+						"m"
+					],
+					hair: [
+						"t",
+						"s",
+						"S",
+						"m"
+					]
+				}
+			},
 			line: "Few climb this far. The mountain keeps its own counsel, and so do I.",
 			choices: [
 				{
@@ -3576,6 +3917,23 @@ var e = {
 		{
 			id: "greta",
 			name: "Greta",
+			look: {
+				body: "woman",
+				colours: {
+					shirt: [
+						"z",
+						"y",
+						"Y",
+						"H"
+					],
+					hair: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "Welcome in. Sit where you like; there is bread and cheese for anyone who is hungry.",
 			choices: [{
 				id: "trade",
@@ -3600,6 +3958,35 @@ var e = {
 		{
 			id: "osric",
 			name: "Osric",
+			look: {
+				body: "man",
+				parts: [
+					"hood",
+					"plain-shirt",
+					"plain-trousers",
+					"plain-boots"
+				],
+				colours: {
+					shirt: [
+						"L",
+						"g",
+						"G",
+						"F"
+					],
+					sleeve: [
+						"h",
+						"G",
+						"F",
+						"l"
+					],
+					legs: [
+						"v",
+						"w",
+						"W",
+						"x"
+					]
+				}
+			},
 			line: "Quiet, friend. A deer hears a boot from a long way off.",
 			choices: [
 				{
